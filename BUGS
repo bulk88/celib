@@ -1,0 +1,4 @@
+Time-stamp: <04/01/02 08:14:04 keuchel@netwave.de>
+
+* BSD printf does not handle some formats! %hs, %ls, %i64...
+* ftime() returns wrong time after suspending device.

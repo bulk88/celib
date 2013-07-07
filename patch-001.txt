@@ -1,0 +1,33 @@
+cd h:/src/wince/celib-palm-3.0/
+diff -c "h:/src/wince/celib-palm-3.0/ceshared2.c~" "h:/src/wince/celib-palm-3.0/ceshared2.c"
+*** h:/src/wince/celib-palm-3.0/ceshared2.c~	Thu Sep 06 09:54:17 2001
+--- h:/src/wince/celib-palm-3.0/ceshared2.c	Sat Oct 06 09:01:01 2001
+***************
+*** 1,6 ****
+  // ceshared2.c - uses file mapping instead of shared dll sections
+  //
+! // Time-stamp: <06/09/01 09:54:17 keuchel@netwave.de>
+  
+  #include <windows.h>
+  #include "celib.h"
+--- 1,6 ----
+  // ceshared2.c - uses file mapping instead of shared dll sections
+  //
+! // Time-stamp: <06/10/01 09:01:01 keuchel@netwave.de>
+  
+  #include <windows.h>
+  #include "celib.h"
+***************
+*** 367,372 ****
+--- 367,377 ----
+  	      return -1;
+  	    }
+  	}
++     }
++   else
++     {
++       // clear any pending events...
++       WaitForSingleObject(hevent_canwrite, 0);
+      }
+  
+    len = min(size, pp->size);

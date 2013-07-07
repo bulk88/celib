@@ -1,0 +1,374 @@
+2002-05-10  Rainer Keuchel  <keuchel@netwave.de>
+
+	* all: XCEGetOpenFileName/XCEGetSaveFileName were not in the
+	WCE200 builds, because they were defined-out in the header. Why?
+
+2002-04-28  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cewin32.c (XCECreateWindowExA): Classname can be atom.
+
+2002-04-26  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cewin32.c (XCEGetTempFileNameA): Fixed. The old impl did not
+	follow the spec.
+	(XCElstrcpynA): Added.
+
+	* ceio.c (_init_io): Added CELIBSTDLOGDIR as dir for the std
+	stream files.
+
+2002-04-25  Rainer Keuchel  <keuchel@netwave.de>
+
+	* All: Version 3.10 released.
+
+2002-04-24  Rainer Keuchel  <keuchel@netwave.de>
+	* cewin32.c: Some more functions for VIM and some missing macros
+	added. 
+	
+2002-04-04  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cedebug.c (XCETrace): Flush file buffers.
+
+2002-03-31  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cewin32.c (XCESendMessageA): Fixed severe bug when
+	WM_GETTEXT. Was never received correctly!!!! Added new messages.
+	Added some new functions.
+	
+2002-03-15  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cestdlib.c (xcemktemp): Fixed overflow...
+
+2002-02-23  Rainer Keuchel  <keuchel@netwave.de>
+
+	* wssocket.c (xceselect): Handle pipes.
+
+	* ceshared2.c (XCEPeekNamedPipe): Return error when pipe is closed.
+
+	* cestdlib.c (xceexit): Call close_all_fds() so pipes get closed.
+
+	* ceio.c (close_all_fds): Added. Closes pipes.
+
+2002-02-15  Rainer Keuchel  <keuchel@netwave.de>
+
+	* registry.c: Some fixes suggested by W. Garland.
+
+	* strftime.c: Added. From newlib.
+
+2002-02-10  Rainer Keuchel  <keuchel@netwave.de>
+
+	* wssocket.c (xceselect): Added yield of non WM_KEYDOWN
+	messages. Possible conflict with other soft????
+
+	* wssocket.c (xceselect): Fixed latent bug. Showed in ssh when
+	used with the -L option...
+
+	* ceio.c (xcefcntl): Set O_NONBLOCK if FIONBIO.
+
+	* wssocket.c (xceioctlsocket): Set O_NONBLOCK in flags if FIONBIO.
+
+	* ceio.c (xcefcntl): Added flags to fdent_t.
+
+2002-01-31  Rainer Keuchel  <keuchel@netwave.de>
+
+	* All: Version 3.07 released.
+	
+	* cewin32.c (XCEGetCharWidthW): XCEGetCharWidth
+	and GetCharABCWidths fixed.
+
+	* cewin32.c (XCEBuildCommDCBA): Was not implemented, only dummy.
+	
+2002-01-24  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceinit.c (xceinit): Setting env var CELIBVERSION.
+
+2002-01-04  Rainer Keuchel  <keuchel@netwave.de>
+
+	* All: Version 3.06 released.
+
+	* ftime.c (xceftime): Support for millis has been added, but it
+	seems that the clock is supended when the device is suspended, so
+	the time is wrong then. Function should check this.
+
+2002-01-03  Rainer Keuchel  <keuchel@netwave.de>
+
+	* All: Added support for Palm/WCE201 and HPC/WCE211/SH4.
+
+2001-12-21  Rainer Keuchel  <keuchel@netwave.de>
+
+	* registry.c: Many bug fixes. For tclreg.dll.
+
+	* ftime.c (xceftime): Now returns millis. For tcl.
+
+2001-12-19  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceshared2.c: Added console to GetStdHandle() and
+	ReadFile()/WriteFile(). Needed for tclsh.
+
+2001-10-25  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cewin32.c (XCEFormatMessageA): Fixed for flag 
+	FORMAT_MESSAGE_ALLOCATE_BUFFER.
+
+2001-10-06  Rainer Keuchel  <keuchel@netwave.de>
+        * All: Version 3.05 released.
+	
+2001-10-06  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceshared2.c (pipe_write): Added Wait(0), so pending events are
+	cleared. Fixed caml problem.
+
+2001-09-23  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceio.c: Added ioctl() and fcntl(), used for sockets and
+	terminal. 
+
+	* termios.c: New file.
+
+	* cesignal.c: Added sigaction stuff, but currently does nothing.
+
+2001-09-22  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceio.c (xceread): Set errno to EAGAIN when EWOULDBLOCK is
+	signaled in socket read.
+
+	* cewin32.c (XCECreateProcessA): Fixed problems with spaces in
+	appname. Occured with Emacs.
+
+	* wssocket.c (xceselect): Fixed select. Now even works with
+	terminals.
+
+2001-09-14  Rainer Keuchel  <keuchel@netwave.de>
+
+	* Makefile.ce: Added section for x86-hpc.
+
+2001-09-13  Rainer Keuchel  <keuchel@netwave.de>
+
+	* registry.c: Added some missing funcs.
+
+2001-09-10  Rainer Keuchel  <keuchel@netwave.de>
+
+	* gid.c: Return 0 instead of -1.
+
+	* cegettimeofday.c: Fixed return type. Must be int.
+
+	* cekeyboard.c: Fixed ESC key in table.
+
+2001-09-07  Rainer Keuchel  <keuchel@netwave.de>
+
+	* celib.rc: Version 3.03.
+	* cewin32.c (XCECreateProcessA): Don't set pipehandles in normal
+	case, where they are not passed via startup info. The old behavior
+	trashed the pipe streams of the parent when this was not wanted.
+
+2001-09-06  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceshared2.c (pipe_read): Must return 0 on EPIPE for Emacs. Check
+	what tcl needs!
+
+2001-09-04  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceprocess.c (XCESearchPath2A): New. This is the "real" SearchPathA!
+
+2001-09-01  Rainer Keuchel  <keuchel@netwave.de>
+
+	* ceshared2.c (pipe_read): Added missing SYNC!
+	Added Sleep(0) after SetEvent(). That seems to fix the pipe
+	problems. 
+
+2001-08-27  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* celib.rc: Version 3.01
+	* ceenv.c: Now using __xceenviron. Old still supported.
+	* ceshared2.c: New version that uses a file mapping object.
+	* ceargv.c: Fixed globbing.
+	* cedir.c (xceopendir): Fixed for the case when dirname is "."
+	Often happens in glob()!
+	* ceinit.c (xceinit): Changed order of initargv/initenv.
+	(xceinit): Get PWD must come before setargv! Used by glob!
+
+2001-08-17  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cewin32.c (XCELoadLibraryA): There was always generated a full
+	path for the libname. This is wrong for libraries like coredll.dll!
+	Now the name without path is also tried...
+	
+2001-08-16  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceargv.c (USE_GLOB): Added USE_GLOB again.
+
+	* cestdio-palmsize.c (palm_init_stdio): Setting stderr to LBF
+	instead of NBF...
+
+2001-08-15  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* pwd.c (xcegetpass): Fixed. Always returned NULL!
+
+2001-08-14  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cewin32.c (XCECreateProcessA): PWD now passed in local
+	environment, via the environment shared memory. CHILDPATH is not
+	set anymore... Also pass PPID.
+
+	* ceprocess.c (XCEExecuteProcessA): Now uses XCECreateProcessA.
+
+2001-08-12  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cestdio-palmsize.c 
+	(palm_setvbuf): Fixed for size=0.
+	(palm_puts): Did not write a newline!
+	(palm_fread): EOF was not returned on large reads (sort)!
+
+2001-08-11  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cectype.c: Now using bcd ctype for all builds. Maybe this speeds
+	up parsing routines in perl and emacs. The WCE300 version seems to
+	be a function call!
+
+2001-08-10  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* createfilemap.c (CreateFileForMappingW): WINCE200 has
+	CreateFileForMapping. It's only named w/o the W character!
+
+2001-08-09  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceenv.c (_findenv): Fixed bug. Returned var when it was only the
+	prefix of another!
+
+	* ceio.c: Added FDCHECK() macro.
+	Addes traceflags and checking environment variable XCE_TRACE in
+	init().
+
+	Added new filetype XCE_FILE_TYPE_NULL. Removed file handle for dev
+	null. Also added handling of opening con.
+
+2001-08-08  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceio.c (xcedup2): Added dup(), dup2(). Hope it does not break
+	other things...
+
+2001-08-06  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cewin32.c (XCESendDlgItemMessageA): Fixed for WM_SETTEXT.
+
+2001-08-04  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cewin32.c (XCEMessageBoxA): Fixed for NULL pointers.
+
+	(XCEStretchDIBits): Fixed for negative height... Also consider
+	bmiSize if not 0.
+
+2001-07-22  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cewin32.c (XCECreateProcessA): Fixed for appname = NULL.
+
+	* registry.c (XCERegQueryValueExA): Fixed query for value
+	size. Appeared in apache.
+
+2001-06-17  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceenv.c (_initenv): Dont show message box anymore...
+
+2001-06-15  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceenv.c (_initenv): Setting some default values when Environment
+	does not exist.
+
+2001-06-07  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceprocess.c (XCEExecuteProcessA): Fixed bug with new dynamic
+	allocation. Problems when rest of command line was 0.
+
+	* createfile.c (XCECreateFileW): Fixed for COMx:...
+
+2001-05-31  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* pwd.c (xcesetpwent): Fixed for UNIXROOTDIR=\.
+
+2001-05-29  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceprocess.c (XCEExecuteProcessA): Fixed bug with long command
+	lines... 
+
+2001-05-08  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* bsd-vfscanf.c (__svfscanf): Does not handle i64 and other
+	microsoft stuff...
+
+2001-05-05  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceprocess.c (XCEExecuteProcessA): When PATH contained
+	forward-slashes, it did not work. Current directory was not
+	searched.
+
+	(XCESearchPathA): Add current dir to pathlist.
+
+2001-04-21  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* createfile.c (XCECreateFileW): Check if file exists, so
+	directories are not created in pocket emulation. This is obviously
+	a bug in the emulation...
+
+2001-04-17  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cedebug.c: Changed trace functions to do OutputDebugString.
+
+	* ftime.c (xceftime): Set millis to 0. Apps needing millis must
+	use GetTickCount() or QueryPerformanceCounter()...
+
+2001-04-07  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cestdio-palmsize.c (palm_fread): Optimized for large reads. Did
+	not speed up mpeg_play significantly!
+
+2001-04-03  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* ceinit.c: Changed to __xcearc/__xceargv for WCE300.
+
+	* Makefile.ce: Removed toolhelp stuff.
+
+	* cestdio-palmsize.c (palm_getc): There was a bug when 0xFF was
+	read. Was converted to EOF because the ptr in PFILE was signed!!!!
+
+	(palm_fseek): When SEEK_CUR, must subtract _cnt from offset!
+
+	(palm_fseek): Must return 0 on success.
+
+2001-02-18  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cewin32.c (XCELoadLibraryA): Call FixPath here.
+
+2001-02-12  Rainer Keuchel  <rkeuc@allgeier.net>
+
+	* all: Cleaned up, makefile changed for object-dirs, dll support.
+
+	* cestdio-palmsize.c: Removed direct cget-calls.
+
+2001-02-10  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cestdlib.c (xcechdir): Did not return error!
+
+2001-02-03  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* currentdir.c (XCESetCurrentDirectoryW): Added check if
+	directory! I must have been sleeping...
+
+	Added root directory to support chroot(), although that is not yet
+	propagated to child processes...
+
+	* all: New multi-thread version. Current directory is now per
+	thread.
+
+2001-02-02  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* fixpath.c (XCEFixPathW): Dont allow slash at end of dirname...
+
+2001-01-28  Rainer Keuchel  <administrator@keuchel.net>
+
+	* wsdb.c (xcegetservbyname): New func.
+
+2001-01-04  Rainer Keuchel  <r_keuchel@smaug.netwave.de>
+
+	* ftime.c (ftime): WinCE does not return millis in
+	SYSTEMTIME. We have to derive from GetTickCount()...
+	
+

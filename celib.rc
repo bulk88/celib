@@ -1,0 +1,38 @@
+// Time-stamp: <10/05/02 09:35:03 keuchel@netwave.de>
+//
+// NOTE: Remember to set the date also in FileDescription!
+
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,1,1
+ PRODUCTVERSION 3,0,1,1
+ FILEFLAGSMASK 0x3FL
+ FILEFLAGS 0x0L
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+	BLOCK "040904B0"
+	BEGIN
+	    VALUE "CompanyName", "General Paranoyaxc\0"
+	    VALUE "FileDescription", "CELIB.DLL 3.11/Fri May 10 2002\0"
+	    VALUE "FileVersion", "3.11\0"
+	    VALUE "ProductVersion", "3.11\0"
+	    VALUE "InternalName", "celib.dll\0"
+	    VALUE "LegalCopyright", "Copyright (C) Rainer Keuchel\0"
+	    VALUE "OriginalFilename", "celib.dll"
+	    VALUE "ProductName", "celib\0"
+	    VALUE "OLESelfRegister", "\0"
+	 END
+     END
+     BLOCK "VarFileInfo"
+     BEGIN
+         VALUE "Translation", 0x409, 1200
+     END
+END

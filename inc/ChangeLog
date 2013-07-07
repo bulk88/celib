@@ -1,0 +1,27 @@
+2002-02-10  Rainer Keuchel  <keuchel@netwave.de>
+
+	* celib.h (_fdent): Added flags.
+
+2001-09-02  Rainer Keuchel  <keuchel@netwave.de>
+
+	* cewin32.h: Many functions had LPTSTR args, which gave warnings
+	when compiling with _UNICODE set...
+
+2001-08-26  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* varargs.h (va_alist): Fixed for MIPS. Now always copies 4 args
+	to the stack. Stupid compiler, bitch!
+
+2001-08-18  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* varargs.h: Added. Experimental.
+
+2001-08-12  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* cestdio.h: Flags were out of sync with palm-stdio!
+
+2001-08-01  Rainer Keuchel  <r_keuchel@netwave.de>
+
+	* stdio-palmsize.h: Added stdarg.h.
+	
+

@@ -1,0 +1,131 @@
+
+**** PROFILE REPORT - TIME IS IN MS AND INCLUDES PROFILE AND CHILD TIME ****
+
+RVA        COUNT      TIME   AVG FUNCTION               FILE
+-----------------------------------------------------------------------------
+1000c1d4   96792                 _getptd                cethread.obj
+1000bdbc   48162                 xcestrtoul             cestr.obj
+1000bbf8    1415                 xcestrtod              cestr.obj
+1000bb34     595                 xcestrcmpi             cestr.obj
+1000bae4     505                 xcestricmp             cestr.obj
+10002940     359                 GetCurrentProcessId    i
+100026b8     359                 XCETrace               cedebug.obj
+1000d564     185                 XCEExtTextOutA         cewin32.obj
+10011294     179                 XCEFixPathW            fixpath.obj
+100113b4     179                 XCECanonicalizePathW   fixpath.obj
+100182a8     154                 __tzset                tzset.obj
+100187cc     153                 _isindst               tzset.obj
+100109a8     153                 __loctotime_t          dtoxtime.obj
+1000bb0c      90                 xcestrcasecmp          cestr.obj
+10007568      87                 XCEReadFile            ceshared2.obj
+10011200      64                 XCEFixPathA            fixpath.obj
+10010c8c      62                 XCEFindFirstFileA      findfile.obj
+100110f0      62                 XCEFindFirstFileW      findfile.obj
+10008ab8      60                 xcestat                cestat.obj
+1000ef08      44                 XCEDefWindowProcA      cewin32.obj
+1000b7b8      39                 xcestrdup              cestr.obj
+10002cbc      37                 _appendenv             ceenv.obj
+100169fc      37                 XCERegEnumValueA       registry.obj
+10011eb8      28                 xceftime               ftime.obj
+10010314      27                 XCECreateFileW         createfile.obj
+10002acc      26                 xcereaddir             cedir.obj
+10010b54      24                 XCEGetFileAttributes   fileattr.obj
+10010298      24                 XCECreateFileA         createfile.obj
+10010c08      24                 XCEGetFileAttributes   fileattr.obj
+1000e4d0      24                 XCEwsprintfA           cewin32.obj
+10007cf8      22                 XCECloseHandle         ceshared2.obj
+1000ec94      21                 XCEGetWindowLongA      cewin32.obj
+10008068      21                 XCEGetFileType         ceshared2.obj
+10010e58      20                 XCEFindNextFileA       findfile.obj
+100176ec      20                 xcestrpbrk             strpbrk.obj
+100111d8      20                 XCEFindNextFileW       findfile.obj
+1000b3bc      17                 xceaccess              cestdlib.obj
+100033bc      12                 _winerror2errno        ceerrno.obj
+1000b998      12                 xcestrncasecmp         cestr.obj
+1000b8a8      12                 xcestrnicmp            cestr.obj
+1000d1c8       9                 XCEPeekMessageA        cewin32.obj
+1000b708       6                 xcestrrchr             cestr.obj
+1000bce4       6                 xcestrtol              cestr.obj
+1000f290       5                 XCEGetWindowPlacemen   cewin32.obj
+100032b4       5                 xcegetenv              ceenv.obj
+10002d9c       5                 _findenv               ceenv.obj
+1000da98       4                 XCECreateWindowExA     cewin32.obj
+1000f2dc       4                 XCEMoveWindow          cewin32.obj
+1000cf48       4                 XCEGetVersionExA       cewin32.obj
+10003e18       4                 _initfds               ceio.obj
+10007f1c       4                 XCEGetStdHandle        ceshared2.obj
+100092c8       3                 palm_fdopen            cestdio-palmsi
+10005184       3                 xcesetfiletype         ceio.obj
+100091f8       3                 palm_fsetmode          cestdio-palmsi
+10003e9c       3                 _getnewfd              ceio.obj
+
+**** PROFILE REPORT - TIME IS IN MS AND INCLUDES PROFILE AND CHILD TIME ****
+
+RVA        COUNT      TIME   AVG FUNCTION               FILE
+-----------------------------------------------------------------------------
+10004270       3                 xceopenw               ceio.obj
+1000aa34       3                 palm_setvbuf           cestdio-palmsi
+100045d8       3                 xceclose               ceio.obj
+10006948       3                 xceshared_getstdhand   ceshared2.obj
+1000ded0       3                 XCEGetProcAddressA     cewin32.obj
+10004000       3                 xceopen                ceio.obj
+100096bc       3                 palm_fclose            cestdio-palmsi
+1000295c       2                 xceopendir             cedir.obj
+1000d238       2                 XCEDispatchMessageA    cewin32.obj
+1000d208       2                 XCEGetMessageA         cewin32.obj
+1000ed28       2                 XCERegisterClassA      cewin32.obj
+10016738       2                 XCERegOpenKeyExA       registry.obj
+10001864       2                 argv_append2           ceargv.obj
+1000ed08       2                 XCEIsZoomed            cewin32.obj
+1000ee68       2                 XCEMulDiv              cewin32.obj
+10001784       2                 argv_append1           ceargv.obj
+1000d2fc       2                 XCEGetModuleFileName   cewin32.obj
+1000ece8       2                 XCEIsIconic            cewin32.obj
+10018c64       2                 cvtdate                tzset.obj
+10002a88       2                 xceclosedir            cedir.obj
+1001094c       1                 DllMain                dllmain.obj
+100182f8       1                 _xcetzset              tzset.obj
+10003a78       1                 xceinit                ceinit.obj
+100032e0       1                 xceputenv              ceenv.obj
+1000befc       1                 _init_multithread      cethread.obj
+100064dc       1                 xceshared_reset        ceshared2.obj
+1000e548       1                 XCElstrcmpiA           cewin32.obj
+1000264c       1                 XCEShowWaitCursor      cecursor.obj
+1000c424       1                 TlsAlloc               i
+100031f4       1                 _initenv               ceenv.obj
+100090b4       1                 palm_init_stdio        cestdio-palmsi
+1000d25c       1                 XCECreateEventA        cewin32.obj
+1001069c       1                 XCESetCurrentDirecto   currentdir.obj
+1000dd4c       1                 XCEGetEnvironmentVar   cewin32.obj
+1001008c       1                 XCEGetCommandLineA     cewin32.obj
+10006880       1                 xceshared_getenviron   ceshared2.obj
+1000ddd4       1                 XCELoadLibraryA        cewin32.obj
+100065bc       1                 xceshared_setenviron   ceshared2.obj
+1000f658       1                 XCEFormatMessageA      cewin32.obj
+1000c120       1                 _initptd               cethread.obj
+100081b8       1                 xceshared_attach       ceshared2.obj
+1000eab8       1                 XCELoadIconA           cewin32.obj
+1000ea0c       1                 XCELoadCursorA         cewin32.obj
+10002f6c       1                 _initenv_from_reg      ceenv.obj
+1000dc00       1                 XCEGetModuleHandleA    cewin32.obj
+1000ecbc       1                 XCESetWindowLongA      cewin32.obj
+1000c444       1                 GetCurrentThreadId     i
+10016bf4       1                 XCERegCloseKey         registry.obj
+1000d030       1                 XCESendMessageA        cewin32.obj
+100014bc       1                 _setargv               ceargv.obj
+10002684       1                 XCEShowNormalCursor    cecursor.obj
+10006384       1                 xceshared_init         ceshared2.obj
+1000d644       1                 XCEGetSystemTimeAsFi   cewin32.obj
+10001454       1                 xcecalloc              calloc.obj
+1001064c       1                 XCESetCurrentDirecto   currentdir.obj
+
+**** PROFILE REPORT - TIME IS IN MS AND INCLUDES PROFILE AND CHILD TIME ****
+
+RVA        COUNT      TIME   AVG FUNCTION               FILE
+-----------------------------------------------------------------------------
+10003b9c       1                 _init_io               ceio.obj
+10003b84       1                 xcedllinit             ceinit.obj
+1000b5e8       1                 xceexit                cestdlib.obj
+1000a9b4       1                 palm_fcloseall         cestdio-palmsi
+10002e7c       1                 _replaceenv            ceenv.obj
+1000e924       1                 XCEGetVersion          cewin32.obj

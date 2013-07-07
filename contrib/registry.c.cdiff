@@ -1,0 +1,78 @@
+*** registry.c	Sun Feb 10 19:48:11 2002
+--- celib-3.06-dist/registry.c	Fri Dec 21 17:14:58 2001
+***************
+*** 57,78 ****
+  {
+    wchar_t valnamew[256];
+    LONG res;
+    LPBYTE lpDataNew = NULL;
+    DWORD dwDataSize;
+-   DWORD dword_spare = 0;
+-   LPDWORD lpType_spare = &dword_spare;
+  
+    if(lpData != NULL)
+      {
+        dwDataSize = *lpcbData * 2;
+        lpDataNew = malloc(dwDataSize);
+      }
+  
+-   if (lpType == NULL)
+-     lpType = lpType_spare;
+- 
+    MultiByteToWideChar(CP_ACP, 0, valname, -1, valnamew, COUNTOF(valnamew));
+  
+    res = RegQueryValueExW(hKey, valnamew, lpReserved, lpType, lpDataNew,
+  			 &dwDataSize);
+  
+--- 57,73 ----
+***************
+*** 119,142 ****
+  		  DWORD dwSize
+  		  )
+  {
+    wchar_t valnamew[256];
+    LONG res;
+!   LPBYTE lpDataNew = lpData;
+    DWORD dwDataSize = dwSize;
+  
+    MultiByteToWideChar(CP_ACP, 0, valname, -1, valnamew, COUNTOF(valnamew));
+  
+!   if ((dwType == REG_SZ) || (dwType == REG_EXPAND_SZ))
+!   {
+!     dwDataSize = dwSize * 2;
+!     lpDataNew = malloc(dwDataSize);
+! 
+!     MultiByteToWideChar(CP_ACP, 0, lpData, -1, (wchar_t *)lpDataNew, 
+! 			dwDataSize);
+!   }
+!     
+    res = RegSetValueExW(hKey, valnamew, dwReserved, dwType, lpDataNew,
+  		       dwDataSize);
+  
+    free(lpDataNew);
+  
+--- 114,137 ----
+  		  DWORD dwSize
+  		  )
+  {
+    wchar_t valnamew[256];
+    LONG res;
+!   LPBYTE lpDataNew = NULL;
+    DWORD dwDataSize = dwSize;
+  
+    MultiByteToWideChar(CP_ACP, 0, valname, -1, valnamew, COUNTOF(valnamew));
+  
+!   if(dwType == REG_SZ)
+!     {
+!       dwDataSize = dwSize * 2;
+!       lpDataNew = malloc(dwDataSize);
+! 
+!       MultiByteToWideChar(CP_ACP, 0, lpData, -1, (wchar_t *)lpDataNew, 
+! 			  dwDataSize);
+!     }
+! 
+    res = RegSetValueExW(hKey, valnamew, dwReserved, dwType, lpDataNew,
+  		       dwDataSize);
+  
+    free(lpDataNew);
+  

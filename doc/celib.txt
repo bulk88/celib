@@ -1,0 +1,77 @@
+NAME
+	celib - Unix/WinANSI library for WinCE
+
+DESCRIPTION
+	This library is for easier porting Win32 and Unix programs to
+	WinCE. It currently contains parts from NetBSD.
+
+	Environment vars are read from HKEY_LOCAL_MACHINE\Environment.
+
+	Most functions are prefixed with xce... The header celib.h
+	defines most xce-functions to their real name when included in
+	a non-library-build.
+
+	This library is in no way well-designed and well-tested. I
+	wrote it to get Emacs running. Use at your own risk.
+
+COMPILING
+	If you want to recompile the library, you probably have to fix
+	some paths in the makefile.
+
+	You may also need to patch some files from Microsoft's CRT
+	library.  Look in the file xpatch.bat and fix the path of the
+	CRT sources (these are not installed by default when you setup
+	VC 6.0!). Then run xpatch.bat. This generates some
+	time-specific files. It's a pain that Microsoft did not
+	implement these - and other crt funcs - in it's coredll.
+	ActiveX seems to be more important than a complete c-runtime
+	library. Invent the wheel again and again and again and
+	again...
+
+PROBLEMS
+	Passing current directory to child processes is done via
+	PWD in the *global* environment. This could be done in other
+	ways, but nobody is running a lot apps simultanously...
+
+	Now this is passed via shared memory.
+
+	Buffered io in r/w mode is currently not supported. This would
+	require a redesign of my stupid stdio implementation. I will 
+	integrate BSD stdio when I need this feature.
+
+USING THE LIBRARY/COMPILING PROGRAMS
+        I have now included precompiled libs in the archive. To
+        compile programs, include celib.h in all source files and
+	link with celib.lib. When you want console-io, you must link
+	with the console objects. They automatically call main().
+	
+	Otherwise you have to provide wWinMain() in your program and
+        call xceinit(lpszcmdlinew) to initialize the library. 
+
+	Be careful with using -O2. The ce compilers are a bit buggy,
+        even without -O2!
+
+	Sometimes you have to place guards in system headers, to
+	prevent typedefs of types used by the program. That's open
+	needed for boolean etc. Put a -D_boolean_defined in the CFLAGS
+	and edit the system header like this:
+
+	#ifndef _boolean_defined
+	typedef unsigned char boolean;
+	#define _boolean_defined
+	#endif
+
+	See also the sample files in this directory.
+
+TODO
+	* Clean up naming etc.
+	* Thread-Safety.
+	* Replace stdio with BSD code
+
+COPYING
+	This software may be used freely, as long as the original
+	author is always credited. If you make substantial
+	improvements, it would be nice to let me know.
+	
+AUTHOR
+	Rainer Keuchel <coyxc@rainer-keuchel.de> 2001-2002

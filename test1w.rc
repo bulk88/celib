@@ -1,0 +1,18 @@
+#include <windows.h>
+#include "test1wres.h"
+
+IDM_MENU MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Menu1"
+    BEGIN
+        MENUITEM "Item1", IDM_ITEM1
+    END
+    POPUP "&Menu2"
+    BEGIN
+        MENUITEM "Item2", IDM_ITEM2
+    END
+    POPUP "&Menu3"
+    BEGIN
+        MENUITEM "Item3", IDM_ITEM3
+    END
+END

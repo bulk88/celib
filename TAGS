@@ -1,0 +1,1264 @@
+
+alarm.c,15
+xcealarm(8,92
+
+ascii2addr.c,22
+xceascii2addr(10,139
+
+asctime.c,63
+#define _ASCBUFSIZE 8,143
+store_dt 13,221
+xceasctime 22,324
+
+bsd-ctype.c,31
+#define _CTYPE_PRIVATE50,2459
+
+bsd-fclose.c,16
+fclose(55,2376
+
+bsd-fdopen.c,22
+__weak_alias(59,2439
+
+bsd-fflush.c,34
+fflush(60,2462
+__sflush(84,2771
+
+bsd-fgets.c,15
+fgets(60,2545
+
+bsd-findfp.c,143
+#define	NDYNAMIC 61,2493
+#define	std(std63,2553
+moreglue(86,3213
+__sfp(109,3572
+f_prealloc(151,4647
+_cleanup(176,5176
+__sinit(186,5350
+
+bsd-flags.c,18
+__sflags(61,2516
+
+bsd-fopen.c,44
+#define DEFFILEMODE 58,2428
+fopen(62,2468
+
+bsd-fprintf.c,17
+fprintf(59,2395
+
+bsd-fputs.c,15
+fputs(59,2419
+
+bsd-fread.c,15
+fread(56,2376
+
+bsd-freopen.c,46
+#define DEFFILEMODE 60,2459
+freopen(69,2673
+
+bsd-fscanf.c,16
+fscanf(59,2392
+
+bsd-fvwrite.c,103
+__sfvwrite(63,2616
+#define	MIN(MIN85,2950
+#define	COPY(COPY86,2992
+#define GETIOV(GETIOV92,3134
+
+bsd-fwalk.c,16
+_fwalk(55,2350
+
+bsd-makebuf.c,62
+__smakebuf(66,2700
+__swhatbuf(108,3409
+__swhatbuf(126,3725
+
+bsd-refill.c,35
+lflush(62,2469
+__srefill(78,2697
+
+bsd-sprintf.c,17
+sprintf(61,2448
+
+bsd-sscanf.c,33
+eofread(63,2492
+sscanf(73,2578
+
+bsd-stdio.c,72
+__sread(63,2510
+__swrite(84,2858
+__sseek(101,3190
+__sclose(122,3497
+
+bsd-strtod.c,4195
+#define __sh3__101,4424
+#define __mips__104,4459
+#define __arm32__107,4494
+#define Unsigned_Shifts111,4527
+#define IEEE_BIG_ENDIAN119,4803
+#define IEEE_LITTLE_ENDIAN122,4849
+#define IEEE_BIG_ENDIAN132,5105
+#define VAX136,5152
+#define Long	139,5172
+#define ULong	140,5193
+#define Bug(Bug144,5254
+#define MALLOC 172,5705
+#define isspace 179,5790
+#define IEEE_ARITHMETIC185,5881
+#define IEEE_ARITHMETIC188,5938
+#define DBL_DIG 192,5993
+#define DBL_MAX_10_EXP 193,6012
+#define DBL_MAX_EXP 194,6039
+#define FLT_RADIX 195,6064
+#define FLT_ROUNDS 196,6084
+#define DBL_MAX 197,6105
+#define DBL_DIG 201,6164
+#define DBL_MAX_10_EXP 202,6183
+#define DBL_MAX_EXP 203,6209
+#define FLT_RADIX 204,6232
+#define FLT_ROUNDS 205,6253
+#define DBL_MAX 206,6274
+#define DBL_DIG 210,6332
+#define DBL_MAX_10_EXP 211,6351
+#define DBL_MAX_EXP 212,6377
+#define FLT_RADIX 213,6401
+#define FLT_ROUNDS 214,6421
+#define DBL_MAX 215,6442
+#define LONG_MAX 219,6506
+#define CONST 234,6690
+#define CONST 236,6722
+#define Sign_Extend(Sign_Extend241,6780
+#define Sign_Extend(Sign_Extend243,6839
+} _double;_double255,7113
+#define value(value256,7124
+#define word0(word0258,7175
+#define word1(word1259,7204
+#define word0(word0261,7239
+#define word1(word1262,7268
+#define Storeinc(Storeinc271,7597
+#define Storeinc(Storeinc275,7722
+#define Exp_shift 287,8146
+#define Exp_shift1 288,8168
+#define Exp_msk1 289,8190
+#define Exp_msk11 290,8219
+#define Exp_mask 291,8248
+#define P 292,8277
+#define Bias 293,8290
+#define IEEE_Arith294,8308
+#define Emin 295,8327
+#define Exp_1 296,8348
+#define Exp_11 297,8374
+#define Ebits 298,8400
+#define Frac_mask 299,8417
+#define Frac_mask1 300,8444
+#define Ten_pmax 301,8471
+#define Bletch 302,8491
+#define Bndry_mask 303,8511
+#define Bndry_mask1 304,8539
+#define LSB 305,8567
+#define Sign_bit 306,8581
+#define Log2P 307,8609
+#define Tiny0 308,8625
+#define Tiny1 309,8641
+#define Quick_max 310,8657
+#define Int_max 311,8678
+#define Infinite(Infinite312,8697
+#define Sudden_Underflow315,8804
+#define Exp_shift 317,8840
+#define Exp_shift1 318,8862
+#define Exp_msk1 319,8884
+#define Exp_msk11 320,8913
+#define Exp_mask 321,8942
+#define P 322,8971
+#define Bias 323,8984
+#define Exp_1 324,9000
+#define Exp_11 325,9026
+#define Ebits 326,9052
+#define Frac_mask 327,9127
+#define Frac_mask1 328,9155
+#define Bletch 329,9183
+#define Ten_pmax 330,9200
+#define Bndry_mask 331,9220
+#define Bndry_mask1 332,9249
+#define LSB 333,9278
+#define Sign_bit 334,9292
+#define Log2P 335,9320
+#define Tiny0 336,9336
+#define Tiny1 337,9359
+#define Quick_max 338,9375
+#define Int_max 339,9396
+#define Exp_shift 341,9431
+#define Exp_shift1 342,9453
+#define Exp_msk1 343,9474
+#define Exp_msk11 344,9499
+#define Exp_mask 345,9528
+#define P 346,9553
+#define Bias 347,9566
+#define Exp_1 348,9583
+#define Exp_11 349,9609
+#define Ebits 350,9631
+#define Frac_mask 351,9647
+#define Frac_mask1 352,9675
+#define Ten_pmax 353,9705
+#define Bletch 354,9725
+#define Bndry_mask 355,9742
+#define Bndry_mask1 356,9773
+#define LSB 357,9804
+#define Sign_bit 358,9824
+#define Log2P 359,9848
+#define Tiny0 360,9864
+#define Tiny1 361,9883
+#define Quick_max 362,9899
+#define Int_max 363,9920
+#define ROUND_BIASED368,9973
+#define rounded_product(rounded_product372,10022
+#define rounded_quotient(rounded_quotient373,10070
+#define rounded_product(rounded_product380,10260
+#define rounded_quotient(rounded_quotient381,10296
+#define Big0 384,10341
+#define Big1 385,10399
+#define Pack_32394,10724
+#define Kmax 398,10755
+Bigint Bigint406,10913
+ typedef struct Bigint Bigint;Bigint412,10989
+Balloc421,11147
+Bfree447,11530
+#define Bcopy(Bcopy462,11730
+multadd466,11837
+s2b511,12505
+hi0bits549,13095
+lo0bits583,13482
+i2b631,13991
+mult647,14137
+pow5mult737,15631
+lshift776,16232
+cmp836,17063
+diff870,17585
+ulp952,18912
+b2d992,19473
+#define d0 1005,19637
+#define d1 1006,19657
+d2b1062,20753
+#define d0 1082,21063
+#define d1 1083,21083
+ratio1196,22842
+#define n_bigtens 1249,23796
+#define n_bigtens 1254,23945
+#define n_bigtens 1258,24070
+strtod1263,24113
+quorem1814,35014
+__dtoa1954,38706
+
+bsd-strtoll.c,22
+__weak_alias(54,2313
+
+bsd-strtoull.c,44
+#define NULL 53,2296
+__weak_alias(57,2349
+
+bsd-ungetc.c,35
+__submore(64,2695
+ungetc(99,3425
+
+bsd-vfprintf.c,868
+static int __sbprintf __P(76,2729
+__sbprintf(112,3528
+#define	BUF	150,4298
+#define	DEFPREC	151,4353
+#define	BUF	158,4519
+__UNCONST(165,4653
+#define __UNCONST(__UNCONST172,4726
+#define	to_digit(to_digit178,4832
+#define is_digit(is_digit179,4864
+#define	to_char(to_char180,4913
+#define	ALT	185,4993
+#define	HEXPREFIX	186,5034
+#define	LADJUST	187,5085
+#define	LONGDBL	188,5131
+#define	LONGINT	189,5188
+#define	QUADINT	190,5231
+#define	SHORTINT	191,5274
+#define	ZEROPAD	192,5318
+#define FPT	193,5379
+vfprintf(195,5431
+#define	quad_t	232,6604
+#define	u_quad_t 233,6631
+#define	quad_t	237,6692
+#define	u_quad_t 238,6717
+#define NIOV 247,7090
+#define	PADSIZE	258,7488
+#define	PRINT(PRINT267,7810
+#define	PAD(PAD278,8041
+#define	FLUSH(FLUSH287,8207
+#define	SARG(SARG298,8434
+#define	UARG(UARG303,8617
+cvt(789,18928
+exponent(837,19999
+
+bsd-vfscanf.c,577
+#define	BUF	68,2561
+#define	LONG	73,2659
+#define	LONGDBL	74,2702
+#define	SHORT	75,2760
+#define	QUAD	76,2795
+#define	LONGLONG	77,2828
+#define	SUPPRESS	78,2870
+#define	POINTER	79,2918
+#define	NOSKIP	80,2976
+#define	SIGNOK	87,3204
+#define	NDIGITS	88,3253
+#define	DPTOK	90,3302
+#define	EXPOK	91,3366
+#define	PFXOK	93,3434
+#define	NZDIGITS	94,3488
+#define	CT_CHAR	99,3570
+#define	CT_CCL	100,3609
+#define	CT_STRING	101,3651
+#define	CT_INT	102,3691
+#define	CT_FLOAT	103,3750
+#define u_char 105,3799
+#define u_long 106,3828
+__svfscanf(118,4016
+__sccl(708,16902
+
+bsd-vsnprintf.c,22
+__weak_alias(55,2353
+
+bsd-vsprintf.c,22
+bsd_vsprintf(54,2328
+
+bsd-vsscanf.c,38
+eofread(57,2418
+bsd_vsscanf(66,2503
+
+bsd-win32.c,107
+open(7,86
+read(13,176
+write(19,253
+close(25,332
+lseek(31,378
+dup2(37,459
+isinf(45,515
+isnan(51,562
+
+bsd-wsetup.c,19
+__swsetup(60,2549
+
+bsd.c,85
+xcebcopy(10,165
+xcebcmp(17,277
+xcebzero(23,373
+xceindex(29,453
+xcerindex(35,519
+
+calloc.c,16
+xcecalloc(8,96
+
+ceargv.c,127
+#define USE_GLOB16,256
+#define GLOBFLAGS 21,344
+errfunc(28,555
+argv_append1(41,812
+argv_append2(69,1229
+_setargv(87,1674
+
+ceassert.c,23
+xcehandleassert(9,109
+
+cebsearch.c,20
+xcebsearch(70,3046
+
+cecommdlg.c,161
+XCEChooseColor(9,119
+#define OPEN_FILE 15,214
+#define SAVE_FILE 16,234
+XCEFileNameNameDlg(19,267
+XCEGetOpenFileNameA(115,2433
+XCEGetSaveFileNameA(121,2543
+
+ceconsole.c,26
+XCESetConsoleMode(14,236
+
+cectype.c,316
+xcetoupper(158,6626
+xcetolower(167,6718
+xceisascii(176,6810
+xceisalnum(185,6898
+xceisalpha(194,6997
+xceisblank(203,7093
+xceiscntrl(212,7180
+xceisdigit(221,7271
+xceisgraph(230,7362
+xceislower(239,7464
+xceisprint(248,7555
+xceispunct(257,7660
+xceisspace(266,7751
+xceisupper(275,7842
+xceisxdigit(284,7934
+
+cecursor.c,54
+XCEShowWaitCursor(16,372
+XCEShowNormalCursor(26,501
+
+cedebug.c,60
+XCETrace(11,140
+XCETraceW(43,726
+XCEOpenTraceFile(62,959
+
+cedir.c,136
+#define MAXPATHLEN 11,170
+#define IS_DIRECTORY_SEP(IS_DIRECTORY_SEP15,228
+xceopendir 18,287
+xceclosedir 58,995
+xcereaddir 68,1166
+
+cedtoxtime.c,23
+__loctotime_t 38,1045
+
+ceenv.c,195
+_appendenv(13,171
+_findenv(27,492
+_replaceenv(51,795
+_initenv_from_reg(73,1079
+_initenv_from_envblock(147,2565
+_initenv(162,2795
+xcegetenv(187,3200
+xceputenv(195,3274
+xcesetenv(206,3392
+
+ceerrno.c,64
+_winerror2errno(55,805
+xceperror(78,1191
+xcestrerror(86,1298
+
+ceexec.c,69
+xceexecv(9,113
+xceexecvp(17,236
+xceexecl(26,361
+xceexeclp(34,454
+
+cefonts.c,190
+XCECreateFontIndirectA(12,152
+typedef struct _MyEnumFontFamArg_MyEnumFontFamArg40,908
+} MYENUMFONTFAMARG;MYENUMFONTFAMARG44,979
+MyEnumFontFamProc(47,1013
+XCEEnumFontFamilies(105,2690
+
+cegettimeofday.c,117
+struct timeval timeval9,139
+struct timezone timezone14,198
+xcegettimeofday 20,264
+xcegettimeofday_timer(44,630
+
+ceinit.c,35
+xceinit(18,241
+xcedllinit(64,958
+
+ceio.c,548
+#define FDCHECK(FDCHECK30,490
+_init_io(39,672
+_initfds(114,2429
+_getnewfd(130,2603
+xceget_osfhandle(150,2813
+xcecreat(159,2959
+xceopen(173,3181
+xceopenw(231,4372
+xceopen_osfilehandle(335,6542
+xceclose(354,6860
+xceread(382,7341
+xcewrite(452,8817
+xcelseek(514,10121
+xceisatty(547,10716
+xcesetmode(564,10971
+xcesetmodefile(573,11054
+xceinitconsole(580,11132
+xceinitconsole2(589,11267
+xcegetfiletype(603,11496
+xcesetfiletype(611,11571
+xcedup(624,11851
+xcedup2(643,12088
+xcepipe(666,12417
+xcefcntl(688,12778
+xceioctl(753,13944
+
+ceirda.c,24
+xceirda_getaddr(11,136
+
+cekeyboard.c,143
+typedef struct _keyentry_keyentry8,114
+} KEYENTRY;KEYENTRY15,222
+XCEToAscii(94,2306
+XCEVkKeyScan(124,2851
+XCEUtil_VkToScancode(155,3343
+
+celocale.c,20
+xcesetlocale(9,112
+
+cemisc.c,30
+XCEGetDiskFreeSpaceExA(8,101
+
+ceprocess.c,102
+XCESearchPathA(10,190
+XCEExecuteProcessA(61,1056
+XCEWaitProcess(154,2702
+XCESearchPath2A(171,3002
+
+ceprofile.c,22
+XCEProfileDump(8,113
+
+cert0.c,16
+wWinMain(8,101
+
+ceshared-old.c,978
+#define CACHE_SYNC_DISCARD 10,232
+#define CACHE_SYNC_INSTRUCTIONS 12,309
+#define CACHE_SYNC_WRITEBACK	14,395
+#define SYNC 19,485
+#define SYNC21,558
+xceshared_init(48,1195
+xceshared_protect(58,1348
+xceshared_reset(81,1936
+xceshared_setshowwindow(90,2098
+xceshared_setcwd(97,2225
+xceshared_setenvironblock(103,2303
+xceshared_setstdhandle(129,2758
+xceshared_getshowwindow(170,3497
+xceshared_getcwd(176,3574
+xceshared_getenvironblock(182,3652
+xceshared_getstdhandle(199,3902
+xceshared_lock(220,4311
+xceshared_release(231,4489
+pipe_setavail(240,4677
+pipe_getavail(246,4755
+pipe_write(254,4879
+pipe_read(353,6993
+XCECreatePipe(446,8965
+XCEReadFile(519,11009
+XCEWriteFile(557,11665
+close_pipe(589,12291
+pipe_increment_opencount(644,13409
+XCECloseHandle(679,14172
+XCEDuplicateHandle(692,14341
+XCESetStdHandle(727,15007
+XCEGetStdHandle(760,15665
+XCEGetFileType(801,16383
+XCEPeekNamedPipe(817,16622
+xceshared_attach(846,17085
+xceshared_detach(852,17125
+
+ceshared2.c,1080
+#define CACHE_SYNC_DISCARD 10,230
+#define CACHE_SYNC_INSTRUCTIONS 12,307
+#define CACHE_SYNC_WRITEBACK	14,393
+#define SYNC 19,483
+#define SYNC21,556
+#define LOCK 24,577
+#define UNLOCK 25,605
+typedef struct shared_data shared_data45,1197
+} SHARED_DATA;SHARED_DATA48,1301
+xceshared_init(55,1364
+xceshared_reset(94,2102
+xceshared_setshowwindow(104,2267
+xceshared_setcwd(115,2422
+xceshared_setenvironblock(124,2527
+xceshared_setstdhandle(153,3012
+xceshared_getshowwindow(197,3785
+xceshared_getcwd(208,3989
+xceshared_getenvironblock(217,4099
+xceshared_getstdhandle(239,4396
+xceshared_lock(263,4854
+xceshared_release(274,5032
+pipe_setavail(283,5220
+pipe_getavail(289,5298
+pipe_write(297,5422
+pipe_read(404,7728
+XCECreatePipe(506,9907
+XCEReadFile(579,11913
+XCEWriteFile(614,12543
+close_pipe(646,13179
+pipe_increment_opencount(701,14277
+XCECloseHandle(736,15028
+XCEDuplicateHandle(749,15197
+XCESetStdHandle(784,15863
+XCEGetStdHandle(817,16521
+XCEGetFileType(864,17346
+XCEPeekNamedPipe(885,17675
+xceshared_attach(931,18561
+xceshared_detach(937,18601
+
+cesignal.c,150
+xcesignal(12,178
+xceraise(28,423
+sigaction(54,845
+sigprocmask(61,938
+sigaddset(68,1025
+sigemptyset(76,1106
+sigsuspend(84,1170
+xcekill(90,1228
+
+cestat.c,108
+#define FDCHECK(FDCHECK13,205
+xcefstat(22,387
+xcestat_old(134,3024
+xcestat(181,3851
+xcelstat(331,7280
+
+cestdio-palmsize.c,1380
+#define PALM_BUFSIZ 16,271
+#define PALM_MODEMASK 18,301
+#define PALM_ERRORMASK 19,377
+#define PALM_EOFMASK 20,436
+#define PALM_BUFMASK 21,493
+#define PALM_ERROR 23,552
+#define PALM_EOF 24,583
+#define PALM_IONBF 26,615
+#define PALM_IOLBF 27,646
+#define PALM_IOFBF 28,677
+#define PALM_SETEOF(PALM_SETEOF30,709
+#define PALM_SETERROR(PALM_SETERROR31,759
+#define PALM_CLEARERROR(PALM_CLEARERROR32,811
+palm_init_stdio(41,958
+palm_fsetmode(69,1654
+palm_fgetmode(84,1957
+palm_fdopen(93,2075
+palm_fopen(188,3644
+palm_fclose(209,4090
+palm_printf(244,4545
+palm_fprintf(259,4780
+palm_vprintf(277,5055
+palm_ferror(289,5263
+palm_clearerr(303,5428
+palm_fflush(313,5524
+palm_feof(371,6524
+palm_fwrite(387,6756
+palm_fread(409,7080
+palm_gets(482,8255
+palm_fgets(506,8492
+palm_vfprintf(529,8754
+palm_getc(575,9391
+palm_putc(610,9934
+palm_fputc(639,10374
+palm_putchar(645,10438
+palm_getchar(651,10503
+palm_fgetc(657,10560
+palm_fileno(663,10614
+palm_ungetc(671,10692
+palm_ftell(690,10950
+palm_fseek(704,11120
+palm_puts(723,11409
+palm_fputs(731,11522
+palm_freopen(745,11713
+palm_fgetpos(799,12552
+palm_fsetpos(811,12683
+palm_flushall(820,12796
+palm_fcloseall(835,12956
+palm_setvbuf(850,13118
+palm_rewind(884,13755
+palm_sprintf(894,13870
+palm_vsprintf(903,13998
+palm_sscanf(909,14098
+xcefopen(920,14241
+xcefclose(926,14331
+xcefreopen(932,14387
+
+cestdio.c,267
+xcefopen(13,184
+xcefreopen(69,1351
+xcefclose(88,1782
+xcefileno(106,1983
+xcerewind(126,2231
+xcefdopen(134,2313
+xcepopen(155,2662
+xcepclose(162,2752
+xcepopen_read(171,2827
+xcepopen_write(228,4130
+xcepopen(285,5415
+xcepclose(299,5683
+xceprinterror(306,5743
+
+cestdlib.c,356
+xcegetcwd(11,135
+xceabort(27,337
+xcesystem(40,492
+xcelocking(46,574
+xceumask(52,636
+xcemkdir(62,729
+xcermdir(76,924
+xcerename(90,1113
+xceremove(116,1431
+xcechmod(131,1611
+xceaccess(156,2064
+xceunlink(167,2192
+xcegetpid(180,2373
+xcechdir(188,2469
+xcemktemp(197,2587
+xcechroot(226,3117
+xceexit(248,3573
+xceclock(265,3795
+xcetimes(271,3841
+
+cestr.c,302
+xcestrrchr(8,97
+xcestrdup 24,343
+xcestrndup 38,534
+xcestrnicmp 55,763
+xcestrncasecmp 79,1154
+xcestrupr(85,1278
+xcestrlwr(99,1442
+xcestricmp 113,1604
+xcestrcasecmp 119,1693
+xcestrcmpi(125,1785
+xcestrtod(141,2095
+xcestrtol(172,2515
+xcestrtoul(203,2958
+xcestrcoll(233,3407
+xceatof(239,3508
+
+cethread.c,229
+_init_multithread(17,304
+_xcebeginthread(24,406
+_threadstart 68,1301
+_xceendthread 83,1538
+_initptd 99,1760
+_freeptd 106,1836
+_getptd 125,2068
+_xcebeginthreadex 154,2536
+_threadstartex(195,3399
+_xceendthreadex 211,3702
+
+cetimezone.c,25
+xcegettimezonename(8,94
+
+cetmpnam.c,71
+#define L_tmpnam 50,2260
+#define P_tmpdir 51,2281
+xcetmpnam(54,2310
+
+cetoolhelp.c,365
+typedef struct tagMODULEENTRY32W tagMODULEENTRY32W8,136
+} MODULEENTRY32W, *PMODULEENTRY32W, *LPMODULEENTRY32W;LPMODULEENTRY32W20,431
+typedef struct tagPROCESSENTRY32W tagPROCESSENTRY32W22,487
+} PROCESSENTRY32W, *PPROCESSENTRY32W, *LPPROCESSENTRY32W;LPPROCESSENTRY32W35,807
+XCEEnumModules(38,871
+XCEEnumProcesses(82,1853
+XCEGetProcessBaseAddress(121,2751
+
+ceunicode.c,22
+XCEMakeUnicode(8,103
+
+ceunsup-unix.c,0
+
+ceunsup-win32.c,27
+XCECreateSemaphoreA(9,134
+
+ceutil.c,226
+XCEShowMessageA(8,88
+XCEShowMessageW(24,365
+XCEToDosPath(37,564
+XCEToUnixPath(49,680
+XCEGetEnvironmentVariableFromRegA(61,794
+XCESetEnvironmentVariableInRegA(95,1376
+XCEGetRegStringA(117,1821
+XCESetRegStringA(151,2395
+
+cewchar.c,52
+xcewctomb(9,110
+xcembtowc(17,198
+xcemblen(28,335
+
+cewin32.c,2931
+#define CACHE_SYNC_DISCARD 9,156
+#define CACHE_SYNC_INSTRUCTIONS 11,233
+#define CACHE_SYNC_WRITEBACK	13,319
+#define SYNC 18,409
+#define SYNC20,482
+XCEGetFileInformationByHandle(33,663
+XCEGetUserNameA(40,845
+XCEGetComputerNameA(58,1132
+XCEGetCharABCWidthsA(78,1455
+XCEGetCharABCWidthsW(97,1796
+XCEGetVersionExA(119,2228
+XCEGetVersionExA(165,3069
+XCESendMessageA(189,3495
+XCEPostMessageA(233,4329
+XCEPostThreadMessageA(239,4463
+XCEPeekMessageA(245,4618
+XCEGetMessageA(253,4821
+XCEDispatchMessageA(259,4982
+XCECreateEventA(265,5073
+XCEGetModuleFileNameA(292,5562
+XCESetWindowTextA(313,5948
+XCEGetWindowTextA(331,6244
+XCEMessageBoxA(337,6394
+XCEExtTextOutA(368,7019
+XCEAttachThreadInput(387,7429
+XCEGetSystemTimeAsFileTime(395,7546
+XCEGetScrollPos(404,7679
+XCESetScrollPos(417,7852
+XCEAdjustWindowRect(429,8065
+XCEMapVirtualKeyA(435,8200
+XCEGetTextExtentExPointA(441,8304
+XCEGetObjectA(470,8878
+XCEGetTextMetricsA(497,9426
+XCEAppendMenuA(529,10420
+XCECreateWindowExA(558,10832
+XCECreateWindowA(602,11733
+XCEGetModuleHandleA(621,12179
+XCECreateFileMappingA(662,12973
+XCEGetEnvironmentVariableA(691,13595
+XCELoadLibraryA(710,13852
+XCEGetProcAddressA(744,14509
+XCEFindWindowA(758,14814
+XCEBuildCommDCBA(786,15365
+XCECharLowerA(864,17026
+XCECharUpperA(878,17214
+XCEGetFullPathNameA(892,17403
+XCEGetShortPathNameA(933,18164
+XCEGetTempFileNameA(941,18359
+XCEGetTempFileNameA(964,19049
+XCEGetTempPathA(983,19408
+XCEGetVolumeInformationA(999,19704
+XCEwsprintfA(1013,20076
+XCElstrcmpA(1026,20246
+XCElstrcmpiA(1032,20331
+XCElstrcpyA(1038,20424
+XCElstrcpynA(1044,20502
+XCESetErrorMode(1050,20590
+XCEExitProcess(1060,20696
+XCEGetTextExtentPoint32W(1069,20862
+XCEGetTextExtentPoint32A(1075,21027
+XCETextOutA(1093,21417
+XCETextOutW(1100,21631
+XCEGetCharWidthA(1107,21842
+XCEGetCharWidthW(1124,22145
+XCEGetFontData(1142,22472
+XCEGetTextCharset(1149,22610
+XCEGetVersion(1155,22678
+XCEExtCreatePen(1172,22904
+XCEOutputDebugStringA(1178,23087
+XCELoadCursorA(1192,23296
+XCELoadIconA(1215,23759
+XCEGetDlgItemTextA(1238,24198
+XCESetDlgItemTextA(1256,24570
+XCEGetWindowLongA(1273,24874
+XCESetWindowLongA(1279,24972
+XCEIsIconic(1285,25093
+XCEIsZoomed(1291,25150
+XCERegisterClassA(1297,25206
+XCEUnregisterClassA(1322,25702
+XCEMulDiv(1337,26021
+XCEDefWindowProcA(1347,26213
+XCESendDlgItemMessageA(1353,26351
+XCECallWindowProcA(1394,27191
+XCEGetTextFaceA(1400,27369
+XCECreateDCA(1415,27666
+XCEInsertMenuA(1435,28121
+XCEGetWindowPlacement(1456,28589
+XCEMoveWindow(1468,28865
+XCECopyMemory(1486,29206
+XCEGetDesktopWindow(1494,29356
+XCEStretchDIBits(1507,29653
+XCEFillRect(1590,31775
+XCEFormatMessageA(1620,32471
+XCECreateMutexA(1647,33096
+XCECreateProcessA(1662,33406
+XCEFreeEnvironmentStrings(1856,38099
+XCEGetEnvironmentStrings(1863,38186
+XCEDialogBoxIndirectParamA(1890,38588
+XCEFindResourceA(1901,38880
+XCEZeroMemory(1937,39563
+XCEGetCommandLineA(1945,39665
+
+chown.c,15
+xcechown(8,87
+
+copyfile.c,41
+XCECopyFileA(8,103
+XCECopyFileW(32,636
+
+createdir.c,55
+XCECreateDirectoryA(8,104
+XCECreateDirectoryW(22,411
+
+createfile.c,45
+XCECreateFileA(8,101
+XCECreateFileW(31,667
+
+createfilemap.c,103
+#define CreateFileForMappingW 9,141
+XCECreateFileForMappingA(15,242
+XCECreateFileForMappingW(38,834
+
+ctime.c,16
+xcectime(9,115
+
+currentdir.c,402
+#define _CURRENTDIRW 17,266
+#define _CURRENTROOTDIRW 18,313
+#define _CURRENTDIRW 20,375
+#define _CURRENTROOTDIRW 21,410
+XCEGetCurrentDirectoryA(25,475
+XCEGetCurrentDirectoryW(36,724
+XCESetCurrentDirectoryA(44,845
+XCESetCurrentDirectoryW(54,1035
+XCEGetCurrentRootDirectoryA(79,1446
+XCEGetCurrentRootDirectoryW(90,1696
+XCESetCurrentRootDirectoryA(98,1818
+XCESetCurrentRootDirectoryW(108,2009
+
+deletefile.c,45
+XCEDeleteFileA(8,105
+XCEDeleteFileW(18,289
+
+dllmain.c,15
+DllMain(9,127
+
+dtoxtime.c,21
+__loctotime_t(9,146
+
+fileattr.c,119
+XCEGetFileAttributesA(8,104
+XCESetFileAttributesA(21,335
+XCEGetFileAttributesW(34,582
+XCESetFileAttributesW(46,771
+
+findfile.c,105
+XCEFindFirstFileA(8,105
+XCEFindNextFileA(44,1012
+XCEFindFirstFileW(85,2082
+XCEFindNextFileW(119,2772
+
+fixpath.c,160
+XCEFixPathA(12,253
+XCEFixPathW(32,640
+#define IS_DIRECTORY_SEP(IS_DIRECTORY_SEP79,1494
+#define IS_ANY_SEP(IS_ANY_SEP80,1534
+XCECanonicalizePathW(84,1604
+
+fnmatch.c,115
+#define	EOS	65,2561
+foldcase(70,2661
+#define	FOLDCASE(FOLDCASE78,2782
+xcefnmatch(81,2854
+rangematch(166,4985
+
+ftime.c,171
+#define EPOCH_BIAS 12,251
+} FT;FT17,362
+#define DAYLIGHT_TIME 22,463
+#define STANDARD_TIME 23,489
+#define UNKNOWN_TIME 24,515
+xceftime_old(30,597
+xceftime(69,1479
+
+ftruncate.c,38
+xceftruncate(8,108
+xcechsize(30,440
+
+getopt.c,91
+__weak_alias(58,2348
+#define	BADCH	73,2673
+#define	BADARG	74,2696
+#define	EMSG	75,2720
+
+gid.c,95
+xcesetgid(9,109
+xcesetegid(15,148
+xcegetgid(21,188
+xcegetegid(27,221
+xceinitgroups(33,256
+
+glob.c,1473
+#define MAXPATHLEN 40,1999
+#define S_ISLNK(S_ISLNK41,2022
+#define __LIBC12_SOURCE__42,2043
+__weak_alias(99,3420
+#define STAT 105,3552
+#define	STAT	108,3607
+#define	STAT	110,3633
+#define	DOLLAR	123,3959
+#define	DOT	124,3979
+#define	EOS	125,3996
+#define	LBRACKET	126,4014
+#define	NOT	127,4035
+#define	QUESTION	128,4052
+#define	QUOTE	129,4073
+#define	RANGE	130,4093
+#define	RBRACKET	131,4112
+#define	SEP	132,4133
+#define	STAR	133,4150
+#define	TILDE	134,4168
+#define	UNDERSCORE	135,4187
+#define	LBRACE	136,4210
+#define	RBRACE	137,4230
+#define	SLASH	138,4250
+#define	COMMA	139,4269
+#define	M_QUOTE	143,4304
+#define	M_PROTECT	144,4328
+#define	M_MASK	145,4353
+#define	M_ASCII	146,4376
+typedef u_short Char;Char148,4401
+#define	M_QUOTE	152,4431
+#define	M_PROTECT	153,4453
+#define	M_MASK	154,4476
+#define	M_ASCII	155,4497
+typedef char Char;Char157,4520
+#define	CHAR(CHAR162,4549
+#define	META(META163,4588
+#define	M_ALL	164,4627
+#define	M_END	165,4652
+#define	M_NOT	166,4677
+#define	M_ONE	167,4702
+#define	M_RNG	168,4727
+#define	M_SET	169,4752
+#define	ismeta(ismeta170,4777
+xceglob(196,5799
+globexp1(250,7041
+globexp2(278,7740
+globtilde(389,9801
+glob0(461,11294
+compare(557,13528
+glob1(572,13798
+glob2(593,14282
+glob3(649,15577
+globextend(735,17817
+match(779,18823
+xceglobfree(831,19801
+g_opendir(849,20072
+g_lstat(871,20419
+g_stat(894,20822
+g_strchr(917,21225
+g_strcat(934,21455
+g_Ctoc(954,21704
+qprintf(969,21903
+
+gmtime.c,18
+xcegmtime(11,187
+
+inet_aton.c,21
+xceinet_aton(10,143
+
+localhost.c,54
+#define WIN32_LEAN_AND_MEAN5,73
+xcelocalhost(14,233
+
+localtim.c,21
+xcelocaltime 10,183
+
+logwtmp.c,19
+xcelogwtmp(12,158
+
+makeunixpath.c,23
+XCEGetUnixPath(10,134
+
+mktime.c,116
+#define ChkAdd(ChkAdd8,136
+#define ChkMul(ChkMul11,276
+xcemktime 16,403
+_mkgmtime 22,475
+_make_time_t 28,554
+
+movefile.c,41
+XCEMoveFileA(8,103
+XCEMoveFileW(32,617
+
+pwd.c,296
+#define WIN32_LEAN_AND_MEAN13,216
+#define __declspec(__declspec23,363
+__declspec(27,412
+xcegetpwent(53,1030
+xceendpwent(115,2201
+xcegetpwnam(125,2317
+xcegetpwuid(141,2576
+xcegetusershell(156,2773
+xceendusershell(163,2859
+xceputpwent(168,2886
+xcegetpass(194,3315
+xcegetlogin(212,3602
+
+rcmd.c,203
+#define WIN32_LEAN_AND_MEAN7,96
+#define bcopy(bcopy18,291
+#define SENDFLAG 20,343
+#define RECVFLAG 21,362
+#define IPPORT_RESERVED 23,382
+#define wserror 30,478
+xcercmd 34,520
+rresvport 197,3926
+
+readwrite.c,162
+XCEWriteFile(9,122
+XCEReadFile(22,413
+XCECloseHandle(35,679
+XCEDuplicateHandle(41,739
+XCECreatePipe(52,942
+XCEGetStdHandle(60,1103
+XCESetStdHandle(70,1220
+
+registry.c,341
+XCERegCreateKeyExA(8,104
+XCERegOpenKeyExA(31,624
+XCERegQueryValueExA(49,972
+XCERegSetValueExA(114,2193
+XCERegEnumValueA(149,2933
+XCERegCloseKey(220,4343
+XCERegDeleteKeyA(226,4414
+XCERegEnumKeyExA(243,4709
+XCERegCreateKeyA(285,5574
+XCERegOpenKeyA(298,5785
+XCERegEnumKeyA(310,5965
+XCERegDeleteValueA(329,6267
+RegEnumKeyA(347,6583
+
+removedir.c,55
+XCERemoveDirectoryA(8,104
+XCERemoveDirectoryW(25,404
+
+rexec.c,205
+#define bcopy(bcopy13,195
+#define SENDFLAG 15,247
+#define RECVFLAG 16,266
+#define IPPORT_RESERVED 18,286
+#define WSAEAGAIN 20,317
+#define wserror(wserror24,360
+xcerexec(29,420
+rresvport 208,4039
+
+sleep.c,15
+xcesleep(4,33
+
+snprintf.c,20
+xcesnprintf(12,173
+
+strftime.c,22
+xcestrftime(166,4307
+
+strpbrk.c,20
+xcestrpbrk(55,2298
+
+strsep.c,19
+xcestrsep(57,2523
+
+strspn.c,19
+xcestrspn(54,2275
+
+syslog.c,151
+#define WIN32_LEAN_AND_MEAN12,177
+xceconnectlog(34,516
+xceopenlog(55,880
+xcecloselog(74,1201
+xcesyslog(83,1305
+xcevsyslog(93,1434
+main(207,3835
+
+termios.c,137
+termios_init(12,169
+tcsetattr(21,359
+tcgetattr(28,512
+cfgetispeed(35,654
+cfgetospeed(42,746
+cfsetispeed(48,803
+cfsetospeed(54,866
+
+test1.c,47
+test_pipes(7,59
+main(35,533
+wWinMain(54,842
+
+test1w.c,330
+#define GET_WM_PARENTNOTIFY_MSG(GET_WM_PARENTNOTIFY_MSG16,296
+#define GET_WM_PARENTNOTIFY_HWNDCHILD(GET_WM_PARENTNOTIFY_HWNDCHILD17,359
+#define IDM_EXIT 36,765
+#define WM_START 37,788
+wWinMain(47,1001
+WndProc(79,1513
+InitApplication(153,2955
+InitMenu(175,3498
+InitInstance(216,4653
+Message(261,5610
+ShowText(272,5784
+
+test_pipe_child.c,28
+main(6,46
+wWinMain(19,317
+
+test_pipe_parent.c,28
+main(6,47
+wWinMain(38,490
+
+test_pipe_parent2.c,28
+main(6,48
+wWinMain(37,470
+
+testexports.c,38
+testexports(10,175
+wWinMain(67,1190
+
+testfloat.c,17
+wWinMain(13,276
+
+testfloatio.c,17
+wWinMain(12,248
+
+time.c,109
+#define DAYLIGHT_TIME 47,1093
+#define STANDARD_TIME 48,1119
+#define UNKNOWN_TIME 49,1145
+xcetime(54,1208
+
+tzset.c,213
+#define DAY_MILLISEC 12,198
+#define IS_LEAP_YEAR(IS_LEAP_YEAR18,407
+        } transitiondate;transitiondate41,980
+__tzset(52,1193
+_xcetzset 66,1346
+static void __cdecl cvtdate 297,6995
+_isindst 437,11519
+
+uid.c,74
+xcesetuid(10,129
+xceseteuid(16,170
+xcegetuid(22,212
+xcegeteuid(28,245
+
+utime.c,35
+xceutime 16,269
+xcefutime 31,507
+
+wsdb.c,160
+#define xcefopen 10,177
+#define xcefclose 11,205
+xcegetservbyname(15,260
+xcegetservbyport(64,1203
+xcegetprotobyname(110,2095
+xcegetprotobynumber(136,2497
+
+wssocket.c,395
+#define CHECKFD(CHECKFD14,225
+xcesocket(27,474
+xceaccept(54,920
+xcebind(84,1413
+xceconnect(100,1632
+xcegetpeername(116,1857
+xcegetsockname(132,2085
+xcegetsockopt(147,2312
+xceioctlsocket(163,2583
+xcelisten(188,2948
+xcerecv(205,3151
+xcerecvfrom(222,3376
+xcesend(249,3946
+xcesendto(266,4177
+xcesetsockopt(284,4464
+xceshutdown(306,4841
+xceselect(325,5062
+xceclosesocket(631,10842
+
+wsstart.c,37
+xcewsstart(15,238
+xcewsstop(27,440
+
+wsstrerror.c,114
+#define _E(_E15,240
+xcewsstrerror(98,3963
+xcewserror(111,4191
+xcewinstrerror(122,4401
+xcewinperror(137,4639

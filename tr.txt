@@ -1,0 +1,330 @@
+00443515:88b65492: open(\maxx-stdin.txt, 300, 666)
+00443520:88b65492: open returns 0
+00443520:88b65492: open(\maxx-stdout.txt, 301, 666)
+00443521:88b65492: open returns 1
+00443522:88b65492: open(\maxx-stderr.txt, 301, 666)
+00443523:88b65492: open returns 2
+00443526:88b65492: fdopen(0, r)
+00443527:88b65492: fdopen returns 65610
+00443528:88b65492: fdopen(1, w)
+00443528:88b65492: fdopen returns 65a40
+00443528:88b65492: fdopen(2, w)
+00443529:88b65492: fdopen returns 65e70
+00446174:88b65492: CreatePipe()
+00446176:88b65492: CreatePipe(): hRead = abcd1000, hWrite = abcd2000
+00446176:88b65492: CreatePipe()
+00446177:88b65492: CreatePipe(): hRead = abcd1001, hWrite = abcd2001
+00446178:88b65492: XCECreateProcess((null),/speicherkarte/caml/bin/camlrun.exe)
+00446179:88b65492: xceshared_setstdhandle(0, abcd1100)
+00446179:88b65492: xceshared_setstdhandle(1, abcd2101)
+00446179:88b65492: xceshared_setstdhandle(2, abcd2101)
+00446180:88b65492: inc_open_count: before 1/1
+00446180:88b65492: inc_open_count: after 2/1
+00446180:88b65492: inc_open_count: before 1/1
+00446180:88b65492: inc_open_count: after 1/2
+00446180:88b65492: inc_open_count: before 1/2
+00446181:88b65492: inc_open_count: after 1/3
+00446181:88b65492: shared output set to abcd2101
+00446181:88b65492: setshowwindow 1
+00446181:88b65492: setshowwindow 0
+00446232:085d85fa: SetStdHandle(0, abcd1100)
+00446232:085d85fa: open_osfilehandle(abcd1100)
+00446233:085d85fa: open_osfilehandle returns 0
+00446233:085d85fa: SetStdHandle(1, abcd2101)
+00446233:085d85fa: open_osfilehandle(abcd2101)
+00446234:085d85fa: open_osfilehandle returns 1
+00446234:085d85fa: SetStdHandle(2, abcd2101)
+00446234:085d85fa: open_osfilehandle(abcd2101)
+00446234:085d85fa: open_osfilehandle returns 2
+00446235:085d85fa: fdopen(0, r)
+00446236:085d85fa: fdopen returns 170ca0
+00446237:085d85fa: fdopen(1, w)
+00446237:085d85fa: fdopen returns 1710d0
+00446237:085d85fa: fdopen(2, w)
+00446238:085d85fa: fdopen returns 171500
+00446243:085d85fa: fflush(fd = 1)
+00446244:085d85fa: write(1, 49)
+00446244:085d85fa: pipe_write(abcd2101, 1710f8, 49)
+00446244:085d85fa: 49 bytes written to pipe, signalling reader
+00446281:085d85fa: write returns 49
+00446281:085d85fa: fflush(fd = 1)
+00446282:085d85fa: write(1, 0)
+00446282:085d85fa: open(/speicherkarte/caml/bin/camlrun.exe, 8000, 460664)
+00446283:085d85fa: open returns 3
+00446284:085d85fa: read(fd = 3, size = 2)
+00446284:085d85fa: read returns 2
+00446284:085d85fa: lseek(3, -20, 2)
+00446285:085d85fa: lseek returns 263176
+00446285:085d85fa: read(fd = 3, size = 20)
+00446287:085d85fa: read returns 20
+00446288:085d85fa: close(3)
+00446288:085d85fa: stat(\storage card\bin;\speicherkarte\bin;\speicherkarte\texmf\bin/camltop)
+00446289:085d85fa: stat: FindFile(\storage card\bin;\speicherkarte\bin;\speicherkarte\texmf\bin\camltop): errno = 2 oserr = 3
+00446289:085d85fa: open(camltop, 8000, 460664)
+00446315:085d85fa: open returns 3
+00446315:085d85fa: lseek(3, -20, 2)
+00446316:085d85fa: lseek returns 152336
+00446316:085d85fa: read(fd = 3, size = 20)
+00446318:085d85fa: read returns 20
+00446340:085d85fa: lseek(3, -152356, 2)
+00446341:085d85fa: lseek returns 0
+00446341:085d85fa: read(fd = 3, size = 81548)
+00446396:085d85fa: read returns 81548
+00446408:085d85fa: read(fd = 3, size = 4096)
+00446413:085d85fa: read returns 4096
+00446413:085d85fa: read(fd = 3, size = 43472)
+00446444:88b65492: pipe_read(abcd1001, 160df6d8, 1)
+00446445:88b65492: pipe_read: waiting for pipe writer (1/3)
+00446446:085d85fa: read returns 43472
+00446447:085d85fa: close(3)
+00446472:085d85fa: write(1, 33)
+00446472:085d85fa: pipe_write(abcd2101, 1b4d54, 33)
+00446473:085d85fa: pipe_write: not empty, waiting for pipe reader (1/3)
+00446474:88b65492: read_pipe returns 1
+00446474:88b65492: PeekNamedPipe(abcd1001)
+00446474:88b65492: pipe_read(abcd1001, 160df6d9, 48)
+00446475:88b65492: pipe_read: waiting for pipe writer (1/3)
+00446475:88b65492: pipe_reader: signalling writer, avail = 0
+00446477:085d85fa: 33 bytes written to pipe, signalling reader
+00446478:88b65492: read_pipe returns 48
+00446486:085d85fa: write returns 33
+00446487:085d85fa: open(camltop, 8000, 0)
+00446490:085d85fa: open returns 3
+00446490:085d85fa: lseek(3, 0, 2)
+00446491:085d85fa: lseek returns 152356
+00446491:085d85fa: lseek(3, 0, 0)
+00446491:085d85fa: lseek returns 0
+00446491:085d85fa: lseek(3, 152336, 0)
+00446492:085d85fa: lseek returns 152336
+00446492:085d85fa: read(fd = 3, size = 4096)
+00446492:085d85fa: read returns 20
+00446493:085d85fa: lseek(3, 0, 2)
+00446493:085d85fa: lseek returns 152356
+00446493:085d85fa: lseek(3, 152356, 0)
+00446494:085d85fa: lseek returns 152356
+00446494:085d85fa: lseek(3, 129116, 0)
+00446494:085d85fa: lseek returns 129116
+00446494:085d85fa: read(fd = 3, size = 4096)
+00446500:085d85fa: read returns 4096
+00446500:085d85fa: read(fd = 3, size = 16876)
+00446513:085d85fa: read returns 16876
+00446514:085d85fa: read(fd = 3, size = 4096)
+00446516:085d85fa: read returns 2268
+00446521:085d85fa: close(3)
+00446522:085d85fa: open(toplevel.zi, 0, 0)
+00446524:085d85fa: open returns 3
+00446525:085d85fa: close(3)
+00446525:085d85fa: open(toplevel.zi, 8000, 0)
+00446528:085d85fa: open returns 3
+00446529:085d85fa: read(fd = 3, size = 4096)
+00446533:085d85fa: read returns 2608
+00446534:085d85fa: close(3)
+00446537:085d85fa: open(stream.zi, 0, 0)
+00446540:085d85fa: open returns 3
+00446540:085d85fa: close(3)
+00446541:085d85fa: open(stream.zi, 8000, 0)
+00446543:085d85fa: open returns 3
+00446544:085d85fa: read(fd = 3, size = 4096)
+00446549:085d85fa: read returns 2956
+00446550:085d85fa: close(3)
+00446551:085d85fa: open(exc.zi, 0, 0)
+00446553:085d85fa: open returns 3
+00446553:085d85fa: close(3)
+00446554:085d85fa: open(exc.zi, 8000, 0)
+00446556:085d85fa: open returns 3
+00446556:085d85fa: read(fd = 3, size = 4096)
+00446560:085d85fa: read returns 1496
+00446561:085d85fa: close(3)
+00446562:085d85fa: open(bool.zi, 0, 0)
+00446569:085d85fa: open returns 3
+00446570:085d85fa: close(3)
+00446570:085d85fa: open(bool.zi, 8000, 0)
+00446572:085d85fa: open returns 3
+00446572:085d85fa: read(fd = 3, size = 4096)
+00446576:085d85fa: read returns 1476
+00446576:085d85fa: close(3)
+00446578:085d85fa: open(string.zi, 0, 0)
+00446580:085d85fa: open returns 3
+00446580:085d85fa: close(3)
+00446581:085d85fa: open(string.zi, 8000, 0)
+00446585:085d85fa: open returns 3
+00446585:085d85fa: read(fd = 3, size = 4096)
+00446590:085d85fa: read returns 4096
+00446590:085d85fa: read(fd = 3, size = 4096)
+00446592:085d85fa: read returns 1480
+00446593:085d85fa: close(3)
+00446595:085d85fa: open(char.zi, 0, 0)
+00446597:085d85fa: open returns 3
+00446597:085d85fa: close(3)
+00446598:085d85fa: open(char.zi, 8000, 0)
+00446599:085d85fa: open returns 3
+00446600:085d85fa: read(fd = 3, size = 4096)
+00446604:085d85fa: read returns 1280
+00446604:085d85fa: close(3)
+00446646:085d85fa: open(vect.zi, 0, 0)
+00446649:085d85fa: open returns 3
+00446649:085d85fa: close(3)
+00446650:085d85fa: open(vect.zi, 8000, 0)
+00446652:085d85fa: open returns 3
+00446653:085d85fa: read(fd = 3, size = 4096)
+00446657:085d85fa: read returns 4096
+00446658:085d85fa: read(fd = 3, size = 4096)
+00446659:085d85fa: read returns 260
+00446660:085d85fa: close(3)
+00446663:085d85fa: open(list.zi, 0, 0)
+00446665:085d85fa: open returns 3
+00446666:085d85fa: close(3)
+00446666:085d85fa: open(list.zi, 8000, 0)
+00446668:085d85fa: open returns 3
+00446669:085d85fa: read(fd = 3, size = 4096)
+00446673:085d85fa: read returns 4096
+00446674:085d85fa: read(fd = 3, size = 4096)
+00446678:085d85fa: read returns 3028
+00446679:085d85fa: close(3)
+00446681:085d85fa: open(pair.zi, 0, 0)
+00446683:085d85fa: open returns 3
+00446684:085d85fa: close(3)
+00446684:085d85fa: open(pair.zi, 8000, 0)
+00446686:085d85fa: open returns 3
+00446687:085d85fa: read(fd = 3, size = 4096)
+00446691:085d85fa: read returns 2232
+00446692:085d85fa: close(3)
+00446693:085d85fa: open(ref.zi, 0, 0)
+00446696:085d85fa: open returns 3
+00446696:085d85fa: close(3)
+00446697:085d85fa: open(ref.zi, 8000, 0)
+00446699:085d85fa: open returns 3
+00446700:085d85fa: read(fd = 3, size = 4096)
+00446704:085d85fa: read returns 1408
+00446704:085d85fa: close(3)
+00446706:085d85fa: open(float.zi, 0, 0)
+00446708:085d85fa: open returns 3
+00446708:085d85fa: close(3)
+00446708:085d85fa: open(float.zi, 8000, 0)
+00446710:085d85fa: open returns 3
+00446711:085d85fa: read(fd = 3, size = 4096)
+00446715:085d85fa: read returns 4096
+00446716:085d85fa: read(fd = 3, size = 7128)
+00446723:085d85fa: read returns 7128
+00446724:085d85fa: close(3)
+00446727:085d85fa: open(int.zi, 0, 0)
+00446729:085d85fa: open returns 3
+00446729:085d85fa: close(3)
+00446730:085d85fa: open(int.zi, 8000, 0)
+00446732:085d85fa: open returns 3
+00446732:085d85fa: read(fd = 3, size = 4096)
+00446737:085d85fa: read returns 4096
+00446737:085d85fa: read(fd = 3, size = 4096)
+00446741:085d85fa: read returns 3064
+00446742:085d85fa: close(3)
+00446744:085d85fa: open(eq.zi, 0, 0)
+00446746:085d85fa: open returns 3
+00446746:085d85fa: close(3)
+00446747:085d85fa: open(eq.zi, 8000, 0)
+00446748:085d85fa: open returns 3
+00446749:085d85fa: read(fd = 3, size = 4096)
+00446751:88b65492: pipe_read(abcd1001, 160df6d8, 1)
+00446752:88b65492: pipe_read: waiting for pipe writer (1/3)
+00446803:085d85fa: read returns 2356
+00446804:085d85fa: close(3)
+00446805:085d85fa: open(io.zi, 0, 0)
+00446807:085d85fa: open returns 3
+00446807:085d85fa: close(3)
+00446808:085d85fa: open(io.zi, 8000, 0)
+00446810:085d85fa: open returns 3
+00446810:085d85fa: read(fd = 3, size = 4096)
+00446815:085d85fa: read returns 4096
+00446815:085d85fa: read(fd = 3, size = 7080)
+00446822:085d85fa: read returns 7080
+00446823:085d85fa: close(3)
+00446839:085d85fa: signal(2, 21584)
+00446839:085d85fa: write(1, 1)
+00446840:085d85fa: pipe_write(abcd2101, 1b4d54, 1)
+00446840:085d85fa: pipe_write: not empty, waiting for pipe reader (1/3)
+00446841:88b65492: read_pipe returns 1
+00446841:88b65492: PeekNamedPipe(abcd1001)
+00446842:88b65492: pipe_read(abcd1001, 160df6d9, 32)
+00446842:88b65492: pipe_read: waiting for pipe writer (1/3)
+00446843:88b65492: pipe_reader: signalling writer, avail = 0
+00446844:085d85fa: 1 bytes written to pipe, signalling reader
+00446844:88b65492: read_pipe returns 32
+00446845:085d85fa: write returns 1
+00446846:085d85fa: read(fd = 0, size = 4096)
+00446846:085d85fa: pipe_read(abcd1100, 1b3d34, 4096)
+00446846:085d85fa: pipe_read: waiting for pipe writer (2/1)
+00446865:88b65492: pipe_read(abcd1001, 160df6d8, 1)
+00446865:88b65492: pipe_read: waiting for pipe writer (1/3)
+00446866:88b65492: pipe_reader: signalling writer, avail = 0
+00446866:88b65492: read_pipe returns 1
+00446866:88b65492: PeekNamedPipe(abcd1001)
+00446868:88b65492: pipe_read(abcd1001, 160df6d8, 1)
+00446868:88b65492: pipe_read: waiting for pipe writer (1/3)
+00452282:88b65492: pipe_write(abcd2000, 160cf8e0, 24)
+00452283:88b65492: 24 bytes written to pipe, signalling reader
+
+00452284:085d85fa: pipe_reader: signalling writer, avail = 0
+00452308:085d85fa: read_pipe returns 24
+00452308:085d85fa: read returns 24
+
+00452313:085d85fa: write(1, 19)
+00452313:085d85fa: pipe_write(abcd2101, 1b4d54, 19)
+00452314:085d85fa: 19 bytes written to pipe, signalling reader
+00452315:085d85fa: write returns 19
+
+00452315:085d85fa: write(1, 1)
+00452316:085d85fa: pipe_write(abcd2101, 1b4d54, 1)
+00452316:085d85fa: pipe_write: not empty, waiting for pipe reader (1/3)
+00452317:085d85fa: error: pipe_write: dwWait = 0, avail = 18
+00452317:085d85fa: WriteFile: handle abcd2101: error 183
+
+00452318:085d85fa: write(1, 1)
+00452318:085d85fa: pipe_write(abcd2101, 1b4d54, 1)
+00452318:085d85fa: pipe_write: not empty, waiting for pipe reader (1/3)
+00452319:88b65492: read_pipe returns 1
+00452319:88b65492: PeekNamedPipe(abcd1001)
+00452320:88b65492: pipe_read(abcd1001, 160df6d9, 18)
+00452320:88b65492: pipe_read: waiting for pipe writer (1/3)
+00452321:88b65492: pipe_reader: signalling writer, avail = 0
+00452321:085d85fa: 1 bytes written to pipe, signalling reader
+00452322:88b65492: read_pipe returns 18
+00452323:085d85fa: write returns 1
+00452323:085d85fa: write(2, 25)
+00452323:085d85fa: pipe_write(abcd2101, 1b5d74, 25)
+00452324:085d85fa: pipe_write: not empty, waiting for pipe reader (1/3)
+00452361:88b65492: pipe_read(abcd1001, 160df6d8, 1)
+00452362:88b65492: pipe_read: waiting for pipe writer (1/3)
+00452362:88b65492: pipe_reader: signalling writer, avail = 0
+00452363:085d85fa: 25 bytes written to pipe, signalling reader
+00452364:88b65492: read_pipe returns 1
+00452364:88b65492: PeekNamedPipe(abcd1001)
+00452364:88b65492: pipe_read(abcd1001, 160df6d9, 25)
+00452365:88b65492: pipe_read: waiting for pipe writer (1/3)
+00452365:88b65492: pipe_reader: signalling writer, avail = 0
+00452366:085d85fa: write returns 25
+00452372:085d85fa: exit(2)
+00452372:085d85fa: close(0)
+00452372:085d85fa: close_pipe: 2/1
+00452373:085d85fa: close(1)
+00452373:085d85fa: close_pipe: 1/3
+00452373:085d85fa: close(2)
+00452373:085d85fa: close_pipe: 1/2
+00452374:085d85fa: GetStdHandle(0)
+00452374:085d85fa: GetStdHandle(0)
+00452374:085d85fa: close_pipe: 1/1
+00452374:085d85fa: GetStdHandle(1)
+00452375:085d85fa: GetStdHandle(1)
+00452375:085d85fa: close_pipe: 1/1
+00452375:085d85fa: GetStdHandle(2)
+00452375:085d85fa: GetStdHandle(2)
+00452375:085d85fa: close_pipe: 1/0
+00452375:085d85fa: WARNING: Closing zero client pipe write handle
+00452392:88b65492: read_pipe returns 25
+00452453:88b65492: pipe_read(abcd1001, 160df6d8, 1)
+00452454:88b65492: pipe_read: waiting for pipe writer (1/0)
+00452556:88b65492: writer has closed pipe
+00455298:88b65492: GetStdHandle(0)
+00455299:88b65492: Warning: Handle is not a pipe
+00455299:88b65492: GetStdHandle(1)
+00455300:88b65492: Warning: Handle is not a pipe
+00455300:88b65492: GetStdHandle(2)
+00455300:88b65492: Warning: Handle is not a pipe

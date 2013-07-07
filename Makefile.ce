@@ -1,0 +1,640 @@
+# Makefile for celib-palm (palmsize/pocket/hpc)
+#
+# Time-stamp: <10/05/02 09:37:37 keuchel@netwave.de>
+
+CECONSOLEDIR = h:/src/wince/w32console
+
+#CFG = WINCE_DEBUGSHARED
+CFG = WINCE_RELEASESHARED
+#CFG = WINCE_PROFILESHARED
+
+!if "$(TARGET)" == ""
+TARGET=wince-arm-hpc-wce300
+#TARGET=wince-arm-hpc-wce211
+#TARGET=wince-sh3-hpc-wce211
+#TARGET=wince-sh4-hpc-wce211
+#TARGET=wince-mips-hpc-wce211
+#TARGET=wince-mips-hpc-wce200
+#TARGET=wince-sh3-hpc-wce200
+#TARGET=wince-arm-pocket-wce300
+#TARGET=wince-sh3-pocket-wce300
+#TARGET=wince-mips-pocket-wce300
+#TARGET=wince-sh3-palm-wce211
+#TARGET=wince-mips-palm-wce211
+#TARGET=wince-mips-palm-wce201
+#TARGET=wince-sh3-palm-wce201
+#TARGET=wince-x86em-hpc-wce211
+#TARGET=wince-x86em-pocket-wce300
+#TARGET=wince-x86em-palm-wce211
+#TARGET=wince-x86-hpc-wce300
+!endif
+
+EVC        = N:\Programme\Microsoft eMbedded Tools\EVC
+WCEROOT    = N:\Windows CE Tools
+SDKROOT    = N:\Windows CE Tools
+#WCEROOT    = D:\Windows CE Tools
+#SDKROOT    = D:\Windows CE Tools
+
+!if "$(TARGET)" == "wince-x86-hpc-wce300"
+CC         = cl.exe
+PLATFORM   = HPC2000
+TARGETCPU  = x86
+MACHFLAGS  = -D x86 -D _X86_ -D _MT -D _DLL
+OSVERSION  = WCE300
+CEVERSION  = 300
+CESUBSYS   = windowsce,3.00
+!endif
+
+!if "$(TARGET)" == "wince-x86em-pocket-wce300"
+CC         = cl.exe
+PLATFORM   = MS Pocket PC
+TARGETCPU  = x86em
+MACHFLAGS  = -D _X86_ -D_WIN32_WCE_EMULATION -DPOCKET_SIZE
+OSVERSION  = WCE300
+CEVERSION  = 300
+CESUBSYS   = windows
+MACHINE	   = -machine:x86
+!endif
+
+!if "$(TARGET)" == "wince-arm-pocket-wce300"
+CC         = clarm.exe
+PLATFORM   = MS Pocket PC
+TARGETCPU  = arm
+MACHFLAGS  = -D _ARM_ -D ARM -D _arm_ -D _ARM_ -DPOCKET_SIZE
+OSVERSION  = WCE300
+CEVERSION  = 300
+CESUBSYS   = windowsce,3.00
+MACHINE	   = -machine:arm
+!endif
+
+!if "$(TARGET)" == "wince-mips-pocket-wce300"
+CC         = clmips.exe
+PLATFORM   = MS Pocket PC
+TARGETCPU  = mips
+MACHFLAGS  = -D _MIPS_ -D MIPS -D _mips_ -D _MIPS_ -DPOCKET_SIZE
+OSVERSION  = WCE300
+CEVERSION  = 300
+CESUBSYS   = windowsce,3.00
+MACHINE	   = -machine:mips
+!endif
+
+!if "$(TARGET)" == "wince-sh3-pocket-wce300"
+CC         = shcl.exe
+PLATFORM   = MS Pocket PC
+TARGETCPU  = sh3
+MACHFLAGS  = -D -D_SH3_ -D_SHx_ -DSHx -Dshx -DPOCKET_SIZE
+OSVERSION  = WCE300
+CEVERSION  = 300
+CESUBSYS   = windowsce,3.00
+MACHINE	   = -machine:sh3
+!endif
+
+!if "$(TARGET)" == "wince-x86em-palm-wce211"
+CC         = cl.exe
+PLATFORM   = MS Palm Size PC
+TARGETCPU  = x86em
+MACHFLAGS  = -D _X86_ -D_WIN32_WCE_EMULATION
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windows
+MACHINE	   = -machine:x86
+!endif
+
+!if "$(TARGET)" == "wince-sh3-hpc-wce211"
+CC         = shcl.exe
+PLATFORM   = MS HPC Pro
+TARGETCPU  = sh3
+MACHFLAGS  = -D_SH3_ -DSH3 -D_SHx_ -DSHx -Dshx
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:sh3
+!endif
+
+!if "$(TARGET)" == "wince-sh4-hpc-wce211"
+CC         = shcl.exe
+PLATFORM   = MS HPC Pro
+TARGETCPU  = sh4
+MACHFLAGS  = -D_SH4_ -DSH4 -D_SHx_ -DSHx -Dshx -Qsh4
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:sh4
+!endif
+
+!if "$(TARGET)" == "wince-arm-hpc-wce211"
+CC         = clarm.exe
+PLATFORM   = MS HPC Pro
+TARGETCPU  = arm
+MACHFLAGS  = -D _ARM_ -D _arm_ -D ARM -D arm
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:ARM
+!endif
+
+!if "$(TARGET)" == "wince-arm-hpc-wce300"
+CC         = clarm.exe
+PLATFORM   = HPC2000
+TARGETCPU  = arm
+MACHFLAGS  = -D _ARM_ -D _arm_ -D ARM -D arm
+OSVERSION  = WCE300
+CEVERSION  = 300
+CESUBSYS   = windowsce,3.00
+MACHINE	   = -machine:ARM
+!endif
+
+!if "$(TARGET)" == "wince-mips-hpc-wce211"
+CC         = clmips.exe
+PLATFORM   = MS HPC Pro
+TARGETCPU  = mips
+MACHFLAGS  = -D _MIPS_ -DMIPS -Dmips
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:mips
+!endif
+
+!if "$(TARGET)" == "wince-mips-hpc-wce200"
+CC         = clmips.exe
+PLATFORM   = MS HPC
+TARGETCPU  = mips
+# NEEDS -MD for correct double compare! Although there is a warning... Stupid!
+# See testfloat.c
+MACHFLAGS  = -D _MIPS_ -D MIPS -D mips -MD
+OSVERSION  = WCE200
+CEVERSION  = 200
+CESUBSYS   = windowsce,2.00
+MACHINE	   = -machine:mips
+!endif
+
+!if "$(TARGET)" == "wince-sh3-hpc-wce200"
+# The WCE200/SH compiler compiles files without error, 
+# but sometimes, there are no object files!!!
+CC         = shcl.exe
+PLATFORM   = MS HPC
+TARGETCPU  = sh3
+# NEEDS -MD! Although there is a warning... Stupid!
+MACHFLAGS  = -D _SH3_ -D SH3 -D sh3 -D _sh3_ -D SHx -MD
+OSVERSION  = WCE200
+CEVERSION  = 200
+CESUBSYS   = windowsce,2.00
+MACHINE	   = -machine:sh3
+!endif
+
+!if "$(TARGET)" == "wince-mips-palm-wce211"
+CC         = clmips.exe
+PLATFORM   = MS Palm Size PC
+TARGETCPU  = mips
+MACHFLAGS  = -D _MIPS_ -DMIPS -Dmips
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:mips
+!endif
+
+!if "$(TARGET)" == "wince-mips-palm-wce201"
+CC         = clmips.exe
+PLATFORM   = MS Palm Size PC
+TARGETCPU  = mips
+# NEEDS -MD for correct double compare! Although there is a warning... Stupid!
+# See testfloat.c
+# /MD link with MSVCRT.LIB - MSVCRT not needed for PSPC/WCE201...
+MACHFLAGS  = -MD -D _MIPS_ -DMIPS -Dmips
+OSVERSION  = WCE201
+CEVERSION  = 201
+CESUBSYS   = windowsce,2.01
+MACHINE	   = -machine:mips
+!endif
+
+!if "$(TARGET)" == "wince-sh3-palm-wce211"
+CC         = shcl.exe
+PLATFORM   = MS Palm Size PC
+TARGETCPU  = sh3
+MACHFLAGS  = -D_SH3_ -DSH3 -D_SHx_ -DSHx -Dshx
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:sh3
+!endif
+
+!if "$(TARGET)" == "wince-sh3-palm-wce201"
+CC         = shcl.exe
+PLATFORM   = MS Palm Size PC
+TARGETCPU  = sh3
+MACHFLAGS  = -MD -D_SH3_ -DSH3 -D_SHx_ -DSHx -Dshx
+OSVERSION  = WCE201
+CEVERSION  = 201
+CESUBSYS   = windowsce,2.01
+MACHINE	   = -machine:sh3
+!endif
+
+!if "$(TARGET)" == "wince-x86em-hpc-wce211"
+CC         = cl.exe
+PLATFORM   = MS HPC Pro
+TARGETCPU  = x86em
+MACHFLAGS  = -D _X86_ -D_WIN32_WCE_EMULATION
+OSVERSION  = WCE211
+CEVERSION  = 211
+CESUBSYS   = windowsce,2.11
+MACHINE	   = -machine:x86
+!endif
+
+######################################################################
+
+RCDEFINES = -DUNDER_CE=$(CEVERSION) -DUNICODE -D_UNICODE -DWIN32 -DSTRICT \
+	    $(DEFS) -DUSA -DINTLMSG_CODEPAGE=1252
+
+######################################################################
+
+# This must come after the target spec...
+# old sdk
+CEPATH=$(WCEROOT)\bin;$(WCEROOT)\$(OSVERSION)\bin
+# embedded tools sdk
+
+!if "$(TARGET)" == "wince-sh3-hpc-wce200"
+# The WCE200/SH compiler sometimes generates no object files,
+# without reporting an error!!! (bsd-fflush)
+CEPATH=$(EVC)\WCE211\BIN
+!else
+CEPATH=$(EVC)\$(OSVERSION)\BIN
+!endif
+
+#CEPATH=D:\Programme\Microsoft eMbedded Tools\EVC\$(OSVERSION)\BIN
+PATH=$(CEPATH);$(PATH)
+
+INCLUDE=$(WCEROOT)/$(OSVERSION)/$(PLATFORM)/include
+LIB=$(WCEROOT)/$(OSVERSION)/$(PLATFORM)/lib/$(TARGETCPU)
+
+######################################################################
+
+!message *****************************************************************
+!message Building for $(TARGETCPU) $(PLATFORM) $(OSVERSION)
+!message INCLUDE = $(INCLUDE)
+!message LIB     = $(LIB)
+!message PATH    = $(CEPATH)
+!message *****************************************************************
+!message
+
+######################################################################
+
+COMMONCFLAGS   = -nologo -I inc -DPALM_SIZE $(MACHFLAGS) -D HAVE_STDARG_H
+COMMONCEDEFS   = -D _WINCE \
+	         -D _WIN32_WCE=$(CEVERSION) \
+                 -D UNDER_CE=$(CEVERSION) \
+                 -D BUILD_CELIB=1 \
+                 -D FLOATING_POINT
+
+######################################################################
+
+# -D XCEDEBUG
+
+LIBFLAGS       = -nologo
+CELIBS         = coredll.lib winsock.lib
+
+!if $(CEVERSION) > 200
+CELIBS         = $(CELIBS) corelibc.lib 
+!endif
+
+# This is needed because -D _MT -D _DLL seem to turn on
+# generation of external function calls for single and double
+# operations...
+
+!if $(CEVERSION) == 200
+CELIBS         = $(CELIBS) msvcrt.lib
+!endif
+
+######################################################################
+
+!if "$(CFG)" == "WINCE_RELEASESHARED"
+PDBNAME = $(TARGETDIR)\celib.pdb
+LIBNAME = celib.lib
+# -Od is safer!
+CFLAGS  = $(COMMONCFLAGS) $(COMMONCEDEFS) -Od -D_MT  -D_DLL
+DLLFLAGS  =
+TARGETDIR = $(TARGET)-release
+!endif
+
+!if "$(CFG)" == "WINCE_DEBUGSHARED"
+PDBNAME = $(TARGETDIR)\celib.pdb
+LIBNAME = celib.lib
+CFLAGS  = $(COMMONCFLAGS) $(COMMONCEDEFS) -Od -Zi -D_MT  -D_DLL \
+         -D_DEBUG -Fd"$(PDBNAME)"
+DLLFLAGS  = -debug:full -pdb:none
+TARGETDIR = $(TARGET)-debug
+!endif
+
+!if "$(CFG)" == "WINCE_PROFILESHARED"
+PDBNAME = $(TARGETDIR)\celib.pdb
+LIBNAME = celib.lib
+CFLAGS  = $(COMMONCFLAGS) $(COMMONCEDEFS) -Od -Zi -D_MT  -D_DLL -Gh \
+         -D_DEBUG -Fd"$(PDBNAME)"
+TARGETDIR = $(TARGET)-profile
+DLLFLAGS  = -debug:full -pdb:$(TARGETDIR)/celib.pdb
+PROFLIBS  = h:/src/wince/profiler/$(TARGET)/prof.lib
+!endif
+
+######################################################################
+
+OBJS = \
+       $(TARGETDIR)\alarm.obj \
+       $(TARGETDIR)\ascii2addr.obj \
+       $(TARGETDIR)\asctime.obj \
+       $(TARGETDIR)\bsd.obj \
+       $(TARGETDIR)\calloc.obj \
+       $(TARGETDIR)\ceargv.obj \
+       $(TARGETDIR)\ceassert.obj \
+       $(TARGETDIR)\cebsearch.obj \
+       $(TARGETDIR)\cecommdlg.obj \
+       $(TARGETDIR)\ceconsole.obj \
+       $(TARGETDIR)\cectype.obj \
+       $(TARGETDIR)\cecursor.obj \
+       $(TARGETDIR)\cedebug.obj \
+       $(TARGETDIR)\cedir.obj \
+       $(TARGETDIR)\ceenv.obj \
+       $(TARGETDIR)\ceerrno.obj \
+       $(TARGETDIR)\ceexec.obj \
+       $(TARGETDIR)\cefonts.obj \
+       $(TARGETDIR)\cegettimeofday.obj \
+       $(TARGETDIR)\ceinit.obj \
+       $(TARGETDIR)\ceio.obj \
+       $(TARGETDIR)\ceirda.obj \
+       $(TARGETDIR)\cekeyboard.obj \
+       $(TARGETDIR)\celocale.obj \
+       $(TARGETDIR)\cemisc.obj \
+       $(TARGETDIR)\ceprocess.obj \
+       $(TARGETDIR)\ceshared2.obj \
+       $(TARGETDIR)\cesignal.obj \
+       $(TARGETDIR)\cestat.obj \
+       $(TARGETDIR)\cestdio-palmsize.obj \
+       $(TARGETDIR)\cestdio.obj \
+       $(TARGETDIR)\cestdlib.obj \
+       $(TARGETDIR)\cestr.obj \
+       $(TARGETDIR)\cethread.obj \
+       $(TARGETDIR)\cetimezone.obj \
+       $(TARGETDIR)\cetmpnam.obj \
+       $(TARGETDIR)\ceunicode.obj \
+       $(TARGETDIR)\ceunsup-unix.obj \
+       $(TARGETDIR)\ceunsup-win32.obj \
+       $(TARGETDIR)\ceutil.obj \
+       $(TARGETDIR)\cewchar.obj \
+       $(TARGETDIR)\cewin32.obj \
+       $(TARGETDIR)\chown.obj \
+       $(TARGETDIR)\copyfile.obj \
+       $(TARGETDIR)\createdir.obj \
+       $(TARGETDIR)\createfile.obj \
+       $(TARGETDIR)\createfilemap.obj \
+       $(TARGETDIR)\ctime.obj \
+       $(TARGETDIR)\currentdir.obj \
+       $(TARGETDIR)\deletefile.obj \
+       $(TARGETDIR)\dllmain.obj \
+       $(TARGETDIR)\dtoxtime.obj \
+       $(TARGETDIR)\fileattr.obj \
+       $(TARGETDIR)\findfile.obj \
+       $(TARGETDIR)\fixpath.obj \
+       $(TARGETDIR)\fnmatch.obj \
+       $(TARGETDIR)\ftime.obj \
+       $(TARGETDIR)\ftruncate.obj \
+       $(TARGETDIR)\getopt.obj \
+       $(TARGETDIR)\gid.obj \
+       $(TARGETDIR)\glob.obj \
+       $(TARGETDIR)\gmtime.obj \
+       $(TARGETDIR)\inet_aton.obj \
+       $(TARGETDIR)\localhost.obj \
+       $(TARGETDIR)\localtim.obj \
+       $(TARGETDIR)\logwtmp.obj \
+       $(TARGETDIR)\makeunixpath.obj \
+       $(TARGETDIR)\mktime.obj \
+       $(TARGETDIR)\movefile.obj \
+       $(TARGETDIR)\pwd.obj \
+       $(TARGETDIR)\rcmd.obj \
+       $(TARGETDIR)\readwrite.obj \
+       $(TARGETDIR)\registry.obj \
+       $(TARGETDIR)\removedir.obj \
+       $(TARGETDIR)\rexec.obj \
+       $(TARGETDIR)\sleep.obj \
+       $(TARGETDIR)\snprintf.obj \
+       $(TARGETDIR)\strftime.obj \
+       $(TARGETDIR)\strpbrk.obj \
+       $(TARGETDIR)\strsep.obj \
+       $(TARGETDIR)\strspn.obj \
+       $(TARGETDIR)\syslog.obj \
+       $(TARGETDIR)\termios.obj \
+       $(TARGETDIR)\time.obj \
+       $(TARGETDIR)\tzset.obj \
+       $(TARGETDIR)\uid.obj \
+       $(TARGETDIR)\utime.obj \
+       $(TARGETDIR)\wsdb.obj \
+       $(TARGETDIR)\wssocket.obj \
+       $(TARGETDIR)\wsstart.obj \
+       $(TARGETDIR)\wsstrerror.obj
+
+BSDOBJS1 = \
+       $(TARGETDIR)\bsd-fflush.obj \
+       $(TARGETDIR)\bsd-findfp.obj \
+       $(TARGETDIR)\bsd-flags.obj \
+       $(TARGETDIR)\bsd-fopen.obj \
+       $(TARGETDIR)\bsd-fdopen.obj \
+       $(TARGETDIR)\bsd-freopen.obj \
+       $(TARGETDIR)\bsd-fclose.obj \
+       $(TARGETDIR)\bsd-fprintf.obj \
+       $(TARGETDIR)\bsd-fread.obj \
+       $(TARGETDIR)\bsd-fscanf.obj \
+       $(TARGETDIR)\bsd-fvwrite.obj \
+       $(TARGETDIR)\bsd-fwalk.obj \
+       $(TARGETDIR)\bsd-makebuf.obj \
+       $(TARGETDIR)\bsd-refill.obj \
+       $(TARGETDIR)\bsd-sprintf.obj \
+       $(TARGETDIR)\bsd-sscanf.obj \
+       $(TARGETDIR)\bsd-stdio.obj \
+       $(TARGETDIR)\bsd-ungetc.obj \
+       $(TARGETDIR)\bsd-vfprintf.obj \
+       $(TARGETDIR)\bsd-vfscanf.obj \
+       $(TARGETDIR)\bsd-vsscanf.obj \
+       $(TARGETDIR)\bsd-vsnprintf.obj \
+       $(TARGETDIR)\bsd-vsprintf.obj \
+       $(TARGETDIR)\bsd-wsetup.obj \
+       $(TARGETDIR)\bsd-fgets.obj \
+       $(TARGETDIR)\bsd-fputs.obj
+
+BSDOBJS2 = \
+       $(TARGETDIR)\bsd-ctype.obj \
+       $(TARGETDIR)\bsd-strtoll.obj \
+       $(TARGETDIR)\bsd-strtoull.obj \
+       $(TARGETDIR)\bsd-strtod.obj \
+       $(TARGETDIR)\bsd-win32.obj
+
+BSDOBJS = $(BSDOBJS1) $(BSDOBJS2)
+
+#XOBJS = $(TARGETDIR)\cetoolhelp.obj
+
+DLLOBJS = $(OBJS) $(XOBJS)
+!if $(CEVERSION) <= 201
+DLLOBJS = $(DLLOBJS) $(BSDOBJS)
+!endif
+
+CECONSOLEOBJS = \
+$(CECONSOLEDIR)\$(TARGET)\wmain.obj \
+$(CECONSOLEDIR)\$(TARGET)\w32console.obj
+
+#XLIBS = toolhelp.lib
+
+######################################################################
+
+all: dirs dll
+
+$(LIBNAME): $(OBJS)
+	lib $(LIBFLAGS) -out:$(LIBNAME) $(OBJS)
+
+!if "$(TARGETCPU)" == "arm"
+install: all
+	cecopy pc:$(TARGETDIR)/celib.dll ce:/windows
+!endif
+
+!if "$(TARGETCPU)" == "sh3"
+install: all
+	cecopy pc:$(TARGETDIR)/celib.dll ce:/windows
+!endif
+
+!if "$(TARGETCPU)" == "mips"
+install: all
+	cecopy pc:$(TARGETDIR)/celib.dll ce:/windows
+!endif
+
+clean:
+	rm -f $(TARGETDIR)/*.obj
+	rm -f $(TARGETDIR)/*.dll
+	rm -f $(TARGETDIR)/*.lib
+
+######################################################################
+# Tests
+
+#tests: test1.exe test1w.exe
+tests: test_pipe_parent.exe test_pipe_parent2.exe test_pipe_child.exe
+
+# NOTE: toolhelp.dll must be copied to device for test1...
+test1.exe: test1.obj $(TARGETDIR)\$(LIBNAME) $(TARGETDIR)\cert0.obj
+	link -nologo -out:test1.exe \
+             -nodefaultlib \
+             -subsystem:$(CESUBSYS) $(MACHINE) \
+             -entry:wWinMain \
+             -libpath:$(TARGETDIR) \
+             -debug:full -pdb:none \
+	     test1.obj \
+	     $(LIBNAME) \
+             $(CELIBS) winsock.lib toolhelp.lib
+
+test1.obj: test1.c
+	$(CC) $(CFLAGS) -U BUILD_CELIB -c test1.c
+
+######################################################################
+
+test_pipe_parent.exe: test_pipe_parent.obj $(TARGETDIR)\$(LIBNAME)
+	link -nologo -out:test_pipe_parent.exe \
+             -nodefaultlib -subsystem:$(CESUBSYS) $(MACHINE) \
+             -entry:wWinMain -libpath:$(TARGETDIR) -debug:full -pdb:none \
+	     test_pipe_parent.obj $(CECONSOLEOBJS) \
+             $(LIBNAME) $(CELIBS) winsock.lib 
+
+test_pipe_parent.obj: test_pipe_parent.c
+	$(CC) $(CFLAGS) -U BUILD_CELIB -c test_pipe_parent.c
+
+test_pipe_parent2.exe: test_pipe_parent2.obj $(TARGETDIR)\$(LIBNAME)
+	link -nologo -out:test_pipe_parent2.exe \
+             -nodefaultlib -subsystem:$(CESUBSYS) $(MACHINE) \
+             -entry:wWinMain -libpath:$(TARGETDIR) -debug:full -pdb:none \
+	     test_pipe_parent2.obj $(CECONSOLEOBJS) \
+             $(LIBNAME) $(CELIBS) winsock.lib 
+
+test_pipe_parent2.obj: test_pipe_parent2.c
+	$(CC) $(CFLAGS) -U BUILD_CELIB -c test_pipe_parent2.c
+
+test_pipe_child.exe: test_pipe_child.obj $(TARGETDIR)\$(LIBNAME)
+	link -nologo -out:test_pipe_child.exe \
+             -nodefaultlib -subsystem:$(CESUBSYS) $(MACHINE) \
+             -entry:wWinMain -libpath:$(TARGETDIR) -debug:full -pdb:none \
+	     test_pipe_child.obj $(CECONSOLEOBJS) \
+             $(LIBNAME) $(CELIBS) winsock.lib 
+
+test_pipe_child.obj: test_pipe_child.c
+	$(CC) $(CFLAGS) -U BUILD_CELIB -c test_pipe_child.c
+
+######################################################################
+
+# $(TARGETDIR)\cert0.obj: cert0.c
+# 	$(CC) $(CFLAGS) -U BUILD_CELIB -U _DLL -c cert0.c -Fo$(TARGETDIR)\
+
+######################################################################
+
+test1w.res: test1w.rc
+	rc $(RCDEFINES) test1w.rc
+
+test1w.exe: test1w.obj test1w.res $(TARGETDIR)\$(LIBNAME)
+	link $(LDFLAGS) -out:test1w.exe test1w.obj test1w.res \
+             $(LIBNAME) $(CELIBS) commctrl.lib winsock.lib
+
+######################################################################
+
+# For MIPS/WCE200 this MUST be compiled with -MD! I dont know
+# why there is a warning...
+
+testfloat.exe: testfloat.c
+	$(CC) $(CFLAGS) -MD -Fa"testfloat.asm" -c testfloat.c
+	link $(LDFLAGS) -out:testfloat.exe testfloat.obj \
+	     -subsystem:$(CESUBSYS) $(MACHINE) -nodefaultlib $(CELIBS)
+
+testfloatio.exe: testfloatio.c
+	$(CC) $(CFLAGS) -MD -Fa"testfloatio.asm" -c testfloatio.c
+	link $(LDFLAGS) -out:testfloatio.exe testfloatio.obj \
+             -debug:full -pdb:none \
+	     -subsystem:$(CESUBSYS) $(MACHINE) -nodefaultlib $(CELIBS) \
+             $(TARGETDIR)\celib.lib
+
+######################################################################
+
+!if "$(TARGETCPU)" == "arm"
+install_tests: tests
+	cecopy pc:test_pipe_parent.exe ce:
+	cecopy pc:test_pipe_parent2.exe ce:
+	cecopy pc:test_pipe_child.exe ce:
+#	cecopy pc:test1.exe ce:/test1.exe
+#	cecopy pc:test1w.exe ce:/speicherkarte2/bin/test1w.exe
+!endif
+
+!if "$(TARGETCPU)" == "sh3"
+install_tests: tests
+#	cecopy pc:test1.exe ce:/speicherkarte2/bin/test1.exe
+#	cecopy pc:test1w.exe ce:/speicherkarte2/bin/test1w.exe
+!endif
+
+!if "$(TARGETCPU)" == "mips"
+install_tests: tests
+#	cecopy pc:test1.exe ce:/netzwerk/compaq/bin/test1.exe
+#	cecopy pc:test1w.exe ce:/netzwerk/compaq/bin/test1w.exe
+!endif
+
+######################################################################
+
+#$(OBJS): inc/celib.h inc/cethread.h
+#$(OBJS): inc/cethread.h
+
+$(TARGETDIR)\ceinit.obj: version.h ceinit.c
+
+dirs:
+	if not exist $(TARGETDIR) mkdir $(TARGETDIR)
+
+{$(SRCDIR)}.c{$(TARGETDIR)}.obj:
+    $(CC) -c $(CFLAGS) -Fo$(TARGETDIR)\ $<
+
+dll: dirs $(TARGETDIR)\celib.dll
+
+# the mips compilers dont generate a bss section, only data...
+$(TARGETDIR)\celib.dll: $(DLLOBJS) celib.res
+	link -nologo -dll -out:$(TARGETDIR)\celib.dll -subsystem:$(CESUBSYS) \
+        -entry:DllMain -def:celib.def $(DLLFLAGS) $(DLLOBJS) celib.res \
+        -map:$(TARGETDIR)\celib.map \
+	$(MACHINE) -nodefaultlib $(CELIBS) $(XLIBS) $(PROFLIBS)
+
+# Not used anymore. Shared dll sections dont work on WinCE211
+#        -section:shared_bss,RWS \
+#        -section:shared_data,RWS \

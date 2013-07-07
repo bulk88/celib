@@ -1,0 +1,59 @@
+39275879:89bb6fa2: open(\test_pipe_parent-stdin.txt)
+39275882:89bb6fa2: open returns 0
+39275884:89bb6fa2: open(\test_pipe_parent-stdout.txt)
+39275885:89bb6fa2: open returns 1
+39275886:89bb6fa2: open(\test_pipe_parent-stderr.txt)
+39275887:89bb6fa2: open returns 2
+39275894:89bb6fa2: fdopen(0, r)
+39275895:89bb6fa2: fdopen returns 162a60
+39275895:89bb6fa2: fdopen(1, w)
+39275895:89bb6fa2: fdopen returns 162e90
+39275896:89bb6fa2: fdopen(2, w)
+39275896:89bb6fa2: fdopen returns 1632c0
+39276643:89bb6fa2: CreatePipe()
+39276645:89bb6fa2: CreatePipe(): hRead = abcd1000, hWrite = abcd2000
+39276646:89bb6fa2: DuplicateHandle(abcd1000)
+39276647:89bb6fa2: xceshared_setstdhandle(0, ffffffff)
+39276648:89bb6fa2: xceshared_setstdhandle(1, abcd2100)
+39276648:89bb6fa2: xceshared_setstdhandle(2, abcd2100)
+39276648:89bb6fa2: shared output set to abcd2100
+39276649:89bb6fa2: setshowwindow 1
+39276649:89bb6fa2: setshowwindow 0
+39276675:8942d122: open(/dev/null)
+39276676:8942d122: open returns 0
+39276676:8942d122: SetStdHandle(1, abcd2100
+39276677:8942d122: open_osfilehandle(abcd2100)
+39276677:8942d122: open_osfilehandle returns 1
+39276677:8942d122: SetStdHandle(2, abcd2100
+39276678:8942d122: open_osfilehandle(abcd2100)
+39276678:8942d122: open_osfilehandle returns 2
+39276678:8942d122: fdopen(0, r)
+39276679:8942d122: fdopen returns 160b10
+39276679:8942d122: fdopen(1, w)
+39276680:8942d122: fdopen returns 160f40
+39276680:8942d122: fdopen(2, w)
+39276680:8942d122: fdopen returns 161370
+39276681:8942d122: pipe_write(abcd2100, 160f68, 7)
+39276683:8942d122: 7 bytes written to pipe
+39276683:89bb6fa2: open_osfilehandle(abcd1100)
+39276684:89bb6fa2: open_osfilehandle returns 3
+39276684:89bb6fa2: fdopen(3, r)
+39276684:89bb6fa2: fdopen returns 164170
+39276684:89bb6fa2: pipe_read(abcd1100, 164198, 1024)
+39276685:89bb6fa2: pipe_read: waiting for pipe open 1/1
+39276685:89bb6fa2: read_pipe returns 7
+39276699:89bb6fa2: pipe_read(abcd1100, 164198, 1024)
+39276699:89bb6fa2: pipe_read: waiting for pipe open 1/1
+39276700:8942d122: pipe_write(abcd2100, 160f68, 26)
+39276701:8942d122: 26 bytes written to pipe
+39276701:89bb6fa2: read_pipe returns 26
+39276735:89bb6fa2: pipe_read(abcd1100, 164198, 1024)
+39276736:89bb6fa2: pipe_read: waiting for pipe open 1/1
+39276737:8942d122: pipe_write(abcd2100, 160f68, 18)
+39276738:8942d122: 18 bytes written to pipe
+39276738:89bb6fa2: read_pipe returns 18
+39276762:89bb6fa2: pipe_read(abcd1100, 164198, 1024)
+39276762:89bb6fa2: pipe_read: waiting for pipe open 1/1
+39276763:8942d122: pipe_write(abcd2100, 160f68, 17)
+39276764:8942d122: 17 bytes written to pipe
+39276764:89bb6fa2: pipe_read: wait failed: dwWait = 0 avail = 0 err = 183

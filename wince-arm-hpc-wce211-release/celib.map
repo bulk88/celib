@@ -1,0 +1,969 @@
+ celib
+
+ Timestamp is 3cdb7857 (Fri May 10 09:35:51 2002)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0001b2b4H .text                   CODE
+ 0002:00000000 000005f5H .rdata                  DATA
+ 0002:000005f8 00000028H .idata$2                DATA
+ 0002:00000620 00000014H .idata$3                DATA
+ 0002:00000634 00000310H .idata$4                DATA
+ 0002:00000944 00000146H .idata$6                DATA
+ 0002:00000a90 00002938H .edata                  DATA
+ 0003:00000000 00000310H .idata$5                DATA
+ 0003:00000310 00000004H .CRT$XCA                DATA
+ 0003:00000314 00000004H .CRT$XCZ                DATA
+ 0003:00000318 00000004H .CRT$XIA                DATA
+ 0003:0000031c 00000004H .CRT$XIZ                DATA
+ 0003:00000320 00000004H .CRT$XPA                DATA
+ 0003:00000324 00000004H .CRT$XPZ                DATA
+ 0003:00000328 00000004H .CRT$XTA                DATA
+ 0003:0000032c 00000004H .CRT$XTZ                DATA
+ 0003:00000330 000038c2H .data                   DATA
+ 0003:00003bf8 00002594H .bss                    DATA
+ 0004:00000000 00001010H .pdata                  DATA
+ 0005:00000000 00000058H .rsrc$01                DATA
+ 0005:00000060 0000030cH .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       xcealarm                   10001000 f   alarm.obj
+ 0001:00000008       xceascii2addr              10001008 f   ascii2addr.obj
+ 0001:0000009c       xceasctime                 1000109c f   asctime.obj
+ 0001:00000314       xcebcopy                   10001314 f   bsd.obj
+ 0001:00000344       xcebcmp                    10001344 f   bsd.obj
+ 0001:00000364       xcebzero                   10001364 f   bsd.obj
+ 0001:00000384       xceindex                   10001384 f   bsd.obj
+ 0001:000003b0       xcerindex                  100013b0 f   bsd.obj
+ 0001:000003cc       xcecalloc                  100013cc f   calloc.obj
+ 0001:00000438       _setargv                   10001438 f   ceargv.obj
+ 0001:00000990       xcehandleassert            10001990 f   ceassert.obj
+ 0001:00000a40       xcebsearch                 10001a40 f   cebsearch.obj
+ 0001:00000b80       XCEChooseColor             10001b80 f   cecommdlg.obj
+ 0001:00000b98       XCEGetOpenFileNameA        10001b98 f   cecommdlg.obj
+ 0001:000013d4       XCEGetSaveFileNameA        100023d4 f   cecommdlg.obj
+ 0001:000013f0       XCESetConsoleMode          100023f0 f   ceconsole.obj
+ 0001:000013f8       xcetoupper                 100023f8 f   cectype.obj
+ 0001:00001424       xcetolower                 10002424 f   cectype.obj
+ 0001:00001450       xceisascii                 10002450 f   cectype.obj
+ 0001:0000148c       xceisalnum                 1000248c f   cectype.obj
+ 0001:000014b8       xceisalpha                 100024b8 f   cectype.obj
+ 0001:000014e4       xceisblank                 100024e4 f   cectype.obj
+ 0001:0000152c       xceiscntrl                 1000252c f   cectype.obj
+ 0001:00001558       xceisdigit                 10002558 f   cectype.obj
+ 0001:00001584       xceisgraph                 10002584 f   cectype.obj
+ 0001:000015b0       xceislower                 100025b0 f   cectype.obj
+ 0001:000015dc       xceisprint                 100025dc f   cectype.obj
+ 0001:00001608       xceispunct                 10002608 f   cectype.obj
+ 0001:00001634       xceisspace                 10002634 f   cectype.obj
+ 0001:00001660       xceisupper                 10002660 f   cectype.obj
+ 0001:0000168c       xceisxdigit                1000268c f   cectype.obj
+ 0001:000016b8       XCEShowWaitCursor          100026b8 f   cecursor.obj
+ 0001:000016e4       XCEShowNormalCursor        100026e4 f   cecursor.obj
+ 0001:0000170c       XCETrace                   1000270c f   cedebug.obj
+ 0001:00001868       XCETraceW                  10002868 f   cedebug.obj
+ 0001:00001904       XCEOpenTraceFile           10002904 f   cedebug.obj
+ 0001:000019b4       GetCurrentThreadId         100029b4 f i cedebug.obj
+ 0001:000019c4       xceopendir                 100029c4 f   cedir.obj
+ 0001:00001af4       xceclosedir                10002af4 f   cedir.obj
+ 0001:00001b3c       xcereaddir                 10002b3c f   cedir.obj
+ 0001:00001d08       _appendenv                 10002d08 f   ceenv.obj
+ 0001:00001de4       _findenv                   10002de4 f   ceenv.obj
+ 0001:00001ec4       _replaceenv                10002ec4 f   ceenv.obj
+ 0001:00001fcc       _initenv_from_reg          10002fcc f   ceenv.obj
+ 0001:000021c0       _initenv_from_envblock     100031c0 f   ceenv.obj
+ 0001:0000226c       _initenv                   1000326c f   ceenv.obj
+ 0001:00002330       xcegetenv                  10003330 f   ceenv.obj
+ 0001:00002350       xceputenv                  10003350 f   ceenv.obj
+ 0001:00002390       xcesetenv                  10003390 f   ceenv.obj
+ 0001:00002414       _winerror2errno            10003414 f   ceerrno.obj
+ 0001:000024bc       xceperror                  100034bc f   ceerrno.obj
+ 0001:000024f4       xcestrerror                100034f4 f   ceerrno.obj
+ 0001:000025b4       xceexecv                   100035b4 f   ceexec.obj
+ 0001:000025d0       xceexecvp                  100035d0 f   ceexec.obj
+ 0001:000025ec       xceexecl                   100035ec f   ceexec.obj
+ 0001:00002610       xceexeclp                  10003610 f   ceexec.obj
+ 0001:00002634       XCECreateFontIndirectA     10003634 f   cefonts.obj
+ 0001:00002720       MyEnumFontFamProc          10003720 f   cefonts.obj
+ 0001:00002928       XCEEnumFontFamilies        10003928 f   cefonts.obj
+ 0001:000029cc       xcegettimeofday            100039cc f   cegettimeofday.obj
+ 0001:00002a10       xcegettimeofday_timer      10003a10 f   cegettimeofday.obj
+ 0001:00002a5c       xceinit                    10003a5c f   ceinit.obj
+ 0001:00002b94       xcedllinit                 10003b94 f   ceinit.obj
+ 0001:00002ba0       _init_io                   10003ba0 f   ceio.obj
+ 0001:00002eac       _initfds                   10003eac f   ceio.obj
+ 0001:00002f1c       _getnewfd                  10003f1c f   ceio.obj
+ 0001:00002fa4       xceget_osfhandle           10003fa4 f   ceio.obj
+ 0001:00003008       xcecreat                   10004008 f   ceio.obj
+ 0001:00003060       xceopen                    10004060 f   ceio.obj
+ 0001:000032a4       xceopenw                   100042a4 f   ceio.obj
+ 0001:0000353c       xceopen_osfilehandle       1000453c f   ceio.obj
+ 0001:000035d4       xceclose                   100045d4 f   ceio.obj
+ 0001:00003700       xceread                    10004700 f   ceio.obj
+ 0001:000039e4       xcewrite                   100049e4 f   ceio.obj
+ 0001:00003cac       xcelseek                   10004cac f   ceio.obj
+ 0001:00003e18       xceisatty                  10004e18 f   ceio.obj
+ 0001:00003ef0       xcesetmode                 10004ef0 f   ceio.obj
+ 0001:00003f60       xceinitconsole             10004f60 f   ceio.obj
+ 0001:00003f94       xceinitconsole2            10004f94 f   ceio.obj
+ 0001:00003fe8       xcegetfiletype             10004fe8 f   ceio.obj
+ 0001:00004068       xcesetfiletype             10005068 f   ceio.obj
+ 0001:000040f0       xcedup                     100050f0 f   ceio.obj
+ 0001:000041c4       xcedup2                    100051c4 f   ceio.obj
+ 0001:00004254       xcepipe                    10005254 f   ceio.obj
+ 0001:000042fc       xcefcntl                   100052fc f   ceio.obj
+ 0001:00004508       xceioctl                   10005508 f   ceio.obj
+ 0001:000045e4       close_all_fds              100055e4 f   ceio.obj
+ 0001:00004688       xceirda_getaddr            10005688 f   ceirda.obj
+ 0001:00004880       XCEToAscii                 10005880 f   cekeyboard.obj
+ 0001:000049cc       XCEVkKeyScan               100059cc f   cekeyboard.obj
+ 0001:00004b2c       XCEUtil_VkToScancode       10005b2c f   cekeyboard.obj
+ 0001:00004bd8       xcesetlocale               10005bd8 f   celocale.obj
+ 0001:00004c28       XCEGetDiskFreeSpaceExA     10005c28 f   cemisc.obj
+ 0001:00004c78       XCESearchPathA             10005c78 f   ceprocess.obj
+ 0001:00004e78       XCEExecuteProcessA         10005e78 f   ceprocess.obj
+ 0001:00005210       XCEWaitProcess             10006210 f   ceprocess.obj
+ 0001:00005274       XCESearchPath2A            10006274 f   ceprocess.obj
+ 0001:000053b0       xceshared_init             100063b0 f   ceshared2.obj
+ 0001:000054fc       xceshared_reset            100064fc f   ceshared2.obj
+ 0001:0000553c       xceshared_setshowwindow    1000653c f   ceshared2.obj
+ 0001:00005580       xceshared_setcwd           10006580 f   ceshared2.obj
+ 0001:000055b8       xceshared_setenvironblock  100065b8 f   ceshared2.obj
+ 0001:000056b0       xceshared_setstdhandle     100066b0 f   ceshared2.obj
+ 0001:000057d8       xceshared_getshowwindow    100067d8 f   ceshared2.obj
+ 0001:00005804       xceshared_getcwd           10006804 f   ceshared2.obj
+ 0001:00005840       xceshared_getenvironblock  10006840 f   ceshared2.obj
+ 0001:000058fc       xceshared_getstdhandle     100068fc f   ceshared2.obj
+ 0001:00005998       xceshared_lock             10006998 f   ceshared2.obj
+ 0001:000059f0       xceshared_release          100069f0 f   ceshared2.obj
+ 0001:00005a08       pipe_setavail              10006a08 f   ceshared2.obj
+ 0001:00005a2c       pipe_getavail              10006a2c f   ceshared2.obj
+ 0001:00005a4c       pipe_write                 10006a4c f   ceshared2.obj
+ 0001:00005d40       pipe_read                  10006d40 f   ceshared2.obj
+ 0001:00006088       XCECreatePipe              10007088 f   ceshared2.obj
+ 0001:0000648c       XCEReadFile                1000748c f   ceshared2.obj
+ 0001:000065cc       XCEWriteFile               100075cc f   ceshared2.obj
+ 0001:00006708       close_pipe                 10007708 f   ceshared2.obj
+ 0001:000069c8       pipe_increment_opencount   100079c8 f   ceshared2.obj
+ 0001:00006bd4       XCECloseHandle             10007bd4 f   ceshared2.obj
+ 0001:00006c34       XCEDuplicateHandle         10007c34 f   ceshared2.obj
+ 0001:00006d08       XCESetStdHandle            10007d08 f   ceshared2.obj
+ 0001:00006dd4       XCEGetStdHandle            10007dd4 f   ceshared2.obj
+ 0001:00006f14       XCEGetFileType             10007f14 f   ceshared2.obj
+ 0001:00006fa0       XCEPeekNamedPipe           10007fa0 f   ceshared2.obj
+ 0001:000070f4       xceshared_attach           100080f4 f   ceshared2.obj
+ 0001:000070fc       xceshared_detach           100080fc f   ceshared2.obj
+ 0001:00007198       SetEvent                   10008198 f i ceshared2.obj
+ 0001:000071b4       GetCurrentProcess          100081b4 f i ceshared2.obj
+ 0001:000071bc       xcesignal                  100081bc f   cesignal.obj
+ 0001:0000724c       xceraise                   1000824c f   cesignal.obj
+ 0001:0000730c       sigaction                  1000830c f   cesignal.obj
+ 0001:00007314       sigprocmask                10008314 f   cesignal.obj
+ 0001:0000731c       sigaddset                  1000831c f   cesignal.obj
+ 0001:00007350       sigemptyset                10008350 f   cesignal.obj
+ 0001:00007370       sigsuspend                 10008370 f   cesignal.obj
+ 0001:00007378       xcekill                    10008378 f   cesignal.obj
+ 0001:000073b0       xcefstat                   100083b0 f   cestat.obj
+ 0001:000077b8       xcestat_old                100087b8 f   cestat.obj
+ 0001:000078fc       xcestat                    100088fc f   cestat.obj
+ 0001:00007ec4       xcelstat                   10008ec4 f   cestat.obj
+ 0001:00007ee0       palm_init_stdio            10008ee0 f   cestdio-palmsize.obj
+ 0001:00008018       palm_fsetmode              10009018 f   cestdio-palmsize.obj
+ 0001:0000809c       palm_fgetmode              1000909c f   cestdio-palmsize.obj
+ 0001:000080d0       palm_fdopen                100090d0 f   cestdio-palmsize.obj
+ 0001:000083f4       palm_fopen                 100093f4 f   cestdio-palmsize.obj
+ 0001:00008518       palm_fclose                10009518 f   cestdio-palmsize.obj
+ 0001:00008628       palm_printf                10009628 f   cestdio-palmsize.obj
+ 0001:00008688       palm_fprintf               10009688 f   cestdio-palmsize.obj
+ 0001:000086e8       palm_vprintf               100096e8 f   cestdio-palmsize.obj
+ 0001:00008734       palm_ferror                10009734 f   cestdio-palmsize.obj
+ 0001:00008780       palm_clearerr              10009780 f   cestdio-palmsize.obj
+ 0001:000087b8       palm_fflush                100097b8 f   cestdio-palmsize.obj
+ 0001:00008980       palm_feof                  10009980 f   cestdio-palmsize.obj
+ 0001:000089bc       palm_fwrite                100099bc f   cestdio-palmsize.obj
+ 0001:00008a6c       palm_fread                 10009a6c f   cestdio-palmsize.obj
+ 0001:00008cd0       palm_gets                  10009cd0 f   cestdio-palmsize.obj
+ 0001:00008d84       palm_fgets                 10009d84 f   cestdio-palmsize.obj
+ 0001:00008e3c       palm_vfprintf              10009e3c f   cestdio-palmsize.obj
+ 0001:00008fb8       palm_getc                  10009fb8 f   cestdio-palmsize.obj
+ 0001:000090dc       palm_putc                  1000a0dc f   cestdio-palmsize.obj
+ 0001:000091e0       palm_fputc                 1000a1e0 f   cestdio-palmsize.obj
+ 0001:000091fc       palm_putchar               1000a1fc f   cestdio-palmsize.obj
+ 0001:00009220       palm_getchar               1000a220 f   cestdio-palmsize.obj
+ 0001:00009238       palm_fgetc                 1000a238 f   cestdio-palmsize.obj
+ 0001:00009250       palm_fileno                1000a250 f   cestdio-palmsize.obj
+ 0001:00009278       palm_ungetc                1000a278 f   cestdio-palmsize.obj
+ 0001:00009310       palm_ftell                 1000a310 f   cestdio-palmsize.obj
+ 0001:00009374       palm_fseek                 1000a374 f   cestdio-palmsize.obj
+ 0001:000093fc       palm_puts                  1000a3fc f   cestdio-palmsize.obj
+ 0001:00009434       palm_fputs                 1000a434 f   cestdio-palmsize.obj
+ 0001:000094a8       palm_freopen               1000a4a8 f   cestdio-palmsize.obj
+ 0001:000095f4       palm_fgetpos               1000a5f4 f   cestdio-palmsize.obj
+ 0001:0000963c       palm_fsetpos               1000a63c f   cestdio-palmsize.obj
+ 0001:00009674       palm_flushall              1000a674 f   cestdio-palmsize.obj
+ 0001:000096e0       palm_fcloseall             1000a6e0 f   cestdio-palmsize.obj
+ 0001:0000974c       palm_setvbuf               1000a74c f   cestdio-palmsize.obj
+ 0001:00009870       palm_rewind                1000a870 f   cestdio-palmsize.obj
+ 0001:000098a4       xcefopen                   1000a8a4 f   cestdio-palmsize.obj
+ 0001:000098c0       xcefclose                  1000a8c0 f   cestdio-palmsize.obj
+ 0001:000098d8       xcefreopen                 1000a8d8 f   cestdio-palmsize.obj
+ 0001:000098f8       xcepopen_read              1000a8f8 f   cestdio.obj
+ 0001:00009a90       xcepopen_write             1000aa90 f   cestdio.obj
+ 0001:00009c28       xcepopen                   1000ac28 f   cestdio.obj
+ 0001:00009c98       xcepclose                  1000ac98 f   cestdio.obj
+ 0001:00009cb0       xceprinterror              1000acb0 f   cestdio.obj
+ 0001:00009cec       xcegetcwd                  1000acec f   cestdlib.obj
+ 0001:00009d4c       xceabort                   1000ad4c f   cestdlib.obj
+ 0001:00009d88       xcesystem                  1000ad88 f   cestdlib.obj
+ 0001:00009da8       xcelocking                 1000ada8 f   cestdlib.obj
+ 0001:00009db0       xceumask                   1000adb0 f   cestdlib.obj
+ 0001:00009de8       xcemkdir                   1000ade8 f   cestdlib.obj
+ 0001:00009e3c       xcermdir                   1000ae3c f   cestdlib.obj
+ 0001:00009e8c       xcerename                  1000ae8c f   cestdlib.obj
+ 0001:00009f0c       xceremove                  1000af0c f   cestdlib.obj
+ 0001:00009f5c       xcechmod                   1000af5c f   cestdlib.obj
+ 0001:0000a008       xceaccess                  1000b008 f   cestdlib.obj
+ 0001:0000a040       xceunlink                  1000b040 f   cestdlib.obj
+ 0001:0000a090       xcegetpid                  1000b090 f   cestdlib.obj
+ 0001:0000a0b0       xcechdir                   1000b0b0 f   cestdlib.obj
+ 0001:0000a0dc       xcemktemp                  1000b0dc f   cestdlib.obj
+ 0001:0000a1b4       xcechroot                  1000b1b4 f   cestdlib.obj
+ 0001:0000a1cc       xceexit                    1000b1cc f   cestdlib.obj
+ 0001:0000a1fc       xceclock                   1000b1fc f   cestdlib.obj
+ 0001:0000a208       xcetimes                   1000b208 f   cestdlib.obj
+ 0001:0000a29c       GetCurrentProcessId        1000b29c f i cestdlib.obj
+ 0001:0000a2ac       GetCurrentThread           1000b2ac f i cestdlib.obj
+ 0001:0000a2b4       xcestrrchr                 1000b2b4 f   cestr.obj
+ 0001:0000a358       xcestrdup                  1000b358 f   cestr.obj
+ 0001:0000a3c8       xcestrndup                 1000b3c8 f   cestr.obj
+ 0001:0000a45c       xcestrnicmp                1000b45c f   cestr.obj
+ 0001:0000a540       xcestrncasecmp             1000b540 f   cestr.obj
+ 0001:0000a560       xcestrupr                  1000b560 f   cestr.obj
+ 0001:0000a5dc       xcestrlwr                  1000b5dc f   cestr.obj
+ 0001:0000a658       xcestricmp                 1000b658 f   cestr.obj
+ 0001:0000a674       xcestrcasecmp              1000b674 f   cestr.obj
+ 0001:0000a690       xcestrcmpi                 1000b690 f   cestr.obj
+ 0001:0000a748       xcestrtod                  1000b748 f   cestr.obj
+ 0001:0000a858       xcestrtol                  1000b858 f   cestr.obj
+ 0001:0000a954       xcestrtoul                 1000b954 f   cestr.obj
+ 0001:0000aa28       xcestrcoll                 1000ba28 f   cestr.obj
+ 0001:0000aa44       xceatof                    1000ba44 f   cestr.obj
+ 0001:0000aa78       _init_multithread          1000ba78 f   cethread.obj
+ 0001:0000aaa8       _xcebeginthread            1000baa8 f   cethread.obj
+ 0001:0000abc4       _threadstart               1000bbc4 f   cethread.obj
+ 0001:0000ac1c       _xceendthread              1000bc1c f   cethread.obj
+ 0001:0000ac74       _initptd                   1000bc74 f   cethread.obj
+ 0001:0000aca4       _freeptd                   1000bca4 f   cethread.obj
+ 0001:0000ad1c       _getptd                    1000bd1c f   cethread.obj
+ 0001:0000adc0       _xcebeginthreadex          1000bdc0 f   cethread.obj
+ 0001:0000aea0       _threadstartex             1000bea0 f   cethread.obj
+ 0001:0000af04       _xceendthreadex            1000bf04 f   cethread.obj
+ 0001:0000af44       TlsAlloc                   1000bf44 f i cethread.obj
+ 0001:0000af58       xcegettimezonename         1000bf58 f   cetimezone.obj
+ 0001:0000aff0       xcetmpnam                  1000bff0 f   cetmpnam.obj
+ 0001:0000b068       XCEMakeUnicode             1000c068 f   ceunicode.obj
+ 0001:0000b0e8       XCEShowMessageA            1000c0e8 f   ceutil.obj
+ 0001:0000b190       XCEShowMessageW            1000c190 f   ceutil.obj
+ 0001:0000b20c       XCEToDosPath               1000c20c f   ceutil.obj
+ 0001:0000b270       XCEToUnixPath              1000c270 f   ceutil.obj
+ 0001:0000b2d4       XCEGetEnvironmentVariableFromRegA 1000c2d4 f   ceutil.obj
+ 0001:0000b3f8       XCESetEnvironmentVariableInRegA 1000c3f8 f   ceutil.obj
+ 0001:0000b4ac       XCEGetRegStringA           1000c4ac f   ceutil.obj
+ 0001:0000b5c4       XCESetRegStringA           1000c5c4 f   ceutil.obj
+ 0001:0000b670       xcewctomb                  1000c670 f   cewchar.obj
+ 0001:0000b694       xcembtowc                  1000c694 f   cewchar.obj
+ 0001:0000b6e0       xcemblen                   1000c6e0 f   cewchar.obj
+ 0001:0000b70c       XCEGetFileInformationByHandle 1000c70c f   cewin32.obj
+ 0001:0000b728       XCEGetUserNameA            1000c728 f   cewin32.obj
+ 0001:0000b7a8       XCEGetComputerNameA        1000c7a8 f   cewin32.obj
+ 0001:0000b828       XCEGetCharABCWidthsA       1000c828 f   cewin32.obj
+ 0001:0000b910       XCEGetCharABCWidthsW       1000c910 f   cewin32.obj
+ 0001:0000b9f8       XCEGetVersionExA           1000c9f8 f   cewin32.obj
+ 0001:0000bad4       XCESendMessageA            1000cad4 f   cewin32.obj
+ 0001:0000bda0       XCEPostMessageA            1000cda0 f   cewin32.obj
+ 0001:0000bdc4       XCEPostThreadMessageA      1000cdc4 f   cewin32.obj
+ 0001:0000bde8       XCEPeekMessageA            1000cde8 f   cewin32.obj
+ 0001:0000be1c       XCEGetMessageA             1000ce1c f   cewin32.obj
+ 0001:0000be40       XCEDispatchMessageA        1000ce40 f   cewin32.obj
+ 0001:0000be58       XCECreateEventA            1000ce58 f   cewin32.obj
+ 0001:0000bf0c       XCEGetModuleFileNameA      1000cf0c f   cewin32.obj
+ 0001:0000bfbc       XCESetWindowTextA          1000cfbc f   cewin32.obj
+ 0001:0000c05c       XCEGetWindowTextA          1000d05c f   cewin32.obj
+ 0001:0000c080       XCEMessageBoxA             1000d080 f   cewin32.obj
+ 0001:0000c1bc       XCEExtTextOutA             1000d1bc f   cewin32.obj
+ 0001:0000c270       XCEAttachThreadInput       1000d270 f   cewin32.obj
+ 0001:0000c278       XCEGetSystemTimeAsFileTime 1000d278 f   cewin32.obj
+ 0001:0000c2a4       XCEGetScrollPos            1000d2a4 f   cewin32.obj
+ 0001:0000c2e0       XCESetScrollPos            1000d2e0 f   cewin32.obj
+ 0001:0000c324       XCEAdjustWindowRect        1000d324 f   cewin32.obj
+ 0001:0000c348       XCEMapVirtualKeyA          1000d348 f   cewin32.obj
+ 0001:0000c364       XCEGetTextExtentExPointA   1000d364 f   cewin32.obj
+ 0001:0000c414       XCEGetObjectA              1000d414 f   cewin32.obj
+ 0001:0000c4b4       XCEGetTextMetricsA         1000d4b4 f   cewin32.obj
+ 0001:0000c5e0       XCEAppendMenuA             1000d5e0 f   cewin32.obj
+ 0001:0000c6a0       XCECreateWindowExA         1000d6a0 f   cewin32.obj
+ 0001:0000c7ac       XCECreateWindowA           1000d7ac f   cewin32.obj
+ 0001:0000c818       XCEGetModuleHandleA        1000d818 f   cewin32.obj
+ 0001:0000c8c8       XCECreateFileMappingA      1000d8c8 f   cewin32.obj
+ 0001:0000c98c       XCEGetEnvironmentVariableA 1000d98c f   cewin32.obj
+ 0001:0000ca08       XCELoadLibraryA            1000da08 f   cewin32.obj
+ 0001:0000cb00       XCEGetProcAddressA         1000db00 f   cewin32.obj
+ 0001:0000cb78       XCEFindWindowA             1000db78 f   cewin32.obj
+ 0001:0000cc24       XCEBuildCommDCBA           1000dc24 f   cewin32.obj
+ 0001:0000d02c       XCECharLowerA              1000e02c f   cewin32.obj
+ 0001:0000d0cc       XCECharUpperA              1000e0cc f   cewin32.obj
+ 0001:0000d16c       XCEGetFullPathNameA        1000e16c f   cewin32.obj
+ 0001:0000d2c8       XCEGetShortPathNameA       1000e2c8 f   cewin32.obj
+ 0001:0000d2f0       XCEGetTempFileNameA        1000e2f0 f   cewin32.obj
+ 0001:0000d3d8       XCEGetTempPathA            1000e3d8 f   cewin32.obj
+ 0001:0000d474       XCEGetVolumeInformationA   1000e474 f   cewin32.obj
+ 0001:0000d48c       XCEwsprintfA               1000e48c f   cewin32.obj
+ 0001:0000d4e0       XCElstrcmpA                1000e4e0 f   cewin32.obj
+ 0001:0000d4fc       XCElstrcmpiA               1000e4fc f   cewin32.obj
+ 0001:0000d518       XCElstrcpyA                1000e518 f   cewin32.obj
+ 0001:0000d534       XCElstrcpynA               1000e534 f   cewin32.obj
+ 0001:0000d564       XCElstrlenA                1000e564 f   cewin32.obj
+ 0001:0000d57c       XCESetErrorMode            1000e57c f   cewin32.obj
+ 0001:0000d5b4       XCEExitProcess             1000e5b4 f   cewin32.obj
+ 0001:0000d5cc       XCEGetTextExtentPoint32W   1000e5cc f   cewin32.obj
+ 0001:0000d610       XCEGetTextExtentPoint32A   1000e610 f   cewin32.obj
+ 0001:0000d6bc       XCETextOutA                1000e6bc f   cewin32.obj
+ 0001:0000d710       XCETextOutW                1000e710 f   cewin32.obj
+ 0001:0000d764       XCEGetCharWidthA           1000e764 f   cewin32.obj
+ 0001:0000d810       XCEGetCharWidthW           1000e810 f   cewin32.obj
+ 0001:0000d8bc       XCEGetFontData             1000e8bc f   cewin32.obj
+ 0001:0000d8c4       XCEGetTextCharset          1000e8c4 f   cewin32.obj
+ 0001:0000d8cc       XCEGetVersion              1000e8cc f   cewin32.obj
+ 0001:0000d8fc       XCEExtCreatePen            1000e8fc f   cewin32.obj
+ 0001:0000d91c       XCEOutputDebugStringA      1000e91c f   cewin32.obj
+ 0001:0000d990       XCELoadCursorA             1000e990 f   cewin32.obj
+ 0001:0000da30       XCELoadIconA               1000ea30 f   cewin32.obj
+ 0001:0000dad0       XCEGetDlgItemTextA         1000ead0 f   cewin32.obj
+ 0001:0000db64       XCESetDlgItemTextA         1000eb64 f   cewin32.obj
+ 0001:0000dbe8       XCEGetWindowLongA          1000ebe8 f   cewin32.obj
+ 0001:0000dc14       XCESetWindowLongA          1000ec14 f   cewin32.obj
+ 0001:0000dc44       XCEIsIconic                1000ec44 f   cewin32.obj
+ 0001:0000dc4c       XCEIsZoomed                1000ec4c f   cewin32.obj
+ 0001:0000dc54       XCERegisterClassA          1000ec54 f   cewin32.obj
+ 0001:0000dd04       XCEUnregisterClassA        1000ed04 f   cewin32.obj
+ 0001:0000dd7c       XCEMulDiv                  1000ed7c f   cewin32.obj
+ 0001:0000de00       XCEDefWindowProcA          1000ee00 f   cewin32.obj
+ 0001:0000de24       XCESendDlgItemMessageA     1000ee24 f   cewin32.obj
+ 0001:0000df9c       XCECallWindowProcA         1000ef9c f   cewin32.obj
+ 0001:0000dfd0       XCEGetTextFaceA            1000efd0 f   cewin32.obj
+ 0001:0000e054       XCECreateDCA               1000f054 f   cewin32.obj
+ 0001:0000e104       XCEInsertMenuA             1000f104 f   cewin32.obj
+ 0001:0000e140       XCEGetWindowPlacement      1000f140 f   cewin32.obj
+ 0001:0000e180       XCEMoveWindow              1000f180 f   cewin32.obj
+ 0001:0000e1f4       XCECopyMemory              1000f1f4 f   cewin32.obj
+ 0001:0000e214       XCEGetDesktopWindow        1000f214 f   cewin32.obj
+ 0001:0000e21c       XCEStretchDIBits           1000f21c f   cewin32.obj
+ 0001:0000e414       XCEFillRect                1000f414 f   cewin32.obj
+ 0001:0000e48c       XCEFormatMessageA          1000f48c f   cewin32.obj
+ 0001:0000e590       XCECreateMutexA            1000f590 f   cewin32.obj
+ 0001:0000e5f8       XCECreateProcessA          1000f5f8 f   cewin32.obj
+ 0001:0000ec2c       XCEFreeEnvironmentStrings  1000fc2c f   cewin32.obj
+ 0001:0000ec58       XCEGetEnvironmentStrings   1000fc58 f   cewin32.obj
+ 0001:0000eda4       XCEDialogBoxIndirectParamA 1000fda4 f   cewin32.obj
+ 0001:0000edd8       XCEFindResourceA           1000fdd8 f   cewin32.obj
+ 0001:0000eef0       XCEZeroMemory              1000fef0 f   cewin32.obj
+ 0001:0000ef10       XCEGetCommandLineA         1000ff10 f   cewin32.obj
+ 0001:0000ef20       XCEGetWindowTextLengthA    1000ff20 f   cewin32.obj
+ 0001:0000ef38       XCEGetMenuItemInfoA        1000ff38 f   cewin32.obj
+ 0001:0000ef70       XCERegisterWindowMessageA  1000ff70 f   cewin32.obj
+ 0001:0000efb4       XCESetClassLongA           1000ffb4 f   cewin32.obj
+ 0001:0000efd4       XCEGetClassNameA           1000ffd4 f   cewin32.obj
+ 0001:0000f04c       XCECreateFontA             1001004c f   cewin32.obj
+ 0001:0000f100       xcechown                   10010100 f   chown.obj
+ 0001:0000f108       XCECopyFileA               10010108 f   copyfile.obj
+ 0001:0000f218       XCECopyFileW               10010218 f   copyfile.obj
+ 0001:0000f260       XCECreateDirectoryA        10010260 f   createdir.obj
+ 0001:0000f2b0       XCECreateDirectoryW        100102b0 f   createdir.obj
+ 0001:0000f2e0       XCECreateFileA             100102e0 f   createfile.obj
+ 0001:0000f350       XCECreateFileW             10010350 f   createfile.obj
+ 0001:0000f480       XCECreateFileForMappingA   10010480 f   createfilemap.obj
+ 0001:0000f4f0       XCECreateFileForMappingW   100104f0 f   createfilemap.obj
+ 0001:0000f594       xcectime                   10010594 f   ctime.obj
+ 0001:0000f5d4       XCEGetCurrentDirectoryA    100105d4 f   currentdir.obj
+ 0001:0000f634       XCEGetCurrentDirectoryW    10010634 f   currentdir.obj
+ 0001:0000f67c       XCESetCurrentDirectoryA    1001067c f   currentdir.obj
+ 0001:0000f6c0       XCESetCurrentDirectoryW    100106c0 f   currentdir.obj
+ 0001:0000f760       XCEGetCurrentRootDirectoryA 10010760 f   currentdir.obj
+ 0001:0000f7c0       XCEGetCurrentRootDirectoryW 100107c0 f   currentdir.obj
+ 0001:0000f808       XCESetCurrentRootDirectoryA 10010808 f   currentdir.obj
+ 0001:0000f84c       XCESetCurrentRootDirectoryW 1001084c f   currentdir.obj
+ 0001:0000f8ec       XCEDeleteFileA             100108ec f   deletefile.obj
+ 0001:0000f930       XCEDeleteFileW             10010930 f   deletefile.obj
+ 0001:0000f95c       DllMain                    1001095c f   dllmain.obj
+ 0001:0000f9ac       __loctotime_t              100109ac f   dtoxtime.obj
+ 0001:0000fb48       XCEGetFileAttributesA      10010b48 f   fileattr.obj
+ 0001:0000fb94       XCESetFileAttributesA      10010b94 f   fileattr.obj
+ 0001:0000fbe4       XCEGetFileAttributesW      10010be4 f   fileattr.obj
+ 0001:0000fc18       XCESetFileAttributesW      10010c18 f   fileattr.obj
+ 0001:0000fc50       XCEFindFirstFileA          10010c50 f   findfile.obj
+ 0001:0000fd78       XCEFindNextFileA           10010d78 f   findfile.obj
+ 0001:0000fed0       XCEFindFirstFileW          10010ed0 f   findfile.obj
+ 0001:0000fff4       XCEFindNextFileW           10010ff4 f   findfile.obj
+ 0001:00010010       XCEFixPathA                10011010 f   fixpath.obj
+ 0001:00010098       XCEFixPathW                10011098 f   fixpath.obj
+ 0001:000101e4       XCECanonicalizePathW       100111e4 f   fixpath.obj
+ 0001:00010408       xcefnmatch                 10011408 f   fnmatch.obj
+ 0001:00010b40       xceftime                   10011b40 f   ftime.obj
+ 0001:00010d3c       xceftruncate               10011d3c f   ftruncate.obj
+ 0001:00010df4       xcechsize                  10011df4 f   ftruncate.obj
+ 0001:00010e10       xcegetopt                  10011e10 f   getopt.obj
+ 0001:00011278       xcesetgid                  10012278 f   gid.obj
+ 0001:00011280       xcesetegid                 10012280 f   gid.obj
+ 0001:00011288       xcegetgid                  10012288 f   gid.obj
+ 0001:00011290       xcegetegid                 10012290 f   gid.obj
+ 0001:00011298       xceinitgroups              10012298 f   gid.obj
+ 0001:000112a0       xceglob                    100122a0 f   glob.obj
+ 0001:00012d84       xceglobfree                10013d84 f   glob.obj
+ 0001:00013188       xcegmtime                  10014188 f   gmtime.obj
+ 0001:0001342c       xceinet_aton               1001442c f   inet_aton.obj
+ 0001:00013708       xcelocalhost               10014708 f   localhost.obj
+ 0001:00013758       xcelocaltime               10014758 f   localtim.obj
+ 0001:00013ac4       xcelogwtmp                 10014ac4 f   logwtmp.obj
+ 0001:00013c14       XCEGetUnixPath             10014c14 f   makeunixpath.obj
+ 0001:00013cd4       xcemktime                  10014cd4 f   mktime.obj
+ 0001:00013cf0       _mkgmtime                  10014cf0 f   mktime.obj
+ 0001:00014220       XCEMoveFileA               10015220 f   movefile.obj
+ 0001:0001432c       XCEMoveFileW               1001532c f   movefile.obj
+ 0001:00014370       xcesetpwent                10015370 f   pwd.obj
+ 0001:0001440c       xcegetpwent                1001540c f   pwd.obj
+ 0001:0001473c       xceendpwent                1001573c f   pwd.obj
+ 0001:00014770       xcegetpwnam                10015770 f   pwd.obj
+ 0001:000147d0       xcegetpwuid                100157d0 f   pwd.obj
+ 0001:0001482c       xcegetusershell            1001582c f   pwd.obj
+ 0001:00014838       xceendusershell            10015838 f   pwd.obj
+ 0001:0001483c       xceputpwent                1001583c f   pwd.obj
+ 0001:0001492c       xcegetpass                 1001592c f   pwd.obj
+ 0001:000149c4       xcegetlogin                100159c4 f   pwd.obj
+ 0001:00014a20       xcercmd                    10015a20 f   rcmd.obj
+ 0001:00015050       XCERegCreateKeyExA         10016050 f   registry.obj
+ 0001:000150d0       XCERegOpenKeyExA           100160d0 f   registry.obj
+ 0001:00015130       XCERegQueryValueExA        10016130 f   registry.obj
+ 0001:000152ec       XCERegSetValueExA          100162ec f   registry.obj
+ 0001:000153e0       XCERegEnumValueA           100163e0 f   registry.obj
+ 0001:00015604       XCERegCloseKey             10016604 f   registry.obj
+ 0001:0001561c       XCERegDeleteKeyA           1001661c f   registry.obj
+ 0001:00015694       XCERegEnumKeyExA           10016694 f   registry.obj
+ 0001:000157a4       XCERegCreateKeyA           100167a4 f   registry.obj
+ 0001:000157f8       XCERegOpenKeyA             100167f8 f   registry.obj
+ 0001:0001582c       XCERegEnumKeyA             1001682c f   registry.obj
+ 0001:00015888       XCERegDeleteValueA         10016888 f   registry.obj
+ 0001:00015908       RegEnumKeyA                10016908 f   registry.obj
+ 0001:00015964       XCERemoveDirectoryA        10016964 f   removedir.obj
+ 0001:00015a00       XCERemoveDirectoryW        10016a00 f   removedir.obj
+ 0001:00015a2c       xcerexec                   10016a2c f   rexec.obj
+ 0001:00016008       xcesleep                   10017008 f   sleep.obj
+ 0001:0001602c       xcesnprintf                1001702c f   snprintf.obj
+ 0001:0001608c       xcestrftime                1001708c f   strftime.obj
+ 0001:00016e3c       xcestrpbrk                 10017e3c f   strpbrk.obj
+ 0001:00016f24       xcestrsep                  10017f24 f   strsep.obj
+ 0001:00016ff4       xcestrspn                  10017ff4 f   strspn.obj
+ 0001:000170d8       xceconnectlog              100180d8 f   syslog.obj
+ 0001:000170e0       xceopenlog                 100180e0 f   syslog.obj
+ 0001:00017150       xcecloselog                10018150 f   syslog.obj
+ 0001:00017164       xcesyslog                  10018164 f   syslog.obj
+ 0001:000171a0       xcevsyslog                 100181a0 f   syslog.obj
+ 0001:000176cc       termios_init               100186cc f   termios.obj
+ 0001:00017710       tcsetattr                  10018710 f   termios.obj
+ 0001:00017748       tcgetattr                  10018748 f   termios.obj
+ 0001:00017780       cfgetispeed                10018780 f   termios.obj
+ 0001:00017788       cfgetospeed                10018788 f   termios.obj
+ 0001:00017790       cfsetispeed                10018790 f   termios.obj
+ 0001:00017798       cfsetospeed                10018798 f   termios.obj
+ 0001:000177a0       xcetime                    100187a0 f   time.obj
+ 0001:0001790c       __tzset                    1001890c f   tzset.obj
+ 0001:00017950       _xcetzset                  10018950 f   tzset.obj
+ 0001:00017e7c       _isindst                   10018e7c f   tzset.obj
+ 0001:00018650       xcesetuid                  10019650 f   uid.obj
+ 0001:00018658       xceseteuid                 10019658 f   uid.obj
+ 0001:00018660       xcegetuid                  10019660 f   uid.obj
+ 0001:00018668       xcegeteuid                 10019668 f   uid.obj
+ 0001:00018670       xceutime                   10019670 f   utime.obj
+ 0001:000186cc       xcefutime                  100196cc f   utime.obj
+ 0001:00018934       xcegetservbyname           10019934 f   wsdb.obj
+ 0001:00018ad4       xcegetservbyport           10019ad4 f   wsdb.obj
+ 0001:00018c58       xcegetprotobyname          10019c58 f   wsdb.obj
+ 0001:00018d04       xcegetprotobynumber        10019d04 f   wsdb.obj
+ 0001:00018d98       xcesocket                  10019d98 f   wssocket.obj
+ 0001:00018e70       xceaccept                  10019e70 f   wssocket.obj
+ 0001:00018fd4       xcebind                    10019fd4 f   wssocket.obj
+ 0001:000190a8       xceconnect                 1001a0a8 f   wssocket.obj
+ 0001:0001917c       xcegetpeername             1001a17c f   wssocket.obj
+ 0001:00019250       xcegetsockname             1001a250 f   wssocket.obj
+ 0001:00019324       xcegetsockopt              1001a324 f   wssocket.obj
+ 0001:0001940c       xceioctlsocket             1001a40c f   wssocket.obj
+ 0001:00019568       xcelisten                  1001a568 f   wssocket.obj
+ 0001:00019640       xcerecv                    1001a640 f   wssocket.obj
+ 0001:00019720       xcerecvfrom                1001a720 f   wssocket.obj
+ 0001:00019840       xcesend                    1001a840 f   wssocket.obj
+ 0001:00019920       xcesendto                  1001a920 f   wssocket.obj
+ 0001:00019a10       xcesetsockopt              1001aa10 f   wssocket.obj
+ 0001:00019b20       xceshutdown                1001ab20 f   wssocket.obj
+ 0001:00019bf4       xceselect                  1001abf4 f   wssocket.obj
+ 0001:0001a734       xceclosesocket             1001b734 f   wssocket.obj
+ 0001:0001a74c       xcewsstart                 1001b74c f   wsstart.obj
+ 0001:0001a778       xcewsstop                  1001b778 f   wsstart.obj
+ 0001:0001a784       xcewsstrerror              1001b784 f   wsstrerror.obj
+ 0001:0001a838       xcewserror                 1001b838 f   wsstrerror.obj
+ 0001:0001a8a4       xcewinstrerror             1001b8a4 f   wsstrerror.obj
+ 0001:0001a958       xcewinperror               1001b958 f   wsstrerror.obj
+ 0001:0001a9c4       SetLastError               1001b9c4 f   coredll:COREDLL.dll
+ 0001:0001a9d0       __rt_sdiv                  1001b9d0 f   coredll:COREDLL.dll
+ 0001:0001a9dc       memcmp                     1001b9dc f   coredll:COREDLL.dll
+ 0001:0001a9e8       memset                     1001b9e8 f   coredll:COREDLL.dll
+ 0001:0001a9f4       MessageBoxW                1001b9f4 f   coredll:COREDLL.dll
+ 0001:0001aa00       MultiByteToWideChar        1001ba00 f   coredll:COREDLL.dll
+ 0001:0001aa0c       WideCharToMultiByte        1001ba0c f   coredll:COREDLL.dll
+ 0001:0001aa18       GetSaveFileNameW           1001ba18 f   coredll:COREDLL.dll
+ 0001:0001aa24       GetOpenFileNameW           1001ba24 f   coredll:COREDLL.dll
+ 0001:0001aa30       memcpy                     1001ba30 f   coredll:COREDLL.dll
+ 0001:0001aa3c       SetCursor                  1001ba3c f   coredll:COREDLL.dll
+ 0001:0001aa48       LoadCursorW                1001ba48 f   coredll:COREDLL.dll
+ 0001:0001aa54       OutputDebugStringW         1001ba54 f   coredll:COREDLL.dll
+ 0001:0001aa60       FlushFileBuffers           1001ba60 f   coredll:COREDLL.dll
+ 0001:0001aa6c       WriteFile                  1001ba6c f   coredll:COREDLL.dll
+ 0001:0001aa78       strlen                     1001ba78 f   coredll:COREDLL.dll
+ 0001:0001aa84       SetFilePointer             1001ba84 f   coredll:COREDLL.dll
+ 0001:0001aa90       strcat                     1001ba90 f   coredll:COREDLL.dll
+ 0001:0001aa9c       CreateFileW                1001ba9c f   coredll:COREDLL.dll
+ 0001:0001aaa8       strcpy                     1001baa8 f   coredll:COREDLL.dll
+ 0001:0001aab4       strcmp                     1001bab4 f   coredll:COREDLL.dll
+ 0001:0001aac0       FindClose                  1001bac0 f   coredll:COREDLL.dll
+ 0001:0001aacc       GetLastError               1001bacc f   coredll:COREDLL.dll
+ 0001:0001aad8       CreateFontIndirectW        1001bad8 f   coredll:COREDLL.dll
+ 0001:0001aae4       EnumFontFamiliesW          1001bae4 f   coredll:COREDLL.dll
+ 0001:0001aaf0       GetTickCount               1001baf0 f   coredll:COREDLL.dll
+ 0001:0001aafc       __rt_udiv                  1001bafc f   coredll:COREDLL.dll
+ 0001:0001ab08       Sleep                      1001bb08 f   coredll:COREDLL.dll
+ 0001:0001ab14       GetDiskFreeSpaceExW        1001bb14 f   coredll:COREDLL.dll
+ 0001:0001ab20       CloseHandle                1001bb20 f   coredll:COREDLL.dll
+ 0001:0001ab2c       GetExitCodeProcess         1001bb2c f   coredll:COREDLL.dll
+ 0001:0001ab38       WaitForSingleObject        1001bb38 f   coredll:COREDLL.dll
+ 0001:0001ab44       OpenProcess                1001bb44 f   coredll:COREDLL.dll
+ 0001:0001ab50       CacheSync                  1001bb50 f   coredll:COREDLL.dll
+ 0001:0001ab5c       MapViewOfFile              1001bb5c f   coredll:COREDLL.dll
+ 0001:0001ab68       CreateFileMappingW         1001bb68 f   coredll:COREDLL.dll
+ 0001:0001ab74       CreateMutexW               1001bb74 f   coredll:COREDLL.dll
+ 0001:0001ab80       ReleaseMutex               1001bb80 f   coredll:COREDLL.dll
+ 0001:0001ab8c       EventModify                1001bb8c f   coredll:COREDLL.dll
+ 0001:0001ab98       ReadFile                   1001bb98 f   coredll:COREDLL.dll
+ 0001:0001aba4       FileTimeToSystemTime       1001bba4 f   coredll:COREDLL.dll
+ 0001:0001abb0       FileTimeToLocalFileTime    1001bbb0 f   coredll:COREDLL.dll
+ 0001:0001abbc       GetThreadTimes             1001bbbc f   coredll:COREDLL.dll
+ 0001:0001abc8       __rt_sdiv64by64            1001bbc8 f   coredll:COREDLL.dll
+ 0001:0001abd4       wcstoul                    1001bbd4 f   coredll:COREDLL.dll
+ 0001:0001abe0       TlsCall                    1001bbe0 f   coredll:COREDLL.dll
+ 0001:0001abec       ResumeThread               1001bbec f   coredll:COREDLL.dll
+ 0001:0001abf8       CreateThread               1001bbf8 f   coredll:COREDLL.dll
+ 0001:0001ac04       TlsSetValue                1001bc04 f   coredll:COREDLL.dll
+ 0001:0001ac10       ExitThread                 1001bc10 f   coredll:COREDLL.dll
+ 0001:0001ac1c       TlsGetValue                1001bc1c f   coredll:COREDLL.dll
+ 0001:0001ac28       GetTimeZoneInformation     1001bc28 f   coredll:COREDLL.dll
+ 0001:0001ac34       GetFileInformationByHandle 1001bc34 f   coredll:COREDLL.dll
+ 0001:0001ac40       GetTextExtentExPointW      1001bc40 f   coredll:COREDLL.dll
+ 0001:0001ac4c       FreeLibrary                1001bc4c f   coredll:COREDLL.dll
+ 0001:0001ac58       GetProcAddressW            1001bc58 f   coredll:COREDLL.dll
+ 0001:0001ac64       LoadLibraryW               1001bc64 f   coredll:COREDLL.dll
+ 0001:0001ac70       SendMessageW               1001bc70 f   coredll:COREDLL.dll
+ 0001:0001ac7c       PostMessageW               1001bc7c f   coredll:COREDLL.dll
+ 0001:0001ac88       PostThreadMessageW         1001bc88 f   coredll:COREDLL.dll
+ 0001:0001ac94       PeekMessageW               1001bc94 f   coredll:COREDLL.dll
+ 0001:0001aca0       GetMessageW                1001bca0 f   coredll:COREDLL.dll
+ 0001:0001acac       DispatchMessageW           1001bcac f   coredll:COREDLL.dll
+ 0001:0001acb8       CreateEventW               1001bcb8 f   coredll:COREDLL.dll
+ 0001:0001acc4       GetModuleFileNameW         1001bcc4 f   coredll:COREDLL.dll
+ 0001:0001acd0       SetWindowTextW             1001bcd0 f   coredll:COREDLL.dll
+ 0001:0001acdc       ExtTextOutW                1001bcdc f   coredll:COREDLL.dll
+ 0001:0001ace8       SystemTimeToFileTime       1001bce8 f   coredll:COREDLL.dll
+ 0001:0001acf4       GetSystemTime              1001bcf4 f   coredll:COREDLL.dll
+ 0001:0001ad00       GetScrollInfo              1001bd00 f   coredll:COREDLL.dll
+ 0001:0001ad0c       SetScrollInfo              1001bd0c f   coredll:COREDLL.dll
+ 0001:0001ad18       AdjustWindowRectEx         1001bd18 f   coredll:COREDLL.dll
+ 0001:0001ad24       MapVirtualKeyW             1001bd24 f   coredll:COREDLL.dll
+ 0001:0001ad30       GetObjectW                 1001bd30 f   coredll:COREDLL.dll
+ 0001:0001ad3c       GetTextMetricsW            1001bd3c f   coredll:COREDLL.dll
+ 0001:0001ad48       AppendMenuW                1001bd48 f   coredll:COREDLL.dll
+ 0001:0001ad54       CreateWindowExW            1001bd54 f   coredll:COREDLL.dll
+ 0001:0001ad60       IsBadReadPtr               1001bd60 f   coredll:COREDLL.dll
+ 0001:0001ad6c       GetModuleHandleW           1001bd6c f   coredll:COREDLL.dll
+ 0001:0001ad78       FindWindowW                1001bd78 f   coredll:COREDLL.dll
+ 0001:0001ad84       GetVersionExW              1001bd84 f   coredll:COREDLL.dll
+ 0001:0001ad90       CreatePen                  1001bd90 f   coredll:COREDLL.dll
+ 0001:0001ad9c       LoadIconW                  1001bd9c f   coredll:COREDLL.dll
+ 0001:0001ada8       GetDlgItemTextW            1001bda8 f   coredll:COREDLL.dll
+ 0001:0001adb4       SetDlgItemTextW            1001bdb4 f   coredll:COREDLL.dll
+ 0001:0001adc0       GetWindowLongW             1001bdc0 f   coredll:COREDLL.dll
+ 0001:0001adcc       SetWindowLongW             1001bdcc f   coredll:COREDLL.dll
+ 0001:0001add8       RegisterClassW             1001bdd8 f   coredll:COREDLL.dll
+ 0001:0001ade4       UnregisterClassW           1001bde4 f   coredll:COREDLL.dll
+ 0001:0001adf0       DefWindowProcW             1001bdf0 f   coredll:COREDLL.dll
+ 0001:0001adfc       SendDlgItemMessageW        1001bdfc f   coredll:COREDLL.dll
+ 0001:0001ae08       CallWindowProcW            1001be08 f   coredll:COREDLL.dll
+ 0001:0001ae14       GetTextFaceW               1001be14 f   coredll:COREDLL.dll
+ 0001:0001ae20       CreateDCW                  1001be20 f   coredll:COREDLL.dll
+ 0001:0001ae2c       InsertMenuW                1001be2c f   coredll:COREDLL.dll
+ 0001:0001ae38       GetWindowRect              1001be38 f   coredll:COREDLL.dll
+ 0001:0001ae44       UpdateWindow               1001be44 f   coredll:COREDLL.dll
+ 0001:0001ae50       InvalidateRect             1001be50 f   coredll:COREDLL.dll
+ 0001:0001ae5c       MoveWindow                 1001be5c f   coredll:COREDLL.dll
+ 0001:0001ae68       DeleteObject               1001be68 f   coredll:COREDLL.dll
+ 0001:0001ae74       StretchBlt                 1001be74 f   coredll:COREDLL.dll
+ 0001:0001ae80       SelectObject               1001be80 f   coredll:COREDLL.dll
+ 0001:0001ae8c       DeleteDC                   1001be8c f   coredll:COREDLL.dll
+ 0001:0001ae98       CreateDIBSection           1001be98 f   coredll:COREDLL.dll
+ 0001:0001aea4       CreateCompatibleDC         1001bea4 f   coredll:COREDLL.dll
+ 0001:0001aeb0       FillRect                   1001beb0 f   coredll:COREDLL.dll
+ 0001:0001aebc       CreateSolidBrush           1001bebc f   coredll:COREDLL.dll
+ 0001:0001aec8       GetSysColor                1001bec8 f   coredll:COREDLL.dll
+ 0001:0001aed4       LocalAlloc                 1001bed4 f   coredll:COREDLL.dll
+ 0001:0001aee0       CreateProcessW             1001bee0 f   coredll:COREDLL.dll
+ 0001:0001aeec       DialogBoxIndirectParamW    1001beec f   coredll:COREDLL.dll
+ 0001:0001aef8       FindResourceW              1001bef8 f   coredll:COREDLL.dll
+ 0001:0001af04       GetWindowTextLengthW       1001bf04 f   coredll:COREDLL.dll
+ 0001:0001af10       GetMenuItemInfoW           1001bf10 f   coredll:COREDLL.dll
+ 0001:0001af1c       RegisterWindowMessageW     1001bf1c f   coredll:COREDLL.dll
+ 0001:0001af28       SetClassLongW              1001bf28 f   coredll:COREDLL.dll
+ 0001:0001af34       GetClassNameW              1001bf34 f   coredll:COREDLL.dll
+ 0001:0001af40       CopyFileW                  1001bf40 f   coredll:COREDLL.dll
+ 0001:0001af4c       CreateDirectoryW           1001bf4c f   coredll:COREDLL.dll
+ 0001:0001af58       GetFileAttributesW         1001bf58 f   coredll:COREDLL.dll
+ 0001:0001af64       CreateFileForMappingW      1001bf64 f   coredll:COREDLL.dll
+ 0001:0001af70       DeleteFileW                1001bf70 f   coredll:COREDLL.dll
+ 0001:0001af7c       SetFileAttributesW         1001bf7c f   coredll:COREDLL.dll
+ 0001:0001af88       FindFirstFileW             1001bf88 f   coredll:COREDLL.dll
+ 0001:0001af94       FindNextFileW              1001bf94 f   coredll:COREDLL.dll
+ 0001:0001afa0       __rt_udiv64by64            1001bfa0 f   coredll:COREDLL.dll
+ 0001:0001afac       __rt_srem64by64            1001bfac f   coredll:COREDLL.dll
+ 0001:0001afb8       SetEndOfFile               1001bfb8 f   coredll:COREDLL.dll
+ 0001:0001afc4       qsort                      1001bfc4 f   coredll:COREDLL.dll
+ 0001:0001afd0       MoveFileW                  1001bfd0 f   coredll:COREDLL.dll
+ 0001:0001afdc       RegCreateKeyExW            1001bfdc f   coredll:COREDLL.dll
+ 0001:0001afe8       RegOpenKeyExW              1001bfe8 f   coredll:COREDLL.dll
+ 0001:0001aff4       RegQueryValueExW           1001bff4 f   coredll:COREDLL.dll
+ 0001:0001b000       RegSetValueExW             1001c000 f   coredll:COREDLL.dll
+ 0001:0001b00c       RegEnumValueW              1001c00c f   coredll:COREDLL.dll
+ 0001:0001b018       RegCloseKey                1001c018 f   coredll:COREDLL.dll
+ 0001:0001b024       RegDeleteKeyW              1001c024 f   coredll:COREDLL.dll
+ 0001:0001b030       RegEnumKeyExW              1001c030 f   coredll:COREDLL.dll
+ 0001:0001b03c       RegDeleteValueW            1001c03c f   coredll:COREDLL.dll
+ 0001:0001b048       RemoveDirectoryW           1001c048 f   coredll:COREDLL.dll
+ 0001:0001b054       GetLocalTime               1001c054 f   coredll:COREDLL.dll
+ 0001:0001b060       SetFileTime                1001c060 f   coredll:COREDLL.dll
+ 0001:0001b06c       LocalFileTimeToFileTime    1001c06c f   coredll:COREDLL.dll
+ 0001:0001b078       TranslateMessage           1001c078 f   coredll:COREDLL.dll
+ 0001:0001b084       closesocket                1001c084 f   winsock:WINSOCK.dll
+ 0001:0001b090       recv                       1001c090 f   winsock:WINSOCK.dll
+ 0001:0001b09c       send                       1001c09c f   winsock:WINSOCK.dll
+ 0001:0001b0a8       getsockopt                 1001c0a8 f   winsock:WINSOCK.dll
+ 0001:0001b0b4       socket                     1001c0b4 f   winsock:WINSOCK.dll
+ 0001:0001b0c0       htonl                      1001c0c0 f   winsock:WINSOCK.dll
+ 0001:0001b0cc       gethostname                1001c0cc f   winsock:WINSOCK.dll
+ 0001:0001b0d8       ntohs                      1001c0d8 f   winsock:WINSOCK.dll
+ 0001:0001b0e4       accept                     1001c0e4 f   winsock:WINSOCK.dll
+ 0001:0001b0f0       listen                     1001c0f0 f   winsock:WINSOCK.dll
+ 0001:0001b0fc       inet_ntoa                  1001c0fc f   winsock:WINSOCK.dll
+ 0001:0001b108       connect                    1001c108 f   winsock:WINSOCK.dll
+ 0001:0001b114       gethostbyname              1001c114 f   winsock:WINSOCK.dll
+ 0001:0001b120       bind                       1001c120 f   winsock:WINSOCK.dll
+ 0001:0001b12c       htons                      1001c12c f   winsock:WINSOCK.dll
+ 0001:0001b138       getpeername                1001c138 f   winsock:WINSOCK.dll
+ 0001:0001b144       getsockname                1001c144 f   winsock:WINSOCK.dll
+ 0001:0001b150       ioctlsocket                1001c150 f   winsock:WINSOCK.dll
+ 0001:0001b15c       recvfrom                   1001c15c f   winsock:WINSOCK.dll
+ 0001:0001b168       sendto                     1001c168 f   winsock:WINSOCK.dll
+ 0001:0001b174       setsockopt                 1001c174 f   winsock:WINSOCK.dll
+ 0001:0001b180       shutdown                   1001c180 f   winsock:WINSOCK.dll
+ 0001:0001b18c       select                     1001c18c f   winsock:WINSOCK.dll
+ 0001:0001b198       __WSAFDIsSet               1001c198 f   winsock:WINSOCK.dll
+ 0001:0001b1a4       WSAStartup                 1001c1a4 f   winsock:WINSOCK.dll
+ 0001:0001b1b0       WSACleanup                 1001c1b0 f   winsock:WINSOCK.dll
+ 0001:0001b1bc       exit                       1001c1bc f   corelibc:crt0dat.obj
+ 0002:00000000       _XCE_ctype_                1001d000     cectype.obj
+ 0002:00000108       _XCE_tolower_              1001d108     cectype.obj
+ 0002:00000310       _XCE_toupper_              1001d310     cectype.obj
+ 0002:000005b8       __dnames                   1001d5b8     time.obj
+ 0002:000005d0       __mnames                   1001d5d0     time.obj
+ 0002:000005f8       __IMPORT_DESCRIPTOR_COREDLL 1001d5f8     coredll:COREDLL.dll
+ 0002:0000060c       __IMPORT_DESCRIPTOR_WINSOCK 1001d60c     winsock:WINSOCK.dll
+ 0002:00000620       __NULL_IMPORT_DESCRIPTOR   1001d620     coredll:COREDLL.dll
+ 0003:00000000       __imp_atol                 10021000     coredll:COREDLL.dll
+ 0003:00000004       __imp_strncat              10021004     coredll:COREDLL.dll
+ 0003:00000008       __imp___rt_sdiv            10021008     coredll:COREDLL.dll
+ 0003:0000000c       __imp_memmove              1002100c     coredll:COREDLL.dll
+ 0003:00000010       __imp_memcmp               10021010     coredll:COREDLL.dll
+ 0003:00000014       __imp_memset               10021014     coredll:COREDLL.dll
+ 0003:00000018       __imp_strchr               10021018     coredll:COREDLL.dll
+ 0003:0000001c       __imp_malloc               1002101c     coredll:COREDLL.dll
+ 0003:00000020       __imp_free                 10021020     coredll:COREDLL.dll
+ 0003:00000024       __imp_realloc              10021024     coredll:COREDLL.dll
+ 0003:00000028       __imp_MessageBoxW          10021028     coredll:COREDLL.dll
+ 0003:0000002c       __imp_MultiByteToWideChar  1002102c     coredll:COREDLL.dll
+ 0003:00000030       __imp_vsprintf             10021030     coredll:COREDLL.dll
+ 0003:00000034       __imp_WideCharToMultiByte  10021034     coredll:COREDLL.dll
+ 0003:00000038       __imp_GetSaveFileNameW     10021038     coredll:COREDLL.dll
+ 0003:0000003c       __imp_GetOpenFileNameW     1002103c     coredll:COREDLL.dll
+ 0003:00000040       __imp_memcpy               10021040     coredll:COREDLL.dll
+ 0003:00000044       __imp_SetCursor            10021044     coredll:COREDLL.dll
+ 0003:00000048       __imp_LoadCursorW          10021048     coredll:COREDLL.dll
+ 0003:0000004c       __imp_OutputDebugStringW   1002104c     coredll:COREDLL.dll
+ 0003:00000050       __imp_FlushFileBuffers     10021050     coredll:COREDLL.dll
+ 0003:00000054       __imp_WriteFile            10021054     coredll:COREDLL.dll
+ 0003:00000058       __imp_strlen               10021058     coredll:COREDLL.dll
+ 0003:0000005c       __imp_SetFilePointer       1002105c     coredll:COREDLL.dll
+ 0003:00000060       __imp_strcat               10021060     coredll:COREDLL.dll
+ 0003:00000064       __imp_sprintf              10021064     coredll:COREDLL.dll
+ 0003:00000068       __imp_wcscat               10021068     coredll:COREDLL.dll
+ 0003:0000006c       __imp_vswprintf            1002106c     coredll:COREDLL.dll
+ 0003:00000070       __imp_CreateFileW          10021070     coredll:COREDLL.dll
+ 0003:00000074       __imp_strcpy               10021074     coredll:COREDLL.dll
+ 0003:00000078       __imp_strcmp               10021078     coredll:COREDLL.dll
+ 0003:0000007c       __imp_FindClose            1002107c     coredll:COREDLL.dll
+ 0003:00000080       __imp_strncmp              10021080     coredll:COREDLL.dll
+ 0003:00000084       __imp_atoi                 10021084     coredll:COREDLL.dll
+ 0003:00000088       __imp_GetLastError         10021088     coredll:COREDLL.dll
+ 0003:0000008c       __imp_CreateFontIndirectW  1002108c     coredll:COREDLL.dll
+ 0003:00000090       __imp_EnumFontFamiliesW    10021090     coredll:COREDLL.dll
+ 0003:00000094       __imp_GetTickCount         10021094     coredll:COREDLL.dll
+ 0003:00000098       __imp___rt_udiv            10021098     coredll:COREDLL.dll
+ 0003:0000009c       __imp_wcslen               1002109c     coredll:COREDLL.dll
+ 0003:000000a0       __imp_Sleep                100210a0     coredll:COREDLL.dll
+ 0003:000000a4       __imp_GetDiskFreeSpaceExW  100210a4     coredll:COREDLL.dll
+ 0003:000000a8       __imp_CloseHandle          100210a8     coredll:COREDLL.dll
+ 0003:000000ac       __imp_GetExitCodeProcess   100210ac     coredll:COREDLL.dll
+ 0003:000000b0       __imp_WaitForSingleObject  100210b0     coredll:COREDLL.dll
+ 0003:000000b4       __imp_strstr               100210b4     coredll:COREDLL.dll
+ 0003:000000b8       __imp_OpenProcess          100210b8     coredll:COREDLL.dll
+ 0003:000000bc       __imp_CacheSync            100210bc     coredll:COREDLL.dll
+ 0003:000000c0       __imp_MapViewOfFile        100210c0     coredll:COREDLL.dll
+ 0003:000000c4       __imp_CreateFileMappingW   100210c4     coredll:COREDLL.dll
+ 0003:000000c8       __imp_CreateMutexW         100210c8     coredll:COREDLL.dll
+ 0003:000000cc       __imp_ReleaseMutex         100210cc     coredll:COREDLL.dll
+ 0003:000000d0       __imp_EventModify          100210d0     coredll:COREDLL.dll
+ 0003:000000d4       __imp_ReadFile             100210d4     coredll:COREDLL.dll
+ 0003:000000d8       __imp_FileTimeToSystemTime 100210d8     coredll:COREDLL.dll
+ 0003:000000dc       __imp_FileTimeToLocalFileTime 100210dc     coredll:COREDLL.dll
+ 0003:000000e0       __imp__vsnprintf           100210e0     coredll:COREDLL.dll
+ 0003:000000e4       __imp_strncpy              100210e4     coredll:COREDLL.dll
+ 0003:000000e8       __imp_GetThreadTimes       100210e8     coredll:COREDLL.dll
+ 0003:000000ec       __imp___rt_sdiv64by64      100210ec     coredll:COREDLL.dll
+ 0003:000000f0       __imp_wcstod               100210f0     coredll:COREDLL.dll
+ 0003:000000f4       __imp_wcstol               100210f4     coredll:COREDLL.dll
+ 0003:000000f8       __imp_wcstoul              100210f8     coredll:COREDLL.dll
+ 0003:000000fc       __imp_TlsCall              100210fc     coredll:COREDLL.dll
+ 0003:00000100       __imp_ResumeThread         10021100     coredll:COREDLL.dll
+ 0003:00000104       __imp_CreateThread         10021104     coredll:COREDLL.dll
+ 0003:00000108       __imp_TlsSetValue          10021108     coredll:COREDLL.dll
+ 0003:0000010c       __imp_ExitThread           1002110c     coredll:COREDLL.dll
+ 0003:00000110       __imp_TlsGetValue          10021110     coredll:COREDLL.dll
+ 0003:00000114       __imp_GetTimeZoneInformation 10021114     coredll:COREDLL.dll
+ 0003:00000118       __imp_GetFileInformationByHandle 10021118     coredll:COREDLL.dll
+ 0003:0000011c       __imp_GetTextExtentExPointW 1002111c     coredll:COREDLL.dll
+ 0003:00000120       __imp_FreeLibrary          10021120     coredll:COREDLL.dll
+ 0003:00000124       __imp_GetProcAddressW      10021124     coredll:COREDLL.dll
+ 0003:00000128       __imp_LoadLibraryW         10021128     coredll:COREDLL.dll
+ 0003:0000012c       __imp_SendMessageW         1002112c     coredll:COREDLL.dll
+ 0003:00000130       __imp_PostMessageW         10021130     coredll:COREDLL.dll
+ 0003:00000134       __imp_PostThreadMessageW   10021134     coredll:COREDLL.dll
+ 0003:00000138       __imp_PeekMessageW         10021138     coredll:COREDLL.dll
+ 0003:0000013c       __imp_GetMessageW          1002113c     coredll:COREDLL.dll
+ 0003:00000140       __imp_DispatchMessageW     10021140     coredll:COREDLL.dll
+ 0003:00000144       __imp_CreateEventW         10021144     coredll:COREDLL.dll
+ 0003:00000148       __imp_GetModuleFileNameW   10021148     coredll:COREDLL.dll
+ 0003:0000014c       __imp_SetWindowTextW       1002114c     coredll:COREDLL.dll
+ 0003:00000150       __imp_ExtTextOutW          10021150     coredll:COREDLL.dll
+ 0003:00000154       __imp_SystemTimeToFileTime 10021154     coredll:COREDLL.dll
+ 0003:00000158       __imp_GetSystemTime        10021158     coredll:COREDLL.dll
+ 0003:0000015c       __imp_GetScrollInfo        1002115c     coredll:COREDLL.dll
+ 0003:00000160       __imp_SetScrollInfo        10021160     coredll:COREDLL.dll
+ 0003:00000164       __imp_AdjustWindowRectEx   10021164     coredll:COREDLL.dll
+ 0003:00000168       __imp_MapVirtualKeyW       10021168     coredll:COREDLL.dll
+ 0003:0000016c       __imp_GetObjectW           1002116c     coredll:COREDLL.dll
+ 0003:00000170       __imp_GetTextMetricsW      10021170     coredll:COREDLL.dll
+ 0003:00000174       __imp_AppendMenuW          10021174     coredll:COREDLL.dll
+ 0003:00000178       __imp_CreateWindowExW      10021178     coredll:COREDLL.dll
+ 0003:0000017c       __imp_IsBadReadPtr         1002117c     coredll:COREDLL.dll
+ 0003:00000180       __imp_GetModuleHandleW     10021180     coredll:COREDLL.dll
+ 0003:00000184       __imp_FindWindowW          10021184     coredll:COREDLL.dll
+ 0003:00000188       __imp_SetLastError         10021188     coredll:COREDLL.dll
+ 0003:0000018c       __imp_strtok               1002118c     coredll:COREDLL.dll
+ 0003:00000190       __imp_GetVersionExW        10021190     coredll:COREDLL.dll
+ 0003:00000194       __imp_CreatePen            10021194     coredll:COREDLL.dll
+ 0003:00000198       __imp_LoadIconW            10021198     coredll:COREDLL.dll
+ 0003:0000019c       __imp_GetDlgItemTextW      1002119c     coredll:COREDLL.dll
+ 0003:000001a0       __imp_SetDlgItemTextW      100211a0     coredll:COREDLL.dll
+ 0003:000001a4       __imp_GetWindowLongW       100211a4     coredll:COREDLL.dll
+ 0003:000001a8       __imp_SetWindowLongW       100211a8     coredll:COREDLL.dll
+ 0003:000001ac       __imp_RegisterClassW       100211ac     coredll:COREDLL.dll
+ 0003:000001b0       __imp_UnregisterClassW     100211b0     coredll:COREDLL.dll
+ 0003:000001b4       __imp_DefWindowProcW       100211b4     coredll:COREDLL.dll
+ 0003:000001b8       __imp_SendDlgItemMessageW  100211b8     coredll:COREDLL.dll
+ 0003:000001bc       __imp_CallWindowProcW      100211bc     coredll:COREDLL.dll
+ 0003:000001c0       __imp_GetTextFaceW         100211c0     coredll:COREDLL.dll
+ 0003:000001c4       __imp_CreateDCW            100211c4     coredll:COREDLL.dll
+ 0003:000001c8       __imp_InsertMenuW          100211c8     coredll:COREDLL.dll
+ 0003:000001cc       __imp_GetWindowRect        100211cc     coredll:COREDLL.dll
+ 0003:000001d0       __imp_UpdateWindow         100211d0     coredll:COREDLL.dll
+ 0003:000001d4       __imp_InvalidateRect       100211d4     coredll:COREDLL.dll
+ 0003:000001d8       __imp_MoveWindow           100211d8     coredll:COREDLL.dll
+ 0003:000001dc       __imp_DeleteObject         100211dc     coredll:COREDLL.dll
+ 0003:000001e0       __imp_StretchBlt           100211e0     coredll:COREDLL.dll
+ 0003:000001e4       __imp_SelectObject         100211e4     coredll:COREDLL.dll
+ 0003:000001e8       __imp_DeleteDC             100211e8     coredll:COREDLL.dll
+ 0003:000001ec       __imp_CreateDIBSection     100211ec     coredll:COREDLL.dll
+ 0003:000001f0       __imp_CreateCompatibleDC   100211f0     coredll:COREDLL.dll
+ 0003:000001f4       __imp_FillRect             100211f4     coredll:COREDLL.dll
+ 0003:000001f8       __imp_CreateSolidBrush     100211f8     coredll:COREDLL.dll
+ 0003:000001fc       __imp_GetSysColor          100211fc     coredll:COREDLL.dll
+ 0003:00000200       __imp_LocalAlloc           10021200     coredll:COREDLL.dll
+ 0003:00000204       __imp_CreateProcessW       10021204     coredll:COREDLL.dll
+ 0003:00000208       __imp_DialogBoxIndirectParamW 10021208     coredll:COREDLL.dll
+ 0003:0000020c       __imp_FindResourceW        1002120c     coredll:COREDLL.dll
+ 0003:00000210       __imp_GetWindowTextLengthW 10021210     coredll:COREDLL.dll
+ 0003:00000214       __imp_GetMenuItemInfoW     10021214     coredll:COREDLL.dll
+ 0003:00000218       __imp_RegisterWindowMessageW 10021218     coredll:COREDLL.dll
+ 0003:0000021c       __imp_SetClassLongW        1002121c     coredll:COREDLL.dll
+ 0003:00000220       __imp_GetClassNameW        10021220     coredll:COREDLL.dll
+ 0003:00000224       __imp_CopyFileW            10021224     coredll:COREDLL.dll
+ 0003:00000228       __imp_CreateDirectoryW     10021228     coredll:COREDLL.dll
+ 0003:0000022c       __imp_wcscpy               1002122c     coredll:COREDLL.dll
+ 0003:00000230       __imp_GetFileAttributesW   10021230     coredll:COREDLL.dll
+ 0003:00000234       __imp_CreateFileForMappingW 10021234     coredll:COREDLL.dll
+ 0003:00000238       __imp_DeleteFileW          10021238     coredll:COREDLL.dll
+ 0003:0000023c       __imp_SetFileAttributesW   1002123c     coredll:COREDLL.dll
+ 0003:00000240       __imp_FindFirstFileW       10021240     coredll:COREDLL.dll
+ 0003:00000244       __imp_wcsrchr              10021244     coredll:COREDLL.dll
+ 0003:00000248       __imp_wcscmp               10021248     coredll:COREDLL.dll
+ 0003:0000024c       __imp_FindNextFileW        1002124c     coredll:COREDLL.dll
+ 0003:00000250       __imp___rt_udiv64by64      10021250     coredll:COREDLL.dll
+ 0003:00000254       __imp___rt_srem64by64      10021254     coredll:COREDLL.dll
+ 0003:00000258       __imp_SetEndOfFile         10021258     coredll:COREDLL.dll
+ 0003:0000025c       __imp_qsort                1002125c     coredll:COREDLL.dll
+ 0003:00000260       __imp_MoveFileW            10021260     coredll:COREDLL.dll
+ 0003:00000264       __imp_RegCreateKeyExW      10021264     coredll:COREDLL.dll
+ 0003:00000268       __imp_RegOpenKeyExW        10021268     coredll:COREDLL.dll
+ 0003:0000026c       __imp_RegQueryValueExW     1002126c     coredll:COREDLL.dll
+ 0003:00000270       __imp_RegSetValueExW       10021270     coredll:COREDLL.dll
+ 0003:00000274       __imp_RegEnumValueW        10021274     coredll:COREDLL.dll
+ 0003:00000278       __imp_RegCloseKey          10021278     coredll:COREDLL.dll
+ 0003:0000027c       __imp_RegDeleteKeyW        1002127c     coredll:COREDLL.dll
+ 0003:00000280       __imp_RegEnumKeyExW        10021280     coredll:COREDLL.dll
+ 0003:00000284       __imp_RegDeleteValueW      10021284     coredll:COREDLL.dll
+ 0003:00000288       __imp_RemoveDirectoryW     10021288     coredll:COREDLL.dll
+ 0003:0000028c       __imp_GetLocalTime         1002128c     coredll:COREDLL.dll
+ 0003:00000290       __imp_SetFileTime          10021290     coredll:COREDLL.dll
+ 0003:00000294       __imp_LocalFileTimeToFileTime 10021294     coredll:COREDLL.dll
+ 0003:00000298       __imp_sscanf               10021298     coredll:COREDLL.dll
+ 0003:0000029c       __imp_TranslateMessage     1002129c     coredll:COREDLL.dll
+ 0003:000002a0       \177COREDLL_NULL_THUNK_DATA 100212a0     coredll:COREDLL.dll
+ 0003:000002a4       __imp_bind                 100212a4     winsock:WINSOCK.dll
+ 0003:000002a8       __imp_recv                 100212a8     winsock:WINSOCK.dll
+ 0003:000002ac       __imp_send                 100212ac     winsock:WINSOCK.dll
+ 0003:000002b0       __imp_getsockopt           100212b0     winsock:WINSOCK.dll
+ 0003:000002b4       __imp_socket               100212b4     winsock:WINSOCK.dll
+ 0003:000002b8       __imp_htonl                100212b8     winsock:WINSOCK.dll
+ 0003:000002bc       __imp_gethostname          100212bc     winsock:WINSOCK.dll
+ 0003:000002c0       __imp_ntohs                100212c0     winsock:WINSOCK.dll
+ 0003:000002c4       __imp_accept               100212c4     winsock:WINSOCK.dll
+ 0003:000002c8       __imp_listen               100212c8     winsock:WINSOCK.dll
+ 0003:000002cc       __imp_inet_ntoa            100212cc     winsock:WINSOCK.dll
+ 0003:000002d0       __imp_connect              100212d0     winsock:WINSOCK.dll
+ 0003:000002d4       __imp_gethostbyname        100212d4     winsock:WINSOCK.dll
+ 0003:000002d8       __imp_closesocket          100212d8     winsock:WINSOCK.dll
+ 0003:000002dc       __imp_htons                100212dc     winsock:WINSOCK.dll
+ 0003:000002e0       __imp_getpeername          100212e0     winsock:WINSOCK.dll
+ 0003:000002e4       __imp_getsockname          100212e4     winsock:WINSOCK.dll
+ 0003:000002e8       __imp_ioctlsocket          100212e8     winsock:WINSOCK.dll
+ 0003:000002ec       __imp_recvfrom             100212ec     winsock:WINSOCK.dll
+ 0003:000002f0       __imp_sendto               100212f0     winsock:WINSOCK.dll
+ 0003:000002f4       __imp_setsockopt           100212f4     winsock:WINSOCK.dll
+ 0003:000002f8       __imp_shutdown             100212f8     winsock:WINSOCK.dll
+ 0003:000002fc       __imp_select               100212fc     winsock:WINSOCK.dll
+ 0003:00000300       __imp___WSAFDIsSet         10021300     winsock:WINSOCK.dll
+ 0003:00000304       __imp_WSAStartup           10021304     winsock:WINSOCK.dll
+ 0003:00000308       __imp_WSACleanup           10021308     winsock:WINSOCK.dll
+ 0003:0000030c       \177WINSOCK_NULL_THUNK_DATA 1002130c     winsock:WINSOCK.dll
+ 0003:00000310       __xc_a                     10021310     corelibc:crt0init.obj
+ 0003:00000314       __xc_z                     10021314     corelibc:crt0init.obj
+ 0003:00000318       __xi_a                     10021318     corelibc:crt0init.obj
+ 0003:0000031c       __xi_z                     1002131c     corelibc:crt0init.obj
+ 0003:00000320       __xp_a                     10021320     corelibc:crt0init.obj
+ 0003:00000324       __xp_z                     10021324     corelibc:crt0init.obj
+ 0003:00000328       __xt_a                     10021328     corelibc:crt0init.obj
+ 0003:0000032c       __xt_z                     1002132c     corelibc:crt0init.obj
+ 0003:00000430       _xce_ctype_                10021430     cectype.obj
+ 0003:00000434       _xce_tolower_tab_          10021434     cectype.obj
+ 0003:00000438       _xce_toupper_tab_          10021438     cectype.obj
+ 0003:00000500       _error_list                10021500     ceerrno.obj
+ 0003:00000c98       german_keyboard            10021c98     cekeyboard.obj
+ 0003:00001bf8       __tlsindex                 10022bf8     cethread.obj
+ 0003:00002fa0       _timezone                  10023fa0     time.obj
+ 0003:00002fa4       _daylight                  10023fa4     time.obj
+ 0003:00002fa8       _dstbias                   10023fa8     time.obj
+ 0003:00003030       _lpdays                    10024030     time.obj
+ 0003:00003068       _days                      10024068     time.obj
+ 0003:000030a0       _tzname                    100240a0     time.obj
+ 0003:00003c18       __xcetrace                 10024c18     cedebug.obj
+ 0003:00004ba4       __LogOpened                10025ba4     syslog.obj
+ 0003:00005040       terminal_termios           10026040     <common>
+ 0003:00005054       __LogTag                   10026054     <common>
+ 0003:00005058       __LogStat                  10026058     <common>
+ 0003:0000505c       _errormode                 1002605c     <common>
+ 0003:00005060       __umask                    10026060     <common>
+ 0003:00005064       palm_stderr                10026064     <common>
+ 0003:00005068       palm_stdout                10026068     <common>
+ 0003:0000506c       palm_stdin                 1002606c     <common>
+ 0003:00005080       palm_files                 10026080     <common>
+ 0003:00005220       _sighandlers               10026220     <common>
+ 0003:00005280       xcelocal_procstart         10026280     <common>
+ 0003:00005b10       console_write_func         10026b10     <common>
+ 0003:00005b14       console_read_func          10026b14     <common>
+ 0003:00005b18       console_hwnd               10026b18     <common>
+ 0003:00005b20       _fdtab                     10026b20     <common>
+ 0003:00006160       console_ioctl_func         10027160     <common>
+ 0003:00006164       _commandline               10027164     <common>
+ 0003:00006168       __xceargv                  10027168     <common>
+ 0003:0000616c       __xceargc                  1002716c     <common>
+ 0003:00006170       environ                    10027170     <common>
+ 0003:00006174       __xceenviron               10027174     <common>
+ 0003:00006178       __progname                 10027178     <common>
+ 0003:0000617c       __xcetracefile             1002717c     <common>
+ 0003:00006180       _exitflag                  10027180     <common>
+ 0003:00006184       __onexitend                10027184     <common>
+ 0003:00006188       __onexitbegin              10027188     <common>
+
+ entry point at        0001:0000f95c
+
+ Static symbols
+
+ 0001:00018308       cvtdate                    10019308 f   tzset.obj
+ 0001:00015ef4       rresvport                  10016ef4 f   rexec.obj
+ 0001:00014f3c       rresvport                  10015f3c f   rcmd.obj
+ 0001:00013d0c       _make_time_t               10014d0c f   mktime.obj
+ 0001:000114c4       globexp1                   100124c4 f   glob.obj
+ 0001:000115d4       globexp2                   100125d4 f   glob.obj
+ 0001:00011a34       glob0                      10012a34 f   glob.obj
+ 0001:00011ea4       globtilde                  10012ea4 f   glob.obj
+ 0001:00012114       compare                    10013114 f   glob.obj
+ 0001:00012198       glob1                      10013198 f   glob.obj
+ 0001:0001223c       glob2                      1001323c f   glob.obj
+ 0001:000124c8       glob3                      100134c8 f   glob.obj
+ 0001:000127bc       globextend                 100137bc f   glob.obj
+ 0001:00012a2c       match                      10013a2c f   glob.obj
+ 0001:00012e74       g_opendir                  10013e74 f   glob.obj
+ 0001:00012f58       g_lstat                    10013f58 f   glob.obj
+ 0001:00013050       g_strchr                   10014050 f   glob.obj
+ 0001:000130cc       g_Ctoc                     100140cc f   glob.obj
+ 0001:000108a4       foldcase                   100118a4 f   fnmatch.obj
+ 0001:00010904       rangematch                 10011904 f   fnmatch.obj
+ 0001:00000bb4       XCEFileNameNameDlg         10001bb4 f   cecommdlg.obj
+ 0001:00000730       argv_append1               10001730 f   ceargv.obj
+ 0001:000008c4       argv_append2               100018c4 f   ceargv.obj
+ 0001:000002a8       store_dt                   100012a8 f   asctime.obj
+ 0001:0001b1c8       doexit                     1001c1c8 f   corelibc:crt0dat.obj
+ 0001:0001b284       _initterm                  1001c284 f   corelibc:crt0dat.obj
