@@ -14,9 +14,9 @@ XCE_END_DECLS
 #  define assert(e)      ((void)0)
 #else
 #  define _DIAGASSERT(e) ((e) || xcehandleassert("Assertion %s failed in file %s: line %d", \
-                                                  #e, __FILE__, __LINE__));
+                                                  #e, __FILE__, __LINE__))
 #  define assert(e)      ((e) || xcehandleassert("Assertion %s failed in file %s: line %d", \
-                                                  #e, __FILE__, __LINE__));
+                                                  #e, __FILE__, __LINE__))
 #endif
 
 #endif

@@ -1,3 +1,11 @@
+2013-09-17 bulk88 <bulk88@hotmail.com>
+	* start new git repo from
+	http://sourceforge.net/projects/perlce/files/PerlCE%20support%20files/celib-3.11/celib-3.11-dll-src.tar.gz/download
+	* assert can't be a statement, only expression
+	* don't define calling conventions, causes problems for EVC4
+	x86 emulator building
+	* struct ABC is defined by modern SDKs, dont define it in celib headers
+
 2002-05-10  Rainer Keuchel  <keuchel@netwave.de>
 
 	* all: XCEGetOpenFileName/XCEGetSaveFileName were not in the

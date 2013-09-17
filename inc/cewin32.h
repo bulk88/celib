@@ -105,11 +105,11 @@ WS_THICKFRAME|WS_MINIMIZEBOX|WS_MAXIMIZEBOX
 
 XCE_BEGIN_DECLS
 
-typedef struct _ABC {
-    int     abcA;
-    UINT    abcB;
-    int     abcC;
-} ABC, *PABC, NEAR *NPABC, FAR *LPABC;
+//typedef struct _ABC {
+//    int     abcA;
+//    UINT    abcB;
+//    int     abcC;
+//} ABC, *PABC, NEAR *NPABC, FAR *LPABC;
 
 typedef struct _WINDOWPLACEMENT {
     UINT  length;
@@ -150,7 +150,9 @@ typedef struct _OSVERSIONINFOW{
 #endif
 
 //////////////////////////////////////////////////////////////////////
-
+//bulk88 change
+//#undef __stdcall
+#define XCEAPI WINAPI
 XCE_EXPORT BOOL XCEAPI XCEAdjustWindowRect(LPRECT lpRect, DWORD dwStyle, BOOL bMenu);
 XCE_EXPORT BOOL XCEAPI XCEAppendMenuA(HMENU hMenu, UINT uFlags, UINT uIDNewItem, const char *s);
 XCE_EXPORT BOOL XCEAPI XCEAttachThreadInput(DWORD idAttach, DWORD idAttachTo, BOOL fAttach);

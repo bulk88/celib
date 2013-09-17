@@ -11,7 +11,9 @@
 #define XCE_EXPORT
 #endif
 
-#define XCEAPI WINAPI
+//bulk88 change
+//#undef __stdcall
+//#define XCEAPI __stdcall
 
 #ifdef __cplusplus
 #define XCE_BEGIN_DECLS extern "C" {
